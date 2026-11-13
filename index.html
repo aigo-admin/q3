@@ -1829,7 +1829,7 @@
     // - Real Milky Way galactic dust plane & deep sky celestial landmarks
     // - Relativistic motion streaks transformed through 3D camera rotation matrix
     // -------------------------------------------------------------
-    var cruiseSpeed = 1.2;
+    var cruiseSpeed = 0;
     var warpSpeed = cruiseSpeed;
     var targetWarpSpeed = cruiseSpeed;
     var isWarping = false;
@@ -2000,7 +2000,65 @@
         });
       }
 
-      // 4. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
+      // 5. CELESTIAL LANDMARK 1: PLANET EARTH ORBITAL HORIZON (NADIR / LOOKING DOWN)
+      // Realistic low-Earth orbital geometry: Earth is directly beneath the spacecraft
+      var EARTH_YE = 3600;
+      var EARTH_RE = 3000;
+      var EARTH_COS_ALPHA = Math.cos(Math.asin(EARTH_RE / EARTH_YE)); // ~0.55277
+      var EARTH_COS2_ALPHA = EARTH_COS_ALPHA * EARTH_COS_ALPHA;       // ~0.305555
+
+      // Realistic metropolitan light clusters and arterial transport webs on the night sector
+      var EARTH_CITIES = [];
+      var EARTH_HIGHWAYS = [];
+      (function initEarthSurfaceLandmarks(){
+        var hubs = [
+          { t: 0.28, p: 0.45, n: 24, spread: 0.08, col: '255, 205, 120' }, // European Megalopolis (London-Paris-Rhine-Milan)
+          { t: 0.32, p: 2.10, n: 28, spread: 0.09, col: '255, 190, 90' },  // East Asian Coast (Tokyo-Seoul-Shanghai-Taipei)
+          { t: 0.38, p: 4.85, n: 26, spread: 0.08, col: '255, 215, 130' }, // North American Corridor (Boston-NY-Philly-DC)
+          { t: 0.22, p: 1.15, n: 16, spread: 0.06, col: '255, 180, 80' },  // Nile Valley & Delta
+          { t: 0.26, p: 1.55, n: 18, spread: 0.07, col: '255, 220, 110' }, // Persian Gulf & Arabian Coast
+          { t: 0.35, p: 2.65, n: 20, spread: 0.08, col: '255, 195, 95' }   // Indian Subcontinent (Mumbai-Delhi-Bengaluru)
+        ];
+        var cityIdx = 0;
+        for (var h = 0; h < hubs.length; h++){
+          var hub = hubs[h];
+          var startIdx = cityIdx;
+          for (var i = 0; i < hub.n; i++){
+            var dTheta = (Math.random() + Math.random() - 1) * hub.spread;
+            var dPhi = (Math.random() + Math.random() - 1) * (hub.spread * 1.5);
+            var th = hub.t + dTheta;
+            var ph = hub.p + dPhi;
+            var xw = EARTH_RE * Math.sin(th) * Math.sin(ph);
+            var yw = EARTH_YE - EARTH_RE * Math.cos(th);
+            var zw = EARTH_RE * Math.sin(th) * Math.cos(ph);
+            EARTH_CITIES.push({
+              x: xw, y: yw, z: zw,
+              col: hub.col,
+              mag: 0.6 + Math.random() * 1.6,
+              blinkSpeed: 0.02 + Math.random() * 0.04,
+              blinkPhase: Math.random() * Math.PI * 2
+            });
+            cityIdx++;
+          }
+          // Arterial highway connections between nearby cities
+          for (var a = startIdx; a < cityIdx; a++){
+            var bestB = -1, bestDist = 110;
+            for (var b = startIdx; b < cityIdx; b++){
+              if (a === b) continue;
+              var d = Math.hypot(EARTH_CITIES[a].x - EARTH_CITIES[b].x, EARTH_CITIES[a].y - EARTH_CITIES[b].y, EARTH_CITIES[a].z - EARTH_CITIES[b].z);
+              if (d < bestDist) {
+                bestDist = d;
+                bestB = b;
+              }
+            }
+            if (bestB > a) {
+              EARTH_HIGHWAYS.push({ a: a, b: bestB, col: hub.col });
+            }
+          }
+        }
+      })();
+
+      // 6. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
       function updateTelemetry(){
         if (!gyroPill) return;
         var degP = Math.round(camPitch * 180 / Math.PI);
@@ -2246,6 +2304,11 @@
         for (var i = 0; i < stars.length; i++){
           var s = stars[i];
 
+          // Occlusion by solid planetary body of Earth
+          if (s.y > 0 && (s.y * s.y) >= EARTH_COS2_ALPHA * (s.x * s.x + s.y * s.y + s.z * s.z)) {
+            continue;
+          }
+
           var prevZ = s.z;
           if (!s.isDeepSky) {
             s.z -= warpSpeed;
@@ -2334,6 +2397,175 @@
               ctx.lineTo(px, py + spikeLen);
               ctx.stroke();
             }
+          }
+        }
+
+        // -------------------------------------------------------------
+        // RENDER CELESTIAL LANDMARK 1: PLANET EARTH ORBITAL HORIZON (NADIR)
+        // -------------------------------------------------------------
+        var A_quad = cosP * cosP - EARTH_COS2_ALPHA;
+        var B_quad = 2 * cosP * sinP;
+
+        var horizonSamples = 20;
+        var horizonPoints = [];
+        var minHorizonY = 99999;
+
+        for (var sIdx = 0; sIdx <= horizonSamples; sIdx++){
+          var screenFrac = sIdx / horizonSamples;
+          var testX = -40 + screenFrac * (w + 80);
+          var u = (testX - cx) / fov;
+          var C_quad = sinP * sinP - EARTH_COS2_ALPHA * (u * u + 1);
+
+          var v = null;
+          if (Math.abs(A_quad) < 1e-7) {
+            var vLin = -C_quad / B_quad;
+            if (vLin * cosP + sinP > 0) v = vLin;
+          } else {
+            var disc = B_quad * B_quad - 4 * A_quad * C_quad;
+            if (disc >= 0) {
+              var sqrtD = Math.sqrt(disc);
+              var v1 = (-B_quad - sqrtD) / (2 * A_quad);
+              var v2 = (-B_quad + sqrtD) / (2 * A_quad);
+              var valid = [];
+              if (v1 * cosP + sinP > 0) valid.push(v1);
+              if (v2 * cosP + sinP > 0) valid.push(v2);
+              if (valid.length > 0) {
+                v = Math.min.apply(null, valid);
+              }
+            }
+          }
+
+          if (v !== null) {
+            var unrotY = cy + v * fov;
+            if (unrotY < minHorizonY) minHorizonY = unrotY;
+            horizonPoints.push({ origX: testX, origY: unrotY });
+          }
+        }
+
+        var isEarthVisible = (horizonPoints.length >= 2 && minHorizonY < h + 140) || (sinP > EARTH_COS_ALPHA);
+
+        if (isEarthVisible) {
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.rotate(camRoll);
+          ctx.translate(-cx, -cy);
+
+          ctx.beginPath();
+          if (horizonPoints.length >= 2) {
+            ctx.moveTo(horizonPoints[0].origX, horizonPoints[0].origY);
+            for (var p = 1; p < horizonPoints.length; p++){
+              ctx.lineTo(horizonPoints[p].origX, horizonPoints[p].origY);
+            }
+            ctx.lineTo(w + 140, h * 2 + 500);
+            ctx.lineTo(-140, h * 2 + 500);
+            ctx.closePath();
+          } else {
+            ctx.rect(-100, -100, w + 200, h * 2 + 400);
+          }
+
+          // Abyssal deep ocean under starlight
+          ctx.fillStyle = '#01050e';
+          ctx.fill();
+
+          // Rayleigh scattering multilayered atmospheric limb
+          if (horizonPoints.length >= 2) {
+            function strokeHorizon(style, width){
+              ctx.beginPath();
+              ctx.moveTo(horizonPoints[0].origX, horizonPoints[0].origY);
+              for (var p = 1; p < horizonPoints.length; p++){
+                ctx.lineTo(horizonPoints[p].origX, horizonPoints[p].origY);
+              }
+              ctx.strokeStyle = style;
+              ctx.lineWidth = width;
+              ctx.stroke();
+            }
+
+            // Outer exosphere cobalt-blue atmospheric wash
+            strokeHorizon('rgba(24, 65, 185, 0.26)', 15);
+            // Middle mesosphere cyan sheath
+            strokeHorizon('rgba(56, 189, 248, 0.65)', 5.5);
+            // Stratosphere razor-sharp ionization limb
+            strokeHorizon('rgba(195, 242, 255, 0.95)', 1.8);
+            // Atomic oxygen green airglow ribbon (ISS 557.7nm emission line)
+            strokeHorizon('rgba(52, 211, 153, 0.32)', 1.1);
+          }
+
+          ctx.restore();
+
+          // Project Earth surface landmarks (Highways & City light clusters)
+          var projectedCities = [];
+          for (var c = 0; c < EARTH_CITIES.length; c++){
+            var city = EARTH_CITIES[c];
+            var cx1 = city.x * cosY - city.z * sinY;
+            var cz1 = city.x * sinY + city.z * cosY;
+            var cy2 = city.y * cosP - cz1 * sinP;
+            var cz2 = city.y * sinP + cz1 * cosP;
+
+            if (cz2 <= 30) {
+              projectedCities[c] = null;
+              continue;
+            }
+
+            var cx3 = cx1 * cosR - cy2 * sinR;
+            var cy3 = cx1 * sinR + cy2 * cosR;
+
+            var cScale = fov / cz2;
+            var cpx = cx + cx3 * cScale;
+            var cpy = cy + cy3 * cScale;
+
+            if (cpx < -20 || cpx > w + 20 || cpy < -20 || cpy > h + 20) {
+              projectedCities[c] = null;
+              continue;
+            }
+
+            projectedCities[c] = {
+              px: cpx, py: cpy,
+              scale: cScale,
+              col: city.col,
+              mag: city.mag,
+              blinkSpeed: city.blinkSpeed,
+              blinkPhase: city.blinkPhase += city.blinkSpeed
+            };
+          }
+
+          // Arterial transportation webs between metropolitan centers
+          ctx.lineWidth = 0.65;
+          for (var hw = 0; hw < EARTH_HIGHWAYS.length; hw++){
+            var hway = EARTH_HIGHWAYS[hw];
+            var ca = projectedCities[hway.a];
+            var cb = projectedCities[hway.b];
+            if (ca && cb) {
+              ctx.strokeStyle = 'rgba(' + hway.col + ',0.16)';
+              ctx.beginPath();
+              ctx.moveTo(ca.px, ca.py);
+              ctx.lineTo(cb.px, cb.py);
+              ctx.stroke();
+            }
+          }
+
+          // Nocturnal city lights
+          for (var c = 0; c < projectedCities.length; c++){
+            var pc = projectedCities[c];
+            if (!pc) continue;
+
+            var blink = 0.82 + Math.sin(pc.blinkPhase) * 0.18;
+            var cRad = Math.max(0.55, pc.mag * Math.min(1.4, pc.scale * 2.6));
+
+            if (cRad > 1.1) {
+              var cHalo = cRad * 3.4;
+              var cGrad = ctx.createRadialGradient(pc.px, pc.py, 0, pc.px, pc.py, cHalo);
+              cGrad.addColorStop(0, 'rgba(' + pc.col + ',' + (0.42 * blink).toFixed(3) + ')');
+              cGrad.addColorStop(1, 'transparent');
+              ctx.fillStyle = cGrad;
+              ctx.beginPath();
+              ctx.arc(pc.px, pc.py, cHalo, 0, Math.PI * 2);
+              ctx.fill();
+            }
+
+            ctx.fillStyle = 'rgba(' + pc.col + ',' + (0.95 * blink).toFixed(3) + ')';
+            ctx.beginPath();
+            ctx.arc(pc.px, pc.py, cRad, 0, Math.PI * 2);
+            ctx.fill();
           }
         }
 
