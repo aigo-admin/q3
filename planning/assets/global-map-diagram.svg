@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="100%" style="background: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="12" y="12" width="976" height="356" rx="12" fill="#faf9f6" stroke="#e6e2da" stroke-width="1.5"/>
+  <text x="36" y="42" fill="#18181b" font-size="16" font-weight="700">Global Target Reach: 100+ Countries Across 5 Key Regions</text>
+  <text x="36" y="62" fill="#71717a" font-size="13">Targeting 6,000+ Participants with Local University Ambassadors and Cyber Communities</text>
+
+  <!-- Region 1: APAC & India -->
+  <g transform="translate(36, 85)">
+    <rect width="215" height="260" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="14" y="14" width="50" height="22" rx="4" fill="#dcfce7"/>
+    <text x="22" y="29" fill="#15803d" font-size="11" font-weight="bold">40%</text>
+    <text x="72" y="30" fill="#18181b" font-size="14" font-weight="700">India &amp; APAC</text>
+    <text x="14" y="58" fill="#16a34a" font-size="12" font-weight="600">Target: 2,400+ Players</text>
+    <line x1="14" y1="70" x2="201" y2="70" stroke="#f0eee6"/>
+    <text x="14" y="92" fill="#3f3f46" font-size="12">• India (IITs, NITs, Colleges)</text>
+    <text x="14" y="114" fill="#3f3f46" font-size="12">• Singapore (NUS, NTU)</text>
+    <text x="14" y="136" fill="#3f3f46" font-size="12">• Japan &amp; South Korea</text>
+    <text x="14" y="158" fill="#3f3f46" font-size="12">• Vietnam &amp; Indonesia</text>
+    <text x="14" y="180" fill="#3f3f46" font-size="12">• Australia (DownUnder network)</text>
+    <rect x="14" y="200" width="187" height="44" rx="4" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="226" fill="#71717a" font-size="11">150+ College Ambassador Leads</text>
+  </g>
+
+  <!-- Region 2: Americas -->
+  <g transform="translate(271, 85)">
+    <rect width="215" height="260" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="14" y="14" width="50" height="22" rx="4" fill="#dbeafe"/>
+    <text x="22" y="29" fill="#1d4ed8" font-size="11" font-weight="bold">28%</text>
+    <text x="72" y="30" fill="#18181b" font-size="14" font-weight="700">North &amp; South Am.</text>
+    <text x="14" y="58" fill="#2563eb" font-size="12" font-weight="600">Target: 1,700+ Players</text>
+    <line x1="14" y1="70" x2="201" y2="70" stroke="#f0eee6"/>
+    <text x="14" y="92" fill="#3f3f46" font-size="12">• United States (Colleges + Pros)</text>
+    <text x="14" y="114" fill="#3f3f46" font-size="12">• Canada (Waterloo, Toronto)</text>
+    <text x="14" y="136" fill="#3f3f46" font-size="12">• Brazil &amp; Mexico</text>
+    <text x="14" y="158" fill="#3f3f46" font-size="12">• Argentina &amp; Chile</text>
+    <text x="14" y="180" fill="#3f3f46" font-size="12">• DEFCON &amp; BSides Groups</text>
+    <rect x="14" y="200" width="187" height="44" rx="4" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="226" fill="#71717a" font-size="11">Collegiate Cyber Defense Clubs</text>
+  </g>
+
+  <!-- Region 3: Europe -->
+  <g transform="translate(506, 85)">
+    <rect width="215" height="260" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="14" y="14" width="50" height="22" rx="4" fill="#fef3c7"/>
+    <text x="22" y="29" fill="#b45309" font-size="11" font-weight="bold">22%</text>
+    <text x="72" y="30" fill="#18181b" font-size="14" font-weight="700">Europe &amp; UK</text>
+    <text x="14" y="58" fill="#d97706" font-size="12" font-weight="600">Target: 1,300+ Players</text>
+    <line x1="14" y1="70" x2="201" y2="70" stroke="#f0eee6"/>
+    <text x="14" y="92" fill="#3f3f46" font-size="12">• UK (Oxford, Cambridge Cyber)</text>
+    <text x="14" y="114" fill="#3f3f46" font-size="12">• Germany (TU Munich, RWTH)</text>
+    <text x="14" y="136" fill="#3f3f46" font-size="12">• Poland (Dragon Sector Hub)</text>
+    <text x="14" y="158" fill="#3f3f46" font-size="12">• France, Spain &amp; Italy</text>
+    <text x="14" y="180" fill="#3f3f46" font-size="12">• Switzerland (ETH Zurich)</text>
+    <rect x="14" y="200" width="187" height="44" rx="4" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="226" fill="#71717a" font-size="11">European Cyber League Outreach</text>
+  </g>
+
+  <!-- Region 4: ME & Africa -->
+  <g transform="translate(741, 85)">
+    <rect width="215" height="260" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="14" y="14" width="50" height="22" rx="4" fill="#f3e8ff"/>
+    <text x="22" y="29" fill="#7e22ce" font-size="11" font-weight="bold">10%</text>
+    <text x="72" y="30" fill="#18181b" font-size="14" font-weight="700">Mid-East &amp; Africa</text>
+    <text x="14" y="58" fill="#9333ea" font-size="12" font-weight="600">Target: 600+ Players</text>
+    <line x1="14" y1="70" x2="201" y2="70" stroke="#f0eee6"/>
+    <text x="14" y="92" fill="#3f3f46" font-size="12">• UAE, Saudi Arabia &amp; Qatar</text>
+    <text x="14" y="114" fill="#3f3f46" font-size="12">• Egypt &amp; CyberTalents network</text>
+    <text x="14" y="136" fill="#3f3f46" font-size="12">• Nigeria (NaijaSecCon Hub)</text>
+    <text x="14" y="158" fill="#3f3f46" font-size="12">• Kenya &amp; South Africa</text>
+    <text x="14" y="180" fill="#3f3f46" font-size="12">• Morocco &amp; Ghana</text>
+    <rect x="14" y="200" width="187" height="44" rx="4" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="226" fill="#71717a" font-size="11">Regional Hackathon Communities</text>
+  </g>
+</svg>

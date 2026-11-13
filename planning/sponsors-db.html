@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTFtime Sponsor & Partner Intelligence // SecLeaf Q3 2027</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #f8f7f4;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1efe9;
+      --border-card: #e3ded6;
+      --border-light: #ece8e1;
+      --text-heading: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      
+      --accent-green: #15803d;
+      --accent-green-light: #dcfce7;
+      --accent-lime: #16a34a;
+      --accent-blue: #1d4ed8;
+      --accent-blue-light: #dbeafe;
+      --accent-amber: #b45309;
+      --accent-amber-light: #fef3c7;
+      --accent-purple: #7e22ce;
+      --accent-purple-light: #f3e8ff;
+
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      font-family: var(--font-sans);
+      color: var(--text-body);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    /* Top Navigation */
+    .top-bar {
+      background: rgba(248, 247, 244, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-card);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-logo {
+      height: 32px;
+      width: auto;
+    }
+    .brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.3px;
+    }
+    .brand-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      background: var(--accent-green-light);
+      color: var(--accent-green);
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .top-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--accent-lime);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #15803d;
+    }
+    .btn-outline {
+      background: #ffffff;
+      border-color: var(--border-card);
+      color: var(--text-heading);
+    }
+    .btn-outline:hover {
+      background: var(--bg-subtle);
+    }
+
+    /* Hero Section */
+    .hero-container {
+      max-width: 1280px;
+      margin: 28px auto 20px;
+      padding: 0 24px;
+    }
+    .hero-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .hero-desc {
+      font-size: 14.5px;
+      color: var(--text-body);
+      max-width: 950px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Stat Cards */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+    .stat-val {
+      font-size: 26px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: var(--text-heading);
+    }
+    .stat-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+
+    /* Tab Switcher */
+    .tab-nav {
+      display: flex;
+      gap: 8px;
+      border-bottom: 2px solid var(--border-card);
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 10px 18px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+    }
+    .tab-btn:hover {
+      color: var(--text-heading);
+    }
+    .tab-btn.active {
+      color: var(--accent-green);
+      border-bottom-color: var(--accent-lime);
+    }
+    .tab-count {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: var(--bg-subtle);
+    }
+    .tab-btn.active .tab-count {
+      background: var(--accent-green-light);
+      color: var(--accent-green);
+    }
+
+    /* Search & Filter Toolbar */
+    .filter-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 14px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .search-input {
+      flex: 1;
+      min-width: 280px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-family: var(--font-sans);
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      background: var(--bg-page);
+      color: var(--text-heading);
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--accent-lime);
+      background: #ffffff;
+    }
+    .category-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .cat-pill {
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--bg-subtle);
+      color: var(--text-body);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .cat-pill:hover {
+      background: #e5e2d8;
+    }
+    .cat-pill.active {
+      background: var(--text-heading);
+      color: #ffffff;
+    }
+
+    /* Sponsor Grid */
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 16px;
+    }
+    .sponsor-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    .sponsor-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .sponsor-name {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: var(--text-heading);
+    }
+    .count-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent-green-light);
+      color: var(--accent-green);
+      padding: 3px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .cat-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .offering-box {
+      background: var(--bg-subtle);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text-body);
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .offering-box strong {
+      color: var(--text-heading);
+      display: block;
+      margin-bottom: 2px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .strategy-box {
+      font-size: 12px;
+      color: var(--text-body);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+    .strategy-box strong {
+      color: var(--accent-green);
+      display: block;
+      margin-bottom: 2px;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    .card-footer {
+      border-top: 1px solid var(--border-light);
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .tier-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-heading);
+      background: #f1efe9;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .action-links {
+      display: flex;
+      gap: 8px;
+    }
+    .link-btn {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--accent-green);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .link-btn:hover {
+      text-decoration: underline;
+    }
+
+    /* Community Partners Table */
+    .table-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 12px;
+    }
+    th {
+      background: #f1efe8;
+      color: var(--text-heading);
+      font-weight: 700;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-card);
+    }
+    td {
+      padding: 9px 14px;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-body);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover td {
+      background: #faf9f6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-bar">
+    <div class="brand-group">
+      <img src="assets/logo.png" alt="SecLeaf" class="brand-logo" onerror="this.src='brochure/assets/SecLeaf_Light_BG.png'">
+      <span class="brand-title">SecLeaf CTF 2027</span>
+      <span class="brand-tag">Deep-Tier Sponsor Intelligence</span>
+    </div>
+    <div class="top-links">
+      <a href="/brochure/" target="_blank" class="btn btn-outline">Presentation Deck ↗</a>
+      <a href="/brochure/print.html" target="_blank" class="btn btn-outline">Sponsorship PDF ↗</a>
+      <a href="ctftime_non_surface_sponsors.csv" download class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download Non-Surface CSV
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Hero Content -->
+  <main class="hero-container">
+    <h1 class="hero-title">Beyond the Surface: Deep-Tier CTF Sponsors</h1>
+    <p class="hero-desc">
+      Excluding the typical obvious sponsors (HTB, THM, OffSec, Google, Trail of Bits), this directory uncovers <strong>65 high-value corporate sponsors</strong> found in the CTFtime archives across Quant Trading, Defense &amp; Aerospace, Telecom, Boutique Exploit Labs, Enterprise Threat Intel, and Indian Cybersecurity firms.
+    </p>
+
+    <!-- Overview Stat Cards -->
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-val" id="totalEvents">2,121</div>
+        <div class="stat-label">CTF Events Analyzed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" style="color: var(--accent-blue);" id="totalNonSurface">65</div>
+        <div class="stat-label">Non-Surface Sponsors (New)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="totalSurface">53</div>
+        <div class="stat-label">Surface-Level Sponsors</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="totalPartners">119</div>
+        <div class="stat-label">Community &amp; College Organizers</div>
+      </div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('non_surface')">
+        ⭐ Non-Surface &amp; Deep-Tier Sponsors
+        <span class="tab-count" id="nonSurfaceTabCount">65</span>
+      </button>
+      <button class="tab-btn" onclick="switchTab('surface')">
+        Standard Surface Sponsors
+        <span class="tab-count" id="surfaceTabCount">53</span>
+      </button>
+      <button class="tab-btn" onclick="switchTab('partners')">
+        Community &amp; College Organizers
+        <span class="tab-count" id="partnersTabCount">119</span>
+      </button>
+    </div>
+
+    <!-- =============================================================
+         TAB 1: NON-SURFACE SPONSORS (DEFAULT)
+         ============================================================= -->
+    <div id="tabNonSurface">
+      <div class="filter-bar">
+        <input type="text" id="nonSurfaceSearch" class="search-input" placeholder="🔍 Search non-surface sponsors (e.g. Jane Street, Thales, Synacktiv, Orange, Quarkslab, Seqrite, Belkasoft)..." oninput="filterNonSurface()">
+        <div class="category-pills" id="nonSurfacePills">
+          <button class="cat-pill active" onclick="filterNonSurfaceCategory('All')">All</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Quant Trading & High Finance')">Quant Trading</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Defense, Aerospace & Government')">Defense &amp; Aero</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Telecom & Enterprise Infrastructure')">Telecom &amp; Tech</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Boutique Offensive Security & Binary Research')">Boutique Pwn/Rev</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Enterprise Threat Defense')">Threat Intel &amp; DFIR</button>
+          <button class="cat-pill" onclick="filterNonSurfaceCategory('Indian Enterprise Cybersecurity')">Indian Infosec</button>
+        </div>
+      </div>
+
+      <div class="sponsor-grid" id="nonSurfaceGrid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+
+    <!-- =============================================================
+         TAB 2: STANDARD SURFACE SPONSORS
+         ============================================================= -->
+    <div id="tabSurface" style="display: none;">
+      <div class="filter-bar">
+        <input type="text" id="surfaceSearch" class="search-input" placeholder="🔍 Search standard sponsors (e.g. HTB, OffSec, Binary Ninja, Google Cloud)..." oninput="filterSurface()">
+        <a href="ctftime_sponsors_directory.csv" download class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Surface CSV
+        </a>
+      </div>
+
+      <div class="sponsor-grid" id="surfaceGrid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+
+    <!-- =============================================================
+         TAB 3: COMMUNITY PARTNERS
+         ============================================================= -->
+    <div id="tabPartners" style="display: none;">
+      <div class="filter-bar">
+        <input type="text" id="partnerSearch" class="search-input" placeholder="🔍 Search college club or team name (e.g. NYUSEC, CSAW, BITS, IIT, SECCON)..." oninput="filterPartners()">
+        <a href="ctftime_community_partners.csv" download class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Community CSV
+        </a>
+      </div>
+
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Community / Academic Club</th>
+              <th style="width: 12%;">CTFs Organized</th>
+              <th style="width: 28%;">Latest Event Title</th>
+              <th style="width: 10%;">Year</th>
+              <th style="width: 25%;">Link / Action</th>
+            </tr>
+          </thead>
+          <tbody id="partnerTableBody">
+            <!-- Rendered dynamically via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    let dbSurface = null;
+    let dbNonSurface = null;
+    let currentNonSurfaceCategory = 'All';
+
+    async function loadAllData() {
+      try {
+        const [resNonSurface, resSurface] = await Promise.all([
+          fetch('ctftime_non_surface_sponsors.json'),
+          fetch('ctftime_sponsors_database.json')
+        ]);
+        
+        dbNonSurface = await resNonSurface.json();
+        dbSurface = await resSurface.json();
+
+        renderNonSurface(dbNonSurface.sponsors);
+        renderSurface(dbSurface.sponsors);
+        renderPartners(dbSurface.community_partners);
+
+        document.getElementById('totalEvents').innerText = '2,121';
+        document.getElementById('totalNonSurface').innerText = dbNonSurface.sponsors.length;
+        document.getElementById('totalSurface').innerText = dbSurface.sponsors.length;
+        document.getElementById('totalPartners').innerText = dbSurface.community_partners.length;
+
+        document.getElementById('nonSurfaceTabCount').innerText = dbNonSurface.sponsors.length;
+        document.getElementById('surfaceTabCount').innerText = dbSurface.sponsors.length;
+        document.getElementById('partnersTabCount').innerText = dbSurface.community_partners.length;
+      } catch (err) {
+        console.error('Failed to load databases:', err);
+      }
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('tabNonSurface').style.display = 'none';
+      document.getElementById('tabSurface').style.display = 'none';
+      document.getElementById('tabPartners').style.display = 'none';
+
+      if (tab === 'non_surface') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('tabNonSurface').style.display = 'block';
+      } else if (tab === 'surface') {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('tabSurface').style.display = 'block';
+      } else {
+        document.querySelectorAll('.tab-btn')[2].classList.add('active');
+        document.getElementById('tabPartners').style.display = 'block';
+      }
+    }
+
+    function renderNonSurface(list) {
+      const container = document.getElementById('nonSurfaceGrid');
+      container.innerHTML = '';
+      if (!list || list.length === 0) {
+        container.innerHTML = '<div style="grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--text-muted);">No non-surface sponsors matched your query.</div>';
+        return;
+      }
+
+      list.forEach(sp => {
+        const card = document.createElement('div');
+        card.className = 'sponsor-card';
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <div class="sponsor-name">${sp.name}</div>
+              <span class="count-badge" style="background: var(--accent-blue-light); color: var(--accent-blue);">${sp.count} CTFs Found</span>
+            </div>
+            <div class="cat-tag">${sp.category}</div>
+
+            <div class="offering-box">
+              <strong>Typical Offering / Prizes:</strong>
+              ${sp.typical_offering}
+            </div>
+
+            <div class="strategy-box">
+              <strong>SecLeaf Pitch Strategy:</strong>
+              ${sp.pitch_strategy}
+            </div>
+
+            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+              <strong style="color: var(--text-heading);">Sample Backed Competitions:</strong><br>
+              ${sp.sample_events_str}
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="tier-badge">${sp.recommended_tier}</span>
+            <div class="action-links">
+              <a href="${sp.website}" target="_blank" class="link-btn">Website ↗</a>
+              ${sp.sponsor_portal ? `<a href="${sp.sponsor_portal}" target="_blank" class="link-btn" style="color: var(--accent-blue);">Careers / Portal ↗</a>` : ''}
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderSurface(list) {
+      const container = document.getElementById('surfaceGrid');
+      container.innerHTML = '';
+      if (!list || list.length === 0) return;
+
+      list.forEach(sp => {
+        const card = document.createElement('div');
+        card.className = 'sponsor-card';
+        const recentStr = sp.recent_events.slice(0, 3).map(e => `${e.title} (${e.year})`).join(', ');
+
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <div class="sponsor-name">${sp.name}</div>
+              <span class="count-badge">${sp.count} CTFs Sponsored</span>
+            </div>
+            <div class="cat-tag">${sp.category}</div>
+
+            <div class="offering-box">
+              <strong>Typical Offering / Prizes:</strong>
+              ${sp.typical_offering}
+            </div>
+
+            <div class="strategy-box">
+              <strong>SecLeaf Pitch Strategy:</strong>
+              ${sp.pitch_strategy}
+            </div>
+
+            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+              <strong style="color: var(--text-heading);">Recent Competitions Backed:</strong><br>
+              ${recentStr}
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="tier-badge">${sp.recommended_tier}</span>
+            <div class="action-links">
+              <a href="${sp.website}" target="_blank" class="link-btn">Website ↗</a>
+              ${sp.sponsor_portal ? `<a href="${sp.sponsor_portal}" target="_blank" class="link-btn" style="color: var(--accent-blue);">Sponsor Portal ↗</a>` : ''}
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderPartners(list) {
+      const tbody = document.getElementById('partnerTableBody');
+      tbody.innerHTML = '';
+      if (!list || list.length === 0) return;
+
+      list.forEach(cp => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${cp.name}</strong></td>
+          <td><span style="font-family: var(--font-mono); font-weight: 700;">${cp.ctfs_organized}</span></td>
+          <td>${cp.latest_ctf}</td>
+          <td><span style="font-family: var(--font-mono);">${cp.latest_year}</span></td>
+          <td>
+            <a href="${cp.website}" target="_blank" class="link-btn">Event Gateway ↗</a>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <a href="${cp.ctftime_url}" target="_blank" class="link-btn" style="color: var(--text-muted);">CTFtime ↗</a>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterNonSurfaceCategory(cat) {
+      currentNonSurfaceCategory = cat;
+      document.querySelectorAll('#nonSurfacePills .cat-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText === (
+          cat === 'Quant Trading & High Finance' ? 'Quant Trading' :
+          cat === 'Defense, Aerospace & Government' ? 'Defense & Aero' :
+          cat === 'Telecom & Enterprise Infrastructure' ? 'Telecom & Tech' :
+          cat === 'Boutique Offensive Security & Binary Research' ? 'Boutique Pwn/Rev' :
+          cat === 'Enterprise Threat Defense' ? 'Threat Intel & DFIR' :
+          cat === 'Indian Enterprise Cybersecurity' ? 'Indian Infosec' : cat
+        ));
+      });
+      filterNonSurface();
+    }
+
+    function filterNonSurface() {
+      if (!dbNonSurface) return;
+      const q = document.getElementById('nonSurfaceSearch').value.toLowerCase();
+      const filtered = dbNonSurface.sponsors.filter(sp => {
+        const matchesCategory = (currentNonSurfaceCategory === 'All') || (sp.category.toLowerCase().includes(currentNonSurfaceCategory.toLowerCase()));
+        const matchesQuery = sp.name.toLowerCase().includes(q) ||
+                             sp.category.toLowerCase().includes(q) ||
+                             sp.typical_offering.toLowerCase().includes(q) ||
+                             sp.pitch_strategy.toLowerCase().includes(q);
+        return matchesCategory && matchesQuery;
+      });
+      renderNonSurface(filtered);
+    }
+
+    function filterSurface() {
+      if (!dbSurface) return;
+      const q = document.getElementById('surfaceSearch').value.toLowerCase();
+      const filtered = dbSurface.sponsors.filter(sp => {
+        return sp.name.toLowerCase().includes(q) ||
+               sp.category.toLowerCase().includes(q) ||
+               sp.typical_offering.toLowerCase().includes(q) ||
+               sp.pitch_strategy.toLowerCase().includes(q);
+      });
+      renderSurface(filtered);
+    }
+
+    function filterPartners() {
+      if (!dbSurface) return;
+      const q = document.getElementById('partnerSearch').value.toLowerCase();
+      const filtered = dbSurface.community_partners.filter(cp => {
+        return cp.name.toLowerCase().includes(q) ||
+               cp.latest_ctf.toLowerCase().includes(q) ||
+               String(cp.latest_year).includes(q);
+      });
+      renderPartners(filtered);
+    }
+
+    window.addEventListener('DOMContentLoaded', loadAllData);
+  </script>
+</body>
+</html>

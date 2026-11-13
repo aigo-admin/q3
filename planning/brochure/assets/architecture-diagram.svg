@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%" style="background: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf9f5"/>
+      <stop offset="100%" stop-color="#f5f3ec"/>
+    </linearGradient>
+    <marker id="arrow-light" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#16a34a" />
+    </marker>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="12" y="12" width="1076" height="456" rx="12" fill="#faf9f6" stroke="#e6e2da" stroke-width="1.5"/>
+  <text x="36" y="42" fill="#18181b" font-size="16" font-weight="700">How SecLeaf Q3 2027 Handles 6,000+ Players Without Crashing</text>
+  <text x="36" y="62" fill="#71717a" font-size="13">Zero Downtime Architecture • 5 Simple Layers from Traffic to Sandboxes</text>
+
+  <!-- Step 1: Shield Layer -->
+  <g transform="translate(36, 85)">
+    <rect width="185" height="360" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="32" height="24" rx="4" fill="#dcfce7"/>
+    <text x="20" y="28" fill="#16a34a" font-size="12" font-weight="bold">01</text>
+    <text x="52" y="28" fill="#18181b" font-size="14" font-weight="700">The Shield</text>
+    <text x="14" y="58" fill="#71717a" font-size="11">Cloudflare Protection</text>
+    
+    <rect x="12" y="80" width="161" height="75" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="102" fill="#18181b" font-size="12" font-weight="600">DDoS Absorption</text>
+    <text x="22" y="122" fill="#71717a" font-size="11">Blocks malicious floods</text>
+    <text x="22" y="138" fill="#16a34a" font-size="11" font-weight="600">✓ 95% traffic absorbed</text>
+
+    <rect x="12" y="170" width="161" height="75" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="192" fill="#18181b" font-size="12" font-weight="600">Static File Offload</text>
+    <text x="22" y="212" fill="#71717a" font-size="11">Binaries &amp; PCAPs on CDN</text>
+    <text x="22" y="228" fill="#16a34a" font-size="11" font-weight="600">✓ Zero load on CTFd</text>
+
+    <rect x="12" y="260" width="161" height="80" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="282" fill="#18181b" font-size="12" font-weight="600">Turnstile Bot Check</text>
+    <text x="22" y="302" fill="#71717a" font-size="11">Stops spam registrations</text>
+    <text x="22" y="322" fill="#16a34a" font-size="11" font-weight="600">✓ Only real humans</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="225" y1="265" x2="245" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-light)"/>
+
+  <!-- Step 2: Website Engine -->
+  <g transform="translate(255, 85)">
+    <rect width="205" height="360" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="32" height="24" rx="4" fill="#dbeafe"/>
+    <text x="20" y="28" fill="#2563eb" font-size="12" font-weight="bold">02</text>
+    <text x="52" y="28" fill="#18181b" font-size="14" font-weight="700">Website Engine</text>
+    <text x="14" y="58" fill="#71717a" font-size="11">Stateless CTFd Clusters</text>
+
+    <rect x="12" y="80" width="181" height="125" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="102" fill="#18181b" font-size="12" font-weight="600">Auto-Scaling Pods</text>
+    <text x="22" y="122" fill="#71717a" font-size="11">Starts with 15 servers</text>
+    <text x="22" y="138" fill="#71717a" font-size="11">Scales to 30 automatically</text>
+    <text x="22" y="156" fill="#16a34a" font-size="11" font-weight="600">✓ Gunicorn Gevent workers</text>
+    <text x="22" y="174" fill="#16a34a" font-size="11" font-weight="600">✓ If 1 crashes, others take over</text>
+
+    <rect x="12" y="220" width="181" height="120" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="242" fill="#18181b" font-size="12" font-weight="600">Shared Secret Keys</text>
+    <text x="22" y="262" fill="#71717a" font-size="11">Players stay logged in</text>
+    <text x="22" y="278" fill="#71717a" font-size="11">regardless of which server</text>
+    <text x="22" y="294" fill="#71717a" font-size="11">handles their request</text>
+    <text x="22" y="316" fill="#16a34a" font-size="11" font-weight="600">✓ Seamless browsing</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="465" y1="265" x2="485" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-light)"/>
+
+  <!-- Step 3: Traffic Police -->
+  <g transform="translate(495, 85)">
+    <rect width="185" height="360" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="32" height="24" rx="4" fill="#fef3c7"/>
+    <text x="20" y="28" fill="#d97706" font-size="12" font-weight="bold">03</text>
+    <text x="52" y="28" fill="#18181b" font-size="14" font-weight="700">Traffic Police</text>
+    <text x="14" y="58" fill="#71717a" font-size="11">ProxySQL Layer</text>
+
+    <rect x="12" y="80" width="161" height="125" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="102" fill="#18181b" font-size="12" font-weight="600">Connection Pooling</text>
+    <text x="22" y="122" fill="#71717a" font-size="11">6,000 players hit the site</text>
+    <text x="22" y="138" fill="#71717a" font-size="11">ProxySQL bundles them into</text>
+    <text x="22" y="156" fill="#16a34a" font-size="12" font-weight="700">only 50 DB connections!</text>
+    <text x="22" y="178" fill="#71717a" font-size="11">Prevents DB crash</text>
+
+    <rect x="12" y="220" width="161" height="120" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="22" y="242" fill="#18181b" font-size="12" font-weight="600">Smart Read/Write</text>
+    <text x="22" y="262" fill="#71717a" font-size="11">Submitting flags ➔ Primary</text>
+    <text x="22" y="278" fill="#71717a" font-size="11">Viewing scores ➔ Replicas</text>
+    <text x="22" y="300" fill="#16a34a" font-size="11" font-weight="600">✓ Zero lag on submissions</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="685" y1="265" x2="705" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-light)"/>
+
+  <!-- Step 4: Storage & Cache -->
+  <g transform="translate(715, 85)">
+    <rect width="175" height="360" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="32" height="24" rx="4" fill="#f3e8ff"/>
+    <text x="20" y="28" fill="#9333ea" font-size="12" font-weight="bold">04</text>
+    <text x="52" y="28" fill="#18181b" font-size="14" font-weight="700">Instant Cache</text>
+    <text x="14" y="58" fill="#71717a" font-size="11">Redis + Managed DB</text>
+
+    <rect x="12" y="80" width="151" height="125" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="20" y="102" fill="#18181b" font-size="12" font-weight="600">Redis Cache</text>
+    <text x="20" y="122" fill="#71717a" font-size="11">Scoreboard refreshes</text>
+    <text x="20" y="138" fill="#71717a" font-size="11">every 10 seconds</text>
+    <text x="20" y="154" fill="#71717a" font-size="11">from memory (RAM)</text>
+    <text x="20" y="176" fill="#16a34a" font-size="11" font-weight="600">✓ Lightning fast 2ms</text>
+
+    <rect x="12" y="220" width="151" height="120" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="20" y="242" fill="#18181b" font-size="12" font-weight="600">AWS Aurora DB</text>
+    <text x="20" y="262" fill="#71717a" font-size="11">Primary writes + 2</text>
+    <text x="20" y="278" fill="#71717a" font-size="11">Read Replicas</text>
+    <text x="20" y="298" fill="#16a34a" font-size="11" font-weight="600">✓ 100% data safety</text>
+  </g>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="895" y1="265" x2="915" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-light)"/>
+
+  <!-- Step 5: Isolated Sandboxes -->
+  <g transform="translate(925, 85)">
+    <rect width="145" height="360" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="32" height="24" rx="4" fill="#ffe4e6"/>
+    <text x="20" y="28" fill="#e11d48" font-size="12" font-weight="bold">05</text>
+    <text x="52" y="28" fill="#18181b" font-size="14" font-weight="700">Sandboxes</text>
+    <text x="14" y="58" fill="#71717a" font-size="11">Dynamic Pwn/Web</text>
+
+    <rect x="12" y="80" width="121" height="125" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="18" y="102" fill="#18181b" font-size="11" font-weight="600">nsjail Containers</text>
+    <text x="18" y="122" fill="#71717a" font-size="10">Each team gets</text>
+    <text x="18" y="136" fill="#71717a" font-size="10">their own private</text>
+    <text x="18" y="150" fill="#71717a" font-size="10">instance (15m)</text>
+    <text x="18" y="174" fill="#16a34a" font-size="10" font-weight="600">✓ Isolated</text>
+
+    <rect x="12" y="220" width="121" height="120" rx="6" fill="#faf9f5" stroke="#e6e2da"/>
+    <text x="18" y="242" fill="#18181b" font-size="11" font-weight="600">Canary Bots</text>
+    <text x="18" y="262" fill="#71717a" font-size="10">Checks challenges</text>
+    <text x="18" y="276" fill="#71717a" font-size="10">every 60 sec</text>
+    <text x="18" y="298" fill="#16a34a" font-size="10" font-weight="600">✓ Auto-fix</text>
+  </g>
+</svg>

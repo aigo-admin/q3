@@ -1,0 +1,5929 @@
+{
+  "total_events_analyzed": 2121,
+  "total_sponsors_tracked": 53,
+  "total_community_partners": 119,
+  "sponsors": [
+    {
+      "name": "Hack The Box",
+      "count": 177,
+      "category": "Training & Certification Labs",
+      "website": "https://www.hackthebox.com/",
+      "sponsor_portal": "https://www.hackthebox.com/",
+      "typical_offering": "1-Year VIP & VIP+ subscriptions, HTB Cubes, Swag boxes, Discord badges",
+      "recommended_tier": "Gold ($3,600) / Silver ($1,800)",
+      "pitch_strategy": "HTB is the #1 platform sponsor on CTFtime (177+ CTFs). Request VIP+ passes for top 10 teams and 500 Cubes for winners.",
+      "recent_events": [
+        {
+          "id": 3068,
+          "title": "ATC Winter Vibes Community CTF 2.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3068/",
+          "event_url": "https://atcwintervibesctf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "ATC CTF Team"
+          ]
+        },
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3123,
+          "title": "CREST CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3123/",
+          "event_url": "https://crestpcu.in/",
+          "weight": 6.0,
+          "organizers": [
+            "CREST"
+          ]
+        },
+        {
+          "id": 3160,
+          "title": "Winja CTF | Nullcon Goa 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3160/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 1.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 3167,
+          "title": "KI CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3167/",
+          "event_url": "https://cyberconclave.yugam.in/",
+          "weight": 0.0,
+          "organizers": [
+            "YUGAM KUMARAGURU"
+          ]
+        },
+        {
+          "id": 3203,
+          "title": "PolyPwnCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3203/",
+          "event_url": "https://polypwn.polycyber.io/",
+          "weight": 0.0,
+          "organizers": [
+            "PolyCyber"
+          ]
+        },
+        {
+          "id": 3096,
+          "title": "RITSEC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3096/",
+          "event_url": "https://ctfd.ritsec.club/",
+          "weight": 48.64,
+          "organizers": [
+            "TeamContagion"
+          ]
+        },
+        {
+          "id": 2937,
+          "title": "UMassCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2937/",
+          "event_url": "https://ctf.umasscybersec.org/",
+          "weight": 65.95,
+          "organizers": [
+            "SavedByTheShell"
+          ]
+        },
+        {
+          "id": 3202,
+          "title": "PUTCyberDays CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3202/",
+          "event_url": "https://putcyberdays.pl/en/",
+          "weight": 24.94,
+          "organizers": [
+            "PUTrequest"
+          ]
+        }
+      ],
+      "all_events_count": 177
+    },
+    {
+      "name": "Google Cloud",
+      "count": 167,
+      "category": "Cloud & Infrastructure",
+      "website": "https://cloud.google.com/",
+      "sponsor_portal": "https://goo.gle/ctfsponsorship",
+      "typical_offering": "Free GCP compute credits ($1,000 - $5,000) & cash support for CTF infrastructure",
+      "recommended_tier": "Infrastructure Partner / Platinum ($6,000)",
+      "pitch_strategy": "Apply directly via goo.gle/ctfsponsorship. Google has sponsored over 200 CTFs by covering GKE / Compute Engine costs for CTFd and challenge instances.",
+      "recent_events": [
+        {
+          "id": 2969,
+          "title": "UofTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2969/",
+          "event_url": "https://ctf.uoftctf.org/",
+          "weight": 33.49,
+          "organizers": [
+            "UofTCTF"
+          ]
+        },
+        {
+          "id": 3175,
+          "title": "CITEFLAG QUALS 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3175/",
+          "event_url": "https://ctf.citeflag.online/",
+          "weight": 25.0,
+          "organizers": [
+            "CITEFLAG"
+          ]
+        },
+        {
+          "id": 2937,
+          "title": "UMassCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2937/",
+          "event_url": "https://ctf.umasscybersec.org/",
+          "weight": 65.95,
+          "organizers": [
+            "SavedByTheShell"
+          ]
+        },
+        {
+          "id": 3141,
+          "title": "TRX CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3141/",
+          "event_url": "https://ctf.theromanxpl0.it/",
+          "weight": 24.16,
+          "organizers": [
+            "TheRomanXpl0it"
+          ]
+        },
+        {
+          "id": 3056,
+          "title": "UMDCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3056/",
+          "event_url": "https://umdctf.io/",
+          "weight": 85.48,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 3137,
+          "title": "Break The Syntax CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3137/",
+          "event_url": "https://bts2026.wh.edu.pl/",
+          "weight": 56.25,
+          "organizers": [
+            "PWr Synt@x Err0r"
+          ]
+        },
+        {
+          "id": 2927,
+          "title": "BKISC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2927/",
+          "event_url": "https://ctf.bkisc.com/",
+          "weight": 25.0,
+          "organizers": [
+            "BK-ISC"
+          ]
+        },
+        {
+          "id": 3195,
+          "title": "TJCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3195/",
+          "event_url": "https://tjctf.org/",
+          "weight": 65.05,
+          "organizers": [
+            "tjcsc"
+          ]
+        },
+        {
+          "id": 3209,
+          "title": "THEM?!CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3209/",
+          "event_url": "https://ctf.themctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "THEM?"
+          ]
+        },
+        {
+          "id": 3178,
+          "title": "Grey Cat The Flag 2026 Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3178/",
+          "event_url": "https://ctf.nusgreyhats.org/",
+          "weight": 47.5,
+          "organizers": [
+            "NUSGreyhats"
+          ]
+        }
+      ],
+      "all_events_count": 167
+    },
+    {
+      "name": "OffSec (Offensive Security)",
+      "count": 111,
+      "category": "Training & Certification Labs",
+      "website": "https://www.offsec.com/",
+      "sponsor_portal": "https://www.offsec.com/",
+      "typical_offering": "Learn Fundamentals annual passes, PEN-200 / OSCP course & exam vouchers ($1,599 each)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Major high-value prize sponsor (111+ CTFs). Pitch Diamond ($10k) or Platinum ($6k) with exclusive access to top 5% resume bank.",
+      "recent_events": [
+        {
+          "id": 2969,
+          "title": "UofTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2969/",
+          "event_url": "https://ctf.uoftctf.org/",
+          "weight": 33.49,
+          "organizers": [
+            "UofTCTF"
+          ]
+        },
+        {
+          "id": 3123,
+          "title": "CREST CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3123/",
+          "event_url": "https://crestpcu.in/",
+          "weight": 6.0,
+          "organizers": [
+            "CREST"
+          ]
+        },
+        {
+          "id": 3142,
+          "title": "CyberGame 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3142/",
+          "event_url": "https://cybergame.sk/",
+          "weight": 0,
+          "organizers": [
+            "SK-CERT"
+          ]
+        },
+        {
+          "id": 3101,
+          "title": "CodeVinci CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3101/",
+          "event_url": "https://challs.codevinci.it/",
+          "weight": 18.57,
+          "organizers": [
+            "code-vinci"
+          ]
+        },
+        {
+          "id": 3134,
+          "title": "Goldrush Gauntlet 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3134/",
+          "event_url": "https://ung.ctfd.io/",
+          "weight": 0,
+          "organizers": [
+            "CyberHawks at UNG"
+          ]
+        },
+        {
+          "id": 3175,
+          "title": "CITEFLAG QUALS 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3175/",
+          "event_url": "https://ctf.citeflag.online/",
+          "weight": 25.0,
+          "organizers": [
+            "CITEFLAG"
+          ]
+        },
+        {
+          "id": 3187,
+          "title": "Triada CTF '26",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3187/",
+          "event_url": "http://ctf26.triada.in/",
+          "weight": 0,
+          "organizers": [
+            "Triada"
+          ]
+        },
+        {
+          "id": 2937,
+          "title": "UMassCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2937/",
+          "event_url": "https://ctf.umasscybersec.org/",
+          "weight": 65.95,
+          "organizers": [
+            "SavedByTheShell"
+          ]
+        },
+        {
+          "id": 3253,
+          "title": "47CON CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3253/",
+          "event_url": "https://sugusuva.es/ctfd/",
+          "weight": 0,
+          "organizers": [
+            "SUGUS"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        }
+      ],
+      "all_events_count": 111
+    },
+    {
+      "name": "Trail of Bits",
+      "count": 80,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://www.trailofbits.com/",
+      "sponsor_portal": "https://www.trailofbits.com/careers",
+      "typical_offering": "Direct cash prize pool ($2,500 - $10,000), custom challenge design, internship fast-track",
+      "recommended_tier": "Diamond ($10,000) / Platinum ($6,000)",
+      "pitch_strategy": "Sponsored 80+ CTFs on CTFtime! Premier sponsor of elite security talent. Pitch vetted resume bank of top 5% solvers.",
+      "recent_events": [
+        {
+          "id": 3101,
+          "title": "CodeVinci CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3101/",
+          "event_url": "https://challs.codevinci.it/",
+          "weight": 18.57,
+          "organizers": [
+            "code-vinci"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3056,
+          "title": "UMDCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3056/",
+          "event_url": "https://umdctf.io/",
+          "weight": 85.48,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 3113,
+          "title": "SekaiCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3113/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 79.25,
+          "organizers": [
+            "Project Sekai"
+          ]
+        },
+        {
+          "id": 3373,
+          "title": "Lexington Informatics Tournament CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3373/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 84.79,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 3181,
+          "title": "gaslightCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3181/",
+          "event_url": "https://gaslightctf.cooking/",
+          "weight": 24.75,
+          "organizers": [
+            "gaslighting"
+          ]
+        },
+        {
+          "id": 2596,
+          "title": "BearcatCTF 2025: World Tour",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2596/",
+          "event_url": "https://play.bearcatctf.io/",
+          "weight": 23.89,
+          "organizers": [
+            "Cyber@UC"
+          ]
+        },
+        {
+          "id": 2579,
+          "title": "WolvCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2579/",
+          "event_url": "https://wolvctf.io/",
+          "weight": 47.25,
+          "organizers": [
+            "w01verines"
+          ]
+        },
+        {
+          "id": 2563,
+          "title": "UMDCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2563/",
+          "event_url": "https://umdctf.io/",
+          "weight": 70.86,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 2809,
+          "title": "TJCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2809/",
+          "event_url": "https://tjctf.org/",
+          "weight": 51.29,
+          "organizers": [
+            "tjcsc"
+          ]
+        }
+      ],
+      "all_events_count": 80
+    },
+    {
+      "name": "OtterSec",
+      "count": 80,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://osec.io/",
+      "sponsor_portal": "https://osec.io/",
+      "typical_offering": "Major cash sponsorships ($2,000 - $10,000), Solana & EVM smart contract challenges",
+      "recommended_tier": "Diamond ($10,000) / Platinum ($6,000)",
+      "pitch_strategy": "Sponsored 80+ CTFs! Highly receptive to technical CTF sponsorships with high prize pools.",
+      "recent_events": [
+        {
+          "id": 3110,
+          "title": "DiceCTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3110/",
+          "event_url": "https://ctf.dicega.ng/",
+          "weight": 100.0,
+          "organizers": [
+            "DiceGang"
+          ]
+        },
+        {
+          "id": 3095,
+          "title": "TAMUctf 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3095/",
+          "event_url": "https://tamuctf.com/",
+          "weight": 76.22,
+          "organizers": [
+            "TAMUctf"
+          ]
+        },
+        {
+          "id": 3187,
+          "title": "Triada CTF '26",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3187/",
+          "event_url": "http://ctf26.triada.in/",
+          "weight": 0,
+          "organizers": [
+            "Triada"
+          ]
+        },
+        {
+          "id": 3113,
+          "title": "SekaiCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3113/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 79.25,
+          "organizers": [
+            "Project Sekai"
+          ]
+        },
+        {
+          "id": 3149,
+          "title": "R3CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3149/",
+          "event_url": "https://ctf2026.r3kapig.com/",
+          "weight": 35.95,
+          "organizers": [
+            "r3kapig"
+          ]
+        },
+        {
+          "id": 3104,
+          "title": "OmniCTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3104/",
+          "event_url": "https://omnictf.com/",
+          "weight": 23.96,
+          "organizers": [
+            "OmniCTF"
+          ]
+        },
+        {
+          "id": 3373,
+          "title": "Lexington Informatics Tournament CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3373/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 84.79,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 3052,
+          "title": "scriptCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3052/",
+          "event_url": "https://ctf.scriptsorcerers.xyz/",
+          "weight": 24.7,
+          "organizers": [
+            "ScriptSorcerers"
+          ]
+        },
+        {
+          "id": 3181,
+          "title": "gaslightCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3181/",
+          "event_url": "https://gaslightctf.cooking/",
+          "weight": 24.75,
+          "organizers": [
+            "gaslighting"
+          ]
+        },
+        {
+          "id": 3097,
+          "title": "NNS CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3097/",
+          "event_url": "https://nnsc.tf/",
+          "weight": 25.0,
+          "organizers": [
+            "Norske N\u00f8kkelsnikere"
+          ]
+        }
+      ],
+      "all_events_count": 80
+    },
+    {
+      "name": "TryHackMe",
+      "count": 70,
+      "category": "Training & Certification Labs",
+      "website": "https://tryhackme.com/",
+      "sponsor_portal": "https://tryhackme.com/",
+      "typical_offering": "Vouchers for 1-month to 1-year Premium subscriptions & official swag packs",
+      "recommended_tier": "Platinum ($6,000) / Gold ($3,600)",
+      "pitch_strategy": "SecLeaf past partner! Pitch renewal with focus on beginner-to-intermediate solver cohort and 150+ college cyber clubs.",
+      "recent_events": [
+        {
+          "id": 3068,
+          "title": "ATC Winter Vibes Community CTF 2.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3068/",
+          "event_url": "https://atcwintervibesctf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "ATC CTF Team"
+          ]
+        },
+        {
+          "id": 3123,
+          "title": "CREST CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3123/",
+          "event_url": "https://crestpcu.in/",
+          "weight": 6.0,
+          "organizers": [
+            "CREST"
+          ]
+        },
+        {
+          "id": 3101,
+          "title": "CodeVinci CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3101/",
+          "event_url": "https://challs.codevinci.it/",
+          "weight": 18.57,
+          "organizers": [
+            "code-vinci"
+          ]
+        },
+        {
+          "id": 2937,
+          "title": "UMassCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2937/",
+          "event_url": "https://ctf.umasscybersec.org/",
+          "weight": 65.95,
+          "organizers": [
+            "SavedByTheShell"
+          ]
+        },
+        {
+          "id": 3195,
+          "title": "TJCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3195/",
+          "event_url": "https://tjctf.org/",
+          "weight": 65.05,
+          "organizers": [
+            "tjcsc"
+          ]
+        },
+        {
+          "id": 3132,
+          "title": "DaVinciCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3132/",
+          "event_url": "https://dvc.tf/",
+          "weight": 32.59,
+          "organizers": [
+            "DaVinciCode"
+          ]
+        },
+        {
+          "id": 3136,
+          "title": "SecLeaf Q2 CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3136/",
+          "event_url": "http://secleaf.xyz/",
+          "weight": 0.0,
+          "organizers": [
+            "SecLeaf"
+          ]
+        },
+        {
+          "id": 3209,
+          "title": "THEM?!CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3209/",
+          "event_url": "https://ctf.themctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "THEM?"
+          ]
+        },
+        {
+          "id": 3308,
+          "title": "ZeroDay Heist 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3308/",
+          "event_url": "https://ctf.cyberhx.com/",
+          "weight": 24.0,
+          "organizers": [
+            "CyberXoX"
+          ]
+        },
+        {
+          "id": 3353,
+          "title": "EYCC CTF 2026 Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3353/",
+          "event_url": "https://eycc.stemeghackclub.org/",
+          "weight": 0,
+          "organizers": [
+            "Mont5ab El2hwa"
+          ]
+        }
+      ],
+      "all_events_count": 70
+    },
+    {
+      "name": "Binary Ninja (Vector 35)",
+      "count": 62,
+      "category": "Binary & Reverse Engineering Tools",
+      "website": "https://binary.ninja/",
+      "sponsor_portal": "https://binary.ninja/",
+      "typical_offering": "Named Non-Commercial & Student Licenses ($150 - $300 value each)",
+      "recommended_tier": "Gold ($3,600) / Pwn Track Sponsor",
+      "pitch_strategy": "Sponsored 62+ CTFs! Crucial for Reverse Engineering & Binary Exploitation tracks. Request 6-10 Named licenses for top pwners.",
+      "recent_events": [
+        {
+          "id": 2969,
+          "title": "UofTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2969/",
+          "event_url": "https://ctf.uoftctf.org/",
+          "weight": 33.49,
+          "organizers": [
+            "UofTCTF"
+          ]
+        },
+        {
+          "id": 3014,
+          "title": "Crackmes.one Reverse Engineering CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3014/",
+          "event_url": "https://ctf.crackmes.one/",
+          "weight": 0,
+          "organizers": [
+            "crackmes.one"
+          ]
+        },
+        {
+          "id": 3098,
+          "title": "Batman's Kitchen CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3098/",
+          "event_url": "https://ctf.batmans.kitchen/",
+          "weight": 24.24,
+          "organizers": [
+            "Batman's Kitchen"
+          ]
+        },
+        {
+          "id": 3095,
+          "title": "TAMUctf 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3095/",
+          "event_url": "https://tamuctf.com/",
+          "weight": 76.22,
+          "organizers": [
+            "TAMUctf"
+          ]
+        },
+        {
+          "id": 3096,
+          "title": "RITSEC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3096/",
+          "event_url": "https://ctfd.ritsec.club/",
+          "weight": 48.64,
+          "organizers": [
+            "TeamContagion"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3056,
+          "title": "UMDCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3056/",
+          "event_url": "https://umdctf.io/",
+          "weight": 85.48,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 3041,
+          "title": "GPN CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3041/",
+          "event_url": "https://gpn24.ctf.kitctf.de/",
+          "weight": 69.0,
+          "organizers": [
+            "KITCTF"
+          ]
+        },
+        {
+          "id": 3113,
+          "title": "SekaiCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3113/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 79.25,
+          "organizers": [
+            "Project Sekai"
+          ]
+        },
+        {
+          "id": 3149,
+          "title": "R3CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3149/",
+          "event_url": "https://ctf2026.r3kapig.com/",
+          "weight": 35.95,
+          "organizers": [
+            "r3kapig"
+          ]
+        }
+      ],
+      "all_events_count": 62
+    },
+    {
+      "name": "Zellic",
+      "count": 55,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://www.zellic.io/",
+      "sponsor_portal": "https://www.zellic.io/",
+      "typical_offering": "Large cash prizes ($3,000 - $15,000), zero-knowledge & cryptography challenges",
+      "recommended_tier": "Diamond ($10,000)",
+      "pitch_strategy": "Sponsored 55+ CTFs! Pitch custom Cryptography / Zero-Knowledge challenge track.",
+      "recent_events": [
+        {
+          "id": 2969,
+          "title": "UofTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2969/",
+          "event_url": "https://ctf.uoftctf.org/",
+          "weight": 33.49,
+          "organizers": [
+            "UofTCTF"
+          ]
+        },
+        {
+          "id": 3110,
+          "title": "DiceCTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3110/",
+          "event_url": "https://ctf.dicega.ng/",
+          "weight": 100.0,
+          "organizers": [
+            "DiceGang"
+          ]
+        },
+        {
+          "id": 3133,
+          "title": "UTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3133/",
+          "event_url": "https://utctf.live/",
+          "weight": 35.2,
+          "organizers": [
+            "hhh_"
+          ]
+        },
+        {
+          "id": 3095,
+          "title": "TAMUctf 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3095/",
+          "event_url": "https://tamuctf.com/",
+          "weight": 76.22,
+          "organizers": [
+            "TAMUctf"
+          ]
+        },
+        {
+          "id": 2983,
+          "title": "KalmarCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2983/",
+          "event_url": "https://kalmarc.tf/",
+          "weight": 49.97,
+          "organizers": [
+            "kalmarunionen"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3234,
+          "title": "squ1rrel CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3234/",
+          "event_url": "https://ctf.squ1rrel.dev/",
+          "weight": 32.47,
+          "organizers": [
+            "squ1rrel"
+          ]
+        },
+        {
+          "id": 3056,
+          "title": "UMDCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3056/",
+          "event_url": "https://umdctf.io/",
+          "weight": 85.48,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 3195,
+          "title": "TJCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3195/",
+          "event_url": "https://tjctf.org/",
+          "weight": 65.05,
+          "organizers": [
+            "tjcsc"
+          ]
+        },
+        {
+          "id": 3041,
+          "title": "GPN CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3041/",
+          "event_url": "https://gpn24.ctf.kitctf.de/",
+          "weight": 69.0,
+          "organizers": [
+            "KITCTF"
+          ]
+        }
+      ],
+      "all_events_count": 55
+    },
+    {
+      "name": "PentesterLab",
+      "count": 44,
+      "category": "Training & Certification Labs",
+      "website": "https://pentesterlab.com/",
+      "sponsor_portal": "https://pentesterlab.com/",
+      "typical_offering": "PentesterLab PRO 1-month / 3-month / 1-year subscriptions",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Very active sponsor (44+ CTFs). Request PRO subscriptions for top Web challenge solvers.",
+      "recent_events": [
+        {
+          "id": 2630,
+          "title": "VishwaCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2630/",
+          "event_url": "https://vishwactf.com/",
+          "weight": 27.9,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 2639,
+          "title": "1753CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2639/",
+          "event_url": "https://1753ctf.com/",
+          "weight": 34.82,
+          "organizers": [
+            "1753c"
+          ]
+        },
+        {
+          "id": 3012,
+          "title": "VuwCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3012/",
+          "event_url": "https://2025.vuwctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "VuwCTF"
+          ]
+        },
+        {
+          "id": 2213,
+          "title": "ESCAPE CTF Final",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2213/",
+          "event_url": "https://ctf.t3n4ci0us.kr/",
+          "weight": 9.64,
+          "organizers": [
+            "CYB3R_T3N4CI0US"
+          ]
+        },
+        {
+          "id": 2268,
+          "title": "Shakti CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2268/",
+          "event_url": "https://ctf.teamshakti.in/",
+          "weight": 24.1,
+          "organizers": [
+            "TeamShakti"
+          ]
+        },
+        {
+          "id": 2476,
+          "title": "Haruulzangi CTF 2024 Qualifier",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2476/",
+          "event_url": "https://dashboard.haruulzangi.mn/",
+          "weight": 23.75,
+          "organizers": [
+            "haruulzangi-organizers"
+          ]
+        },
+        {
+          "id": 2494,
+          "title": "Haruulzangi CTF 2024 Finals",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2494/",
+          "event_url": "https://dashboard.haruulzangi.mn/",
+          "weight": 0.0,
+          "organizers": [
+            "haruulzangi-organizers"
+          ]
+        },
+        {
+          "id": 2454,
+          "title": "PwnSec CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2454/",
+          "event_url": "https://ctf.pwnsex.xyz/",
+          "weight": 23.92,
+          "organizers": [
+            "PwnSec"
+          ]
+        },
+        {
+          "id": 1927,
+          "title": "SpringForwardCTF2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1927/",
+          "event_url": "https://nicc.ctfd.io/",
+          "weight": 25.0,
+          "organizers": [
+            "NICC"
+          ]
+        },
+        {
+          "id": 2025,
+          "title": "aupCTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2025/",
+          "event_url": "https://aupctf.live/",
+          "weight": 24.69,
+          "organizers": [
+            "Team 8bit"
+          ]
+        }
+      ],
+      "all_events_count": 44
+    },
+    {
+      "name": "Altered Security",
+      "count": 44,
+      "category": "Training & Certification Labs",
+      "website": "https://www.alteredsecurity.com/",
+      "sponsor_portal": "https://www.alteredsecurity.com/",
+      "typical_offering": "Certified Red Team Professional (CRTP) / CRTE lab & exam vouchers ($499 each)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Active Indian & global sponsor (44+ CTFs). Offer Active Directory / Red Team track sponsorship.",
+      "recent_events": [
+        {
+          "id": 3053,
+          "title": "KnightCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3053/",
+          "event_url": "https://2026.knightctf.com/",
+          "weight": 22.21,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3074,
+          "title": "EncipherX CTF 4.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3074/",
+          "event_url": "https://encipherx.in/",
+          "weight": 0.0,
+          "organizers": [
+            "Phoenixcybersecurity"
+          ]
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3123,
+          "title": "CREST CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3123/",
+          "event_url": "https://crestpcu.in/",
+          "weight": 6.0,
+          "organizers": [
+            "CREST"
+          ]
+        },
+        {
+          "id": 3167,
+          "title": "KI CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3167/",
+          "event_url": "https://cyberconclave.yugam.in/",
+          "weight": 0.0,
+          "organizers": [
+            "YUGAM KUMARAGURU"
+          ]
+        },
+        {
+          "id": 3171,
+          "title": "ApoorvCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3171/",
+          "event_url": "https://apoorvctf.iiitkottayam.ac.in/",
+          "weight": 24.1,
+          "organizers": [
+            "LAT3_C0M3R5"
+          ]
+        },
+        {
+          "id": 3188,
+          "title": "Stranger's CTF - Techtrix '26",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3188/",
+          "event_url": "https://upsidectf.online/",
+          "weight": 0.0,
+          "organizers": [
+            "UpsideCTF"
+          ]
+        },
+        {
+          "id": 3183,
+          "title": "KAALCHAKRA CTF Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3183/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "TH3_RANG3RS"
+          ]
+        },
+        {
+          "id": 3230,
+          "title": "KAALCHAKRA CTF Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3230/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "TH3_RANG3RS"
+          ]
+        }
+      ],
+      "all_events_count": 44
+    },
+    {
+      "name": "CTFd",
+      "count": 31,
+      "category": "Cloud & Infrastructure",
+      "website": "https://ctfd.io/",
+      "sponsor_portal": "https://ctfd.io/",
+      "typical_offering": "Free managed Enterprise CTFd instances or discount hosting",
+      "recommended_tier": "Platform Partner",
+      "pitch_strategy": "Co-marketing CTFd Enterprise setup case study.",
+      "recent_events": [
+        {
+          "id": 3178,
+          "title": "Grey Cat The Flag 2026 Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3178/",
+          "event_url": "https://ctf.nusgreyhats.org/",
+          "weight": 47.5,
+          "organizers": [
+            "NUSGreyhats"
+          ]
+        },
+        {
+          "id": 3383,
+          "title": "SCAN 2026 Online Qualifier",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3383/",
+          "event_url": "https://scan.sx/",
+          "weight": 0.0,
+          "organizers": [
+            "D Asset Inc."
+          ]
+        },
+        {
+          "id": 3342,
+          "title": "AEROSPACE VILLAGE STARPWN CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3342/",
+          "event_url": "https://starpwn.ctfd.io/",
+          "weight": 24.65,
+          "organizers": [
+            "Visionspace"
+          ]
+        },
+        {
+          "id": 3434,
+          "title": "CSS CTF 2026: Return of Nexus",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3434/",
+          "event_url": "https://ctf.cybersecurity.sydney/",
+          "weight": 24.26,
+          "organizers": [
+            "su\u0250\u01ddpod\u1d09\u0287u\u0250"
+          ]
+        },
+        {
+          "id": 2657,
+          "title": "BroncoCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2657/",
+          "event_url": "https://ctfd.broncoctf.xyz/",
+          "weight": 22.51,
+          "organizers": [
+            "BroncoSec"
+          ]
+        },
+        {
+          "id": 2757,
+          "title": "WSUCTF25",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2757/",
+          "event_url": "https://waynestateuniversity-ctf.ctfd.io/",
+          "weight": 0.0,
+          "organizers": [
+            "WayneStateCyber"
+          ]
+        },
+        {
+          "id": 2873,
+          "title": "CRHC CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2873/",
+          "event_url": "https://ctfd.crhc.club/",
+          "weight": 0,
+          "organizers": [
+            "CRHC-CTF"
+          ]
+        },
+        {
+          "id": 2893,
+          "title": "FortID CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2893/",
+          "event_url": "https://fortid.ctfd.io/",
+          "weight": 30.0,
+          "organizers": [
+            "TBTL"
+          ]
+        },
+        {
+          "id": 2957,
+          "title": "EnigmaXplore 3.0",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2957/",
+          "event_url": "https://enigmaxplore.ctfd.io/",
+          "weight": 24.58,
+          "organizers": [
+            "Crispr_iiitn"
+          ]
+        },
+        {
+          "id": 2922,
+          "title": "Hackfest CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2922/",
+          "event_url": "https://hfctf.ca/",
+          "weight": 0.0,
+          "organizers": [
+            "Hackfest.ca"
+          ]
+        }
+      ],
+      "all_events_count": 31
+    },
+    {
+      "name": "Hex-Rays (IDA Pro)",
+      "count": 30,
+      "category": "Binary & Reverse Engineering Tools",
+      "website": "https://hex-rays.com/",
+      "sponsor_portal": "https://hex-rays.com/",
+      "typical_offering": "IDA Pro & IDA Home 1-year licenses for top individual solvers",
+      "recommended_tier": "Platinum ($6,000) / RE Category Sponsor",
+      "pitch_strategy": "Sponsored 30+ CTFs. Pitch reverse engineering track sponsorship.",
+      "recent_events": [
+        {
+          "id": 3101,
+          "title": "CodeVinci CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3101/",
+          "event_url": "https://challs.codevinci.it/",
+          "weight": 18.57,
+          "organizers": [
+            "code-vinci"
+          ]
+        },
+        {
+          "id": 3095,
+          "title": "TAMUctf 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3095/",
+          "event_url": "https://tamuctf.com/",
+          "weight": 76.22,
+          "organizers": [
+            "TAMUctf"
+          ]
+        },
+        {
+          "id": 2983,
+          "title": "KalmarCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2983/",
+          "event_url": "https://kalmarc.tf/",
+          "weight": 49.97,
+          "organizers": [
+            "kalmarunionen"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3056,
+          "title": "UMDCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3056/",
+          "event_url": "https://umdctf.io/",
+          "weight": 85.48,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 3195,
+          "title": "TJCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3195/",
+          "event_url": "https://tjctf.org/",
+          "weight": 65.05,
+          "organizers": [
+            "tjcsc"
+          ]
+        },
+        {
+          "id": 3201,
+          "title": "D^3CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3201/",
+          "event_url": "https://d3c.tf/",
+          "weight": 69.22,
+          "organizers": [
+            "D^3CTF Organizers"
+          ]
+        },
+        {
+          "id": 3052,
+          "title": "scriptCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3052/",
+          "event_url": "https://ctf.scriptsorcerers.xyz/",
+          "weight": 24.7,
+          "organizers": [
+            "ScriptSorcerers"
+          ]
+        },
+        {
+          "id": 3290,
+          "title": "COMPFEST CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3290/",
+          "event_url": "https://mirror-ctf.compfest.id/",
+          "weight": 96.0,
+          "organizers": [
+            "CSUI"
+          ]
+        },
+        {
+          "id": 3344,
+          "title": "TFC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3344/",
+          "event_url": "https://ctf.thefewchosen.com/",
+          "weight": 77.08,
+          "organizers": [
+            "The Few Chosen"
+          ]
+        }
+      ],
+      "all_events_count": 30
+    },
+    {
+      "name": "Wolfram",
+      "count": 27,
+      "category": "Software & Mathematical Tools",
+      "website": "https://www.wolfram.com/",
+      "sponsor_portal": "https://www.wolfram.com/",
+      "typical_offering": "Wolfram|One and Mathematica 1-year subscriptions ($250 value each)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored 27+ CTFs! Very generous with software licenses. Pitch Cryptography category prize.",
+      "recent_events": [
+        {
+          "id": 3373,
+          "title": "Lexington Informatics Tournament CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3373/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 84.79,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 2890,
+          "title": "Lexington Informatics Tournament CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2890/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 67.32,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 2213,
+          "title": "ESCAPE CTF Final",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2213/",
+          "event_url": "https://ctf.t3n4ci0us.kr/",
+          "weight": 9.64,
+          "organizers": [
+            "CYB3R_T3N4CI0US"
+          ]
+        },
+        {
+          "id": 2179,
+          "title": "WxMCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2179/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 23.59,
+          "organizers": [
+            "wxmctf"
+          ]
+        },
+        {
+          "id": 2288,
+          "title": "cr3 CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2288/",
+          "event_url": "https://2024.cr3c.tf/",
+          "weight": 23.96,
+          "organizers": [
+            "cr3.mov"
+          ]
+        },
+        {
+          "id": 2444,
+          "title": "Lexington Informatics Tournament CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2444/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 46.25,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 1839,
+          "title": "idekCTF 2022*",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1839/",
+          "event_url": "https://ctf.idek.team/",
+          "weight": 24.56,
+          "organizers": [
+            "idek"
+          ]
+        },
+        {
+          "id": 1792,
+          "title": "KnightCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1792/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1861,
+          "title": "MHSCTF 2023 (Online)",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1861/",
+          "event_url": "https://mhsctf2023.ctfd.io/",
+          "weight": 0,
+          "organizers": [
+            "MHS CS"
+          ]
+        },
+        {
+          "id": 1880,
+          "title": "Incognito 4.0",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1880/",
+          "event_url": "https://ictf.ninja/",
+          "weight": 21.55,
+          "organizers": [
+            "Byt3Scr4pp3rs"
+          ]
+        }
+      ],
+      "all_events_count": 27
+    },
+    {
+      "name": "Ret2 Systems",
+      "count": 26,
+      "category": "Binary & Reverse Engineering Tools",
+      "website": "https://ret2.io/",
+      "sponsor_portal": "https://ret2.io/",
+      "typical_offering": "WarGames binary exploitation interactive platform licenses",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored 26+ CTFs. Pitch binary exploitation learning prizes.",
+      "recent_events": [
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3061,
+          "title": "L3akCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3061/",
+          "event_url": "https://ctf.l3ak.team/",
+          "weight": 34.47,
+          "organizers": [
+            "L3ak"
+          ]
+        },
+        {
+          "id": 2610,
+          "title": "KnightCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2610/",
+          "event_url": "https://2025.knightctf.com/",
+          "weight": 18.78,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2579,
+          "title": "WolvCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2579/",
+          "event_url": "https://wolvctf.io/",
+          "weight": 47.25,
+          "organizers": [
+            "w01verines"
+          ]
+        },
+        {
+          "id": 2637,
+          "title": "SillyCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2637/",
+          "event_url": "https://sillyctf.psuccso.org/",
+          "weight": 25.0,
+          "organizers": [
+            "Penn State CCSO"
+          ]
+        },
+        {
+          "id": 2639,
+          "title": "1753CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2639/",
+          "event_url": "https://1753ctf.com/",
+          "weight": 34.82,
+          "organizers": [
+            "1753c"
+          ]
+        },
+        {
+          "id": 2629,
+          "title": "L3akCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2629/",
+          "event_url": "https://ctf.l3ak.team/",
+          "weight": 24.43,
+          "organizers": [
+            "L3ak"
+          ]
+        },
+        {
+          "id": 2763,
+          "title": "corCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2763/",
+          "event_url": "https://2025.cor.team/",
+          "weight": 82.0,
+          "organizers": [
+            "Crusaders of Rust"
+          ]
+        },
+        {
+          "id": 2878,
+          "title": "Infobahn CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2878/",
+          "event_url": "https://2025.infobahnc.tf/",
+          "weight": 25.0,
+          "organizers": [
+            "Infobahn"
+          ]
+        },
+        {
+          "id": 2915,
+          "title": "BackdoorCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2915/",
+          "event_url": "https://backdoor.infoseciitr.in/",
+          "weight": 71.35,
+          "organizers": [
+            "InfoSecIITR"
+          ]
+        }
+      ],
+      "all_events_count": 26
+    },
+    {
+      "name": "LetsDefend",
+      "count": 22,
+      "category": "Training & Certification Labs",
+      "website": "https://letsdefend.io/",
+      "sponsor_portal": "https://letsdefend.io/",
+      "typical_offering": "VIP Blue Team & SOC Analyst platform vouchers (1-3 months)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Top blue team sponsor (22+ CTFs). Pitch SOC Analyst / DFIR category prize sponsor.",
+      "recent_events": [
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3328,
+          "title": "Kali Team - CTF 26",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3328/",
+          "event_url": "https://kali-team.online/",
+          "weight": 25.0,
+          "organizers": [
+            "Kali Team"
+          ]
+        },
+        {
+          "id": 2607,
+          "title": "BITSCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2607/",
+          "event_url": "https://ctf.bitskrieg.in/",
+          "weight": 21.81,
+          "organizers": [
+            "BITSkrieg"
+          ]
+        },
+        {
+          "id": 2668,
+          "title": "Kashi CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2668/",
+          "event_url": "https://kashictf.iitbhucybersec.in/",
+          "weight": 21.78,
+          "organizers": [
+            "Codefest"
+          ]
+        },
+        {
+          "id": 2638,
+          "title": "ApoorvCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2638/",
+          "event_url": "https://ctf.iiitkottayam.ac.in/",
+          "weight": 24.1,
+          "organizers": [
+            "LAT3_C0M3R5"
+          ]
+        },
+        {
+          "id": 2630,
+          "title": "VishwaCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2630/",
+          "event_url": "https://vishwactf.com/",
+          "weight": 27.9,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 2639,
+          "title": "1753CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2639/",
+          "event_url": "https://1753ctf.com/",
+          "weight": 34.82,
+          "organizers": [
+            "1753c"
+          ]
+        },
+        {
+          "id": 2753,
+          "title": "World Wide CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2753/",
+          "event_url": "https://wwctf.com/",
+          "weight": 24.48,
+          "organizers": [
+            "World Wide Flags"
+          ]
+        },
+        {
+          "id": 2826,
+          "title": "QnQSec CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2826/",
+          "event_url": "https://ctf.qnqsec.team/",
+          "weight": 24.76,
+          "organizers": [
+            "QnQSec"
+          ]
+        }
+      ],
+      "all_events_count": 22
+    },
+    {
+      "name": "Caido",
+      "count": 22,
+      "category": "Web & Application Security Tools",
+      "website": "https://caido.io/",
+      "sponsor_portal": "https://caido.io/",
+      "typical_offering": "Caido Pro 1-year licenses & hacker swag",
+      "recommended_tier": "Silver ($1,800) / Web Track Partner",
+      "pitch_strategy": "SecLeaf past partner! Pitch renewal with custom Caido CLI / proxy challenge integration.",
+      "recent_events": [
+        {
+          "id": 3064,
+          "title": "SCPCTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3064/",
+          "event_url": "https://scpctf.vercel.app/",
+          "weight": 0,
+          "organizers": [
+            "SCP CTF"
+          ]
+        },
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3074,
+          "title": "EncipherX CTF 4.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3074/",
+          "event_url": "https://encipherx.in/",
+          "weight": 0.0,
+          "organizers": [
+            "Phoenixcybersecurity"
+          ]
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3073,
+          "title": "upCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3073/",
+          "event_url": "https://ctf.xstf.pt/",
+          "weight": 24.42,
+          "organizers": [
+            "xSTF"
+          ]
+        },
+        {
+          "id": 3197,
+          "title": "VishwaCTF'2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3197/",
+          "event_url": "http://vishwactf.com/",
+          "weight": 36.0,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 3175,
+          "title": "CITEFLAG QUALS 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3175/",
+          "event_url": "https://ctf.citeflag.online/",
+          "weight": 25.0,
+          "organizers": [
+            "CITEFLAG"
+          ]
+        },
+        {
+          "id": 3156,
+          "title": "CTF@CIT 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3156/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 23.93,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 3136,
+          "title": "SecLeaf Q2 CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3136/",
+          "event_url": "http://secleaf.xyz/",
+          "weight": 0.0,
+          "organizers": [
+            "SecLeaf"
+          ]
+        },
+        {
+          "id": 3209,
+          "title": "THEM?!CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3209/",
+          "event_url": "https://ctf.themctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "THEM?"
+          ]
+        }
+      ],
+      "all_events_count": 22
+    },
+    {
+      "name": "DigitalOcean",
+      "count": 21,
+      "category": "Cloud & Infrastructure",
+      "website": "https://www.digitalocean.com/",
+      "sponsor_portal": "https://www.digitalocean.com/community",
+      "typical_offering": "Droplet credits ($500 - $2,500) & community swag pack",
+      "recommended_tier": "Silver ($1,800) / Infrastructure",
+      "pitch_strategy": "Request hosting credits for edge frontend nodes and community challenge runners.",
+      "recent_events": [
+        {
+          "id": 2667,
+          "title": "JerseyCTF V",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2667/",
+          "event_url": "https://ctf.jerseyctf.com/",
+          "weight": 24.73,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 2360,
+          "title": "AirOverflow CTF - 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2360/",
+          "event_url": "https://ctf.airoverflow.com/",
+          "weight": 25.0,
+          "organizers": [
+            "AirOverFlow"
+          ]
+        },
+        {
+          "id": 1792,
+          "title": "KnightCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1792/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1911,
+          "title": "WxMCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1911/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 0,
+          "organizers": [
+            "wxmctf"
+          ]
+        },
+        {
+          "id": 1568,
+          "title": "CrewCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1568/",
+          "event_url": "https://crewc.tf/",
+          "weight": 20.33,
+          "organizers": [
+            "thehackerscrew"
+          ]
+        },
+        {
+          "id": 1543,
+          "title": "SEETF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1543/",
+          "event_url": "https://seetf.sg/seetf/",
+          "weight": 24.88,
+          "organizers": [
+            "Social Engineering Xperts"
+          ]
+        },
+        {
+          "id": 1657,
+          "title": "n00bzCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1657/",
+          "event_url": "https://ctf.n00bzunit3d.xyz/",
+          "weight": 15.12,
+          "organizers": [
+            "n00bzUnit3d"
+          ]
+        },
+        {
+          "id": 1670,
+          "title": "ImaginaryCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1670/",
+          "event_url": "https://2022.imaginaryctf.org/",
+          "weight": 24.65,
+          "organizers": [
+            "[sqrt (-1) + 1]"
+          ]
+        },
+        {
+          "id": 1638,
+          "title": "UACTF 2022 (POSTPONED)",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1638/",
+          "event_url": "https://uactf.com.au/",
+          "weight": 0.0,
+          "organizers": [
+            "AdelaideB9"
+          ]
+        },
+        {
+          "id": 1699,
+          "title": "BDSec CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1699/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 12.23,
+          "organizers": [
+            "Knight Squad"
+          ]
+        }
+      ],
+      "all_events_count": 21
+    },
+    {
+      "name": "Raspberry Pi",
+      "count": 19,
+      "category": "Hardware & IoT Security",
+      "website": "https://www.raspberrypi.com/",
+      "sponsor_portal": "https://www.raspberrypi.com/",
+      "typical_offering": "Raspberry Pi 5 kits for student / collegiate top teams",
+      "recommended_tier": "Student Prize Partner",
+      "pitch_strategy": "Sponsored 19+ CTFs. Pitch student division hardware reward.",
+      "recent_events": [
+        {
+          "id": 3160,
+          "title": "Winja CTF | Nullcon Goa 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3160/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 1.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 3411,
+          "title": "PECAN+ CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3411/",
+          "event_url": "https://pecanplus.org/",
+          "weight": 0,
+          "organizers": [
+            "PECAN+"
+          ]
+        },
+        {
+          "id": 2705,
+          "title": "WEC CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2705/",
+          "event_url": "https://wecctf.nitk.ac.in/",
+          "weight": 0.0,
+          "organizers": [
+            "Web Club NITK"
+          ]
+        },
+        {
+          "id": 2673,
+          "title": "RITSEC CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2673/",
+          "event_url": "https://ctfd.ritsec.club/",
+          "weight": 34.14,
+          "organizers": [
+            "TeamContagion"
+          ]
+        },
+        {
+          "id": 2752,
+          "title": "Auvergn'Hack",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2752/",
+          "event_url": "https://ctf.zitf.fr/",
+          "weight": 22.75,
+          "organizers": [
+            "ZiTF"
+          ]
+        },
+        {
+          "id": 2882,
+          "title": "PECAN+ CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2882/",
+          "event_url": "https://pecanplus.org/",
+          "weight": 0.0,
+          "organizers": [
+            "PECAN+"
+          ]
+        },
+        {
+          "id": 2270,
+          "title": "WEC CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2270/",
+          "event_url": "https://wecctf.nitk.ac.in/",
+          "weight": 0.0,
+          "organizers": [
+            "Web Club NITK"
+          ]
+        },
+        {
+          "id": 2439,
+          "title": "PECAN+ CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2439/",
+          "event_url": "https://pecanplus.ecusdf.org/",
+          "weight": 0.0,
+          "organizers": [
+            "PECAN+"
+          ]
+        },
+        {
+          "id": 2052,
+          "title": "Lexington Informatics Tournament CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2052/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 33.53,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 2168,
+          "title": "Ph0wn 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2168/",
+          "event_url": "https://ph0wn.org/",
+          "weight": 18.0,
+          "organizers": [
+            "Pic0wn"
+          ]
+        }
+      ],
+      "all_events_count": 19
+    },
+    {
+      "name": "HackerOne",
+      "count": 18,
+      "category": "Bug Bounty Platforms",
+      "website": "https://www.hackerone.com/",
+      "sponsor_portal": "https://www.hackerone.com/",
+      "typical_offering": "Private program invites, cash bounties, hacker swag boxes",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored 18+ CTFs. Pitch direct community invites for top solvers to private bounty programs.",
+      "recent_events": [
+        {
+          "id": 3353,
+          "title": "EYCC CTF 2026 Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3353/",
+          "event_url": "https://eycc.stemeghackclub.org/",
+          "weight": 0,
+          "organizers": [
+            "Mont5ab El2hwa"
+          ]
+        },
+        {
+          "id": 3405,
+          "title": "EYCC CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3405/",
+          "event_url": "https://eycc.stemeghackclub.org/",
+          "weight": 0,
+          "organizers": [
+            "Mont5ab El2hwa"
+          ]
+        },
+        {
+          "id": 2630,
+          "title": "VishwaCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2630/",
+          "event_url": "https://vishwactf.com/",
+          "weight": 27.9,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 2038,
+          "title": "MapleCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2038/",
+          "event_url": "https://ctf.maplebacon.org/",
+          "weight": 24.05,
+          "organizers": [
+            "Maple Bacon"
+          ]
+        },
+        {
+          "id": 1327,
+          "title": "redpwnCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1327/",
+          "event_url": "https://ctf.redpwn.net/",
+          "weight": 32.61,
+          "organizers": [
+            "redpwn"
+          ]
+        },
+        {
+          "id": 1386,
+          "title": "HTB Business CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1386/",
+          "event_url": "https://www.hackthebox.com/events/cyber-apocalypse-2022",
+          "weight": 24.33,
+          "organizers": [
+            "Hack The Box"
+          ]
+        },
+        {
+          "id": 1444,
+          "title": "H@cktivityCon 2021 CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1444/",
+          "event_url": "https://ctf.hacktivitycon.com/",
+          "weight": 24.98,
+          "organizers": [
+            "JohnHammond"
+          ]
+        },
+        {
+          "id": 1401,
+          "title": "DamCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1401/",
+          "event_url": "https://damctf.xyz/",
+          "weight": 24.43,
+          "organizers": [
+            "OSUSEC"
+          ]
+        },
+        {
+          "id": 1466,
+          "title": "DUNGEON - BSides Ahmedabad CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1466/",
+          "event_url": "https://score.bsidesahmedabad.in/",
+          "weight": 25.0,
+          "organizers": [
+            "zer0pts"
+          ]
+        },
+        {
+          "id": 1512,
+          "title": "idekCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1512/",
+          "event_url": "https://ctf.idek.team/",
+          "weight": 24.56,
+          "organizers": [
+            "idek"
+          ]
+        }
+      ],
+      "all_events_count": 18
+    },
+    {
+      "name": "Null Community",
+      "count": 18,
+      "category": "Community & Conference Partners",
+      "website": "https://null.community/",
+      "sponsor_portal": "https://null.community/",
+      "typical_offering": "Chapter co-hosting, meetup promotions, nullcon passes",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "Reach India's largest open security community across 15+ chapters.",
+      "recent_events": [
+        {
+          "id": 3066,
+          "title": "Nullcon Goa HackIM 2026 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3066/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 24.72,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 3160,
+          "title": "Winja CTF | Nullcon Goa 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3160/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 1.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 2642,
+          "title": "Nullcon Goa HackIM 2025 CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2642/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 30.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2692,
+          "title": "Winja CTF | Nullcon Goa 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2692/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 13.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 2874,
+          "title": "Nullcon Berlin HackIM 2025 CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2874/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 30.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2264,
+          "title": "Nullcon Berlin HackIM 2024 CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2264/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 20.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 1900,
+          "title": "Nullcon Berlin HackIM 2023 CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1900/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 25.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2065,
+          "title": "nullcon HackIM CTF Goa 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2065/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 25.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2094,
+          "title": "Winja CTF | Nullcon Goa 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2094/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 5.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 1594,
+          "title": " nullcon HackIM 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1594/",
+          "event_url": "https://nullcon.net/berlin-2022/ctf/",
+          "weight": 24.42,
+          "organizers": [
+            "Nullcon"
+          ]
+        }
+      ],
+      "all_events_count": 18
+    },
+    {
+      "name": "Root-Me",
+      "count": 17,
+      "category": "Training & Certification Labs",
+      "website": "https://www.root-me.org/",
+      "sponsor_portal": "https://www.root-me.org/",
+      "typical_offering": "Root-Me PRO vouchers & community badges",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "European community and student lab access.",
+      "recent_events": [
+        {
+          "id": 3132,
+          "title": "DaVinciCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3132/",
+          "event_url": "https://dvc.tf/",
+          "weight": 32.59,
+          "organizers": [
+            "DaVinciCode"
+          ]
+        },
+        {
+          "id": 3456,
+          "title": "kBxAc CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3456/",
+          "event_url": "https://ctf.kbxac.xyz/",
+          "weight": 24.75,
+          "organizers": [
+            "kBxAc"
+          ]
+        },
+        {
+          "id": 2486,
+          "title": "N0PSctf",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2486/",
+          "event_url": "https://ctf.nops.re/",
+          "weight": 24.34,
+          "organizers": [
+            "NOPS"
+          ]
+        },
+        {
+          "id": 2790,
+          "title": "AMSI CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2790/",
+          "event_url": "https://amsi-sorbonne.fr/",
+          "weight": 0.0,
+          "organizers": [
+            "AMSI CTF Team"
+          ]
+        },
+        {
+          "id": 2827,
+          "title": "Cyber Lumen x GWK #CTF1",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2827/",
+          "event_url": "https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/",
+          "weight": 0,
+          "organizers": [
+            "Cyber Lumen"
+          ]
+        },
+        {
+          "id": 2251,
+          "title": "GCC CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2251/",
+          "event_url": "https://gcc-ctf.com/",
+          "weight": 24.93,
+          "organizers": [
+            "Galette Cidre CTF"
+          ]
+        },
+        {
+          "id": 2358,
+          "title": "N0PSctf",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2358/",
+          "event_url": "https://ctf.nops.re/",
+          "weight": 24.34,
+          "organizers": [
+            "NOPS"
+          ]
+        },
+        {
+          "id": 1939,
+          "title": "Hacky'Nov 0x02",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1939/",
+          "event_url": "https://hackynov.fr/",
+          "weight": 0.0,
+          "organizers": [
+            "Hacky'Nov"
+          ]
+        },
+        {
+          "id": 1947,
+          "title": "Midnight Flag - Black Box",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1947/",
+          "event_url": "https://ctf.midnightflag.fr/",
+          "weight": 25.0,
+          "organizers": [
+            "Midnight Flag - INFEKTION"
+          ]
+        },
+        {
+          "id": 1994,
+          "title": "ESAIP CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1994/",
+          "event_url": "https://ctf.esaip.org/",
+          "weight": 0.0,
+          "organizers": [
+            "Esaip CTF"
+          ]
+        }
+      ],
+      "all_events_count": 17
+    },
+    {
+      "name": "Flipper Zero",
+      "count": 17,
+      "category": "Hardware & IoT Security",
+      "website": "https://flipperzero.one/",
+      "sponsor_portal": "https://flipperzero.one/",
+      "typical_offering": "Flipper Zero multi-tool devices for top winners",
+      "recommended_tier": "Hardware Prize Partner",
+      "pitch_strategy": "Sponsored 17+ CTFs. Pitch hardware gadget prize bundle for 1st place overall.",
+      "recent_events": [
+        {
+          "id": 3160,
+          "title": "Winja CTF | Nullcon Goa 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3160/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 1.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 3411,
+          "title": "PECAN+ CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3411/",
+          "event_url": "https://pecanplus.org/",
+          "weight": 0,
+          "organizers": [
+            "PECAN+"
+          ]
+        },
+        {
+          "id": 2665,
+          "title": "ATC Winter Vibes Community CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2665/",
+          "event_url": "https://atcwintervibescommunityctf.ctfd.io/",
+          "weight": 0.0,
+          "organizers": [
+            "ATC CTF Team"
+          ]
+        },
+        {
+          "id": 2642,
+          "title": "Nullcon Goa HackIM 2025 CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2642/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 30.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2692,
+          "title": "Winja CTF | Nullcon Goa 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2692/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 13.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 2882,
+          "title": "PECAN+ CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2882/",
+          "event_url": "https://pecanplus.org/",
+          "weight": 0.0,
+          "organizers": [
+            "PECAN+"
+          ]
+        },
+        {
+          "id": 2874,
+          "title": "Nullcon Berlin HackIM 2025 CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2874/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 30.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        },
+        {
+          "id": 2925,
+          "title": "InfiniteCTF Qualifiers",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2925/",
+          "event_url": "https://register.redteamassociation.com/",
+          "weight": 0.0,
+          "organizers": [
+            "Red Team Association"
+          ]
+        },
+        {
+          "id": 2255,
+          "title": "Cyber Apocalypse 2024: Hacker Royale",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2255/",
+          "event_url": "https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386",
+          "weight": 25.0,
+          "organizers": [
+            "Hack The Box"
+          ]
+        },
+        {
+          "id": 2264,
+          "title": "Nullcon Berlin HackIM 2024 CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2264/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 20.0,
+          "organizers": [
+            "ENOFLAG"
+          ]
+        }
+      ],
+      "all_events_count": 17
+    },
+    {
+      "name": "Bugcrowd",
+      "count": 16,
+      "category": "Bug Bounty Platforms",
+      "website": "https://www.bugcrowd.com/",
+      "sponsor_portal": "https://www.bugcrowd.com/",
+      "typical_offering": "Cash pool, exclusive swag, leaderboard rankings",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored 16+ CTFs. Pitch partnership to onboard top solvers to elite triage pools.",
+      "recent_events": [
+        {
+          "id": 2969,
+          "title": "UofTCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2969/",
+          "event_url": "https://ctf.uoftctf.org/",
+          "weight": 33.49,
+          "organizers": [
+            "UofTCTF"
+          ]
+        },
+        {
+          "id": 3053,
+          "title": "KnightCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3053/",
+          "event_url": "https://2026.knightctf.com/",
+          "weight": 22.21,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0,
+          "organizers": [
+            "Team MCSC"
+          ]
+        },
+        {
+          "id": 3197,
+          "title": "VishwaCTF'2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3197/",
+          "event_url": "http://vishwactf.com/",
+          "weight": 36.0,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 2937,
+          "title": "UMassCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/2937/",
+          "event_url": "https://ctf.umasscybersec.org/",
+          "weight": 65.95,
+          "organizers": [
+            "SavedByTheShell"
+          ]
+        },
+        {
+          "id": 2784,
+          "title": "BDSec CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2784/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 15.62,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2850,
+          "title": "PatriotCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2850/",
+          "event_url": "http://pctf.competitivecyber.club/",
+          "weight": 42.42,
+          "organizers": [
+            "Competitive Cyber at Mason"
+          ]
+        },
+        {
+          "id": 2042,
+          "title": "DeconstruCT.F 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2042/",
+          "event_url": "https://ctf.dscvit.com/",
+          "weight": 11.23,
+          "organizers": [
+            "GDSCVIT"
+          ]
+        },
+        {
+          "id": 1250,
+          "title": "darkCON CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1250/",
+          "event_url": "https://ctf.darkarmy.xyz/",
+          "weight": 24.06,
+          "organizers": [
+            "DarkArmy"
+          ]
+        }
+      ],
+      "all_events_count": 16
+    },
+    {
+      "name": "Hak5",
+      "count": 15,
+      "category": "Hardware & IoT Security",
+      "website": "https://shop.hak5.org/",
+      "sponsor_portal": "https://shop.hak5.org/",
+      "typical_offering": "USB Rubber Duckies, WiFi Pineapples, Screen Claymores",
+      "recommended_tier": "Hardware & Badge Sponsor ($4,000)",
+      "pitch_strategy": "Sponsored 11+ CTFs. Request physical hardware gadget prize bundle for top 3 teams.",
+      "recent_events": [
+        {
+          "id": 3096,
+          "title": "RITSEC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3096/",
+          "event_url": "https://ctfd.ritsec.club/",
+          "weight": 48.64,
+          "organizers": [
+            "TeamContagion"
+          ]
+        },
+        {
+          "id": 2165,
+          "title": "osu!gaming CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2165/",
+          "event_url": "https://osugaming.pages.dev/",
+          "weight": 23.84,
+          "organizers": [
+            "osu!gaming"
+          ]
+        },
+        {
+          "id": 2262,
+          "title": "DamCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2262/",
+          "event_url": "https://damctf.xyz/",
+          "weight": 47.75,
+          "organizers": [
+            "OSUSEC"
+          ]
+        },
+        {
+          "id": 1872,
+          "title": "DamCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1872/",
+          "event_url": "https://damctf.xyz/",
+          "weight": 32.76,
+          "organizers": [
+            "OSUSEC"
+          ]
+        },
+        {
+          "id": 2004,
+          "title": "BxMCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2004/",
+          "event_url": "https://ctfmgci.jonathanw.dev/",
+          "weight": 23.59,
+          "organizers": [
+            "wxmctf"
+          ]
+        },
+        {
+          "id": 1992,
+          "title": " GlacierCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1992/",
+          "event_url": "https://glacierctf.com/",
+          "weight": 24.32,
+          "organizers": [
+            "LosFuzzys"
+          ]
+        },
+        {
+          "id": 1564,
+          "title": "MHSCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1564/",
+          "event_url": "https://mhsctf2022.0xmmalik.repl.co/",
+          "weight": 0,
+          "organizers": [
+            "MHS CS"
+          ]
+        },
+        {
+          "id": 1628,
+          "title": "THCon 2k22",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1628/",
+          "event_url": "https://ctf.thcon.party/",
+          "weight": 24.0,
+          "organizers": [
+            "pony7"
+          ]
+        },
+        {
+          "id": 1689,
+          "title": "US Cyber Open CTF: Season II",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1689/",
+          "event_url": "https://www.uscybergames.com/apply-to-play",
+          "weight": 0,
+          "organizers": [
+            "Play Cyber"
+          ]
+        },
+        {
+          "id": 1665,
+          "title": "CyberSecurityRumble CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1665/",
+          "event_url": "https://cybersecurityrumble.de/",
+          "weight": 62.0,
+          "organizers": [
+            "RedRocket"
+          ]
+        }
+      ],
+      "all_events_count": 15
+    },
+    {
+      "name": "BurpBounty",
+      "count": 13,
+      "category": "Web & Application Security Tools",
+      "website": "https://burpbounty.net/",
+      "sponsor_portal": "https://burpbounty.net/",
+      "typical_offering": "BurpBounty Pro extension licenses",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored 13+ CTFs. Pitch automated web scanning challenge sub-sponsor.",
+      "recent_events": [
+        {
+          "id": 2610,
+          "title": "KnightCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2610/",
+          "event_url": "https://2025.knightctf.com/",
+          "weight": 18.78,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2607,
+          "title": "BITSCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2607/",
+          "event_url": "https://ctf.bitskrieg.in/",
+          "weight": 21.81,
+          "organizers": [
+            "BITSkrieg"
+          ]
+        },
+        {
+          "id": 2784,
+          "title": "BDSec CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2784/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 15.62,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2209,
+          "title": "KnightCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2209/",
+          "event_url": "https://knightctf.com/",
+          "weight": 6.65,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2378,
+          "title": "n00bzCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2378/",
+          "event_url": "https://ctf.n00bzunit3d.xyz/",
+          "weight": 24.23,
+          "organizers": [
+            "n00bzUnit3d"
+          ]
+        },
+        {
+          "id": 1895,
+          "title": "n00bzCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1895/",
+          "event_url": "https://ctf.n00bzunit3d.xyz/",
+          "weight": 15.12,
+          "organizers": [
+            "n00bzUnit3d"
+          ]
+        },
+        {
+          "id": 1946,
+          "title": "BDSec CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1946/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 12.23,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1545,
+          "title": "KnightCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1545/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1568,
+          "title": "CrewCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1568/",
+          "event_url": "https://crewc.tf/",
+          "weight": 20.33,
+          "organizers": [
+            "thehackerscrew"
+          ]
+        },
+        {
+          "id": 1657,
+          "title": "n00bzCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1657/",
+          "event_url": "https://ctf.n00bzunit3d.xyz/",
+          "weight": 15.12,
+          "organizers": [
+            "n00bzUnit3d"
+          ]
+        }
+      ],
+      "all_events_count": 13
+    },
+    {
+      "name": "AWS (Amazon Web Services)",
+      "count": 11,
+      "category": "Cloud & Infrastructure",
+      "website": "https://aws.amazon.com/",
+      "sponsor_portal": "https://aws.amazon.com/developer/community/",
+      "typical_offering": "AWS Cloud Promotional Credits ($1,000 - $5,000)",
+      "recommended_tier": "Gold ($3,600) / Cloud Track Sponsor ($3,500)",
+      "pitch_strategy": "Pitch dedicated AWS Cloud Security track where competitors solve IAM, S3, and Lambda exploitation challenges.",
+      "recent_events": [
+        {
+          "id": 3212,
+          "title": "CRACK-IN 2.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3212/",
+          "event_url": "https://www.crackin.tech/",
+          "weight": 0,
+          "organizers": [
+            "Cyber Hive"
+          ]
+        },
+        {
+          "id": 3061,
+          "title": "L3akCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3061/",
+          "event_url": "https://ctf.l3ak.team/",
+          "weight": 34.47,
+          "organizers": [
+            "L3ak"
+          ]
+        },
+        {
+          "id": 2585,
+          "title": "DamCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2585/",
+          "event_url": "https://damctf.xyz/",
+          "weight": 60.67,
+          "organizers": [
+            "OSUSEC"
+          ]
+        },
+        {
+          "id": 2954,
+          "title": "CRAC CTF - Cloud and IAM CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2954/",
+          "event_url": "https://defhawk.com/battleground/raid/cloud-and-iam-ctf",
+          "weight": 0.0,
+          "organizers": [
+            "h4wk"
+          ]
+        },
+        {
+          "id": 2230,
+          "title": "JerseyCTF IV",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2230/",
+          "event_url": "https://ctf.jerseyctf.com/",
+          "weight": 21.26,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 2278,
+          "title": "HACKFEST'8 QUALS",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2278/",
+          "event_url": "https://ctf-quals-8.hackfest.tn/",
+          "weight": 21.0,
+          "organizers": [
+            "HACKFEST TEAM [ SUPCOM ]"
+          ]
+        },
+        {
+          "id": 1265,
+          "title": "\u00e5ngstromCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1265/",
+          "event_url": "https://2021.angstromctf.com/",
+          "weight": 46.09,
+          "organizers": [
+            "\u00e5ngstromCTF Organizers"
+          ]
+        },
+        {
+          "id": 1341,
+          "title": "Great Lakes Security Conference CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1341/",
+          "event_url": "https://ctf.glsc.tech/",
+          "weight": 24.6,
+          "organizers": [
+            "RedTeam@MTU"
+          ]
+        },
+        {
+          "id": 1434,
+          "title": "BuckeyeCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1434/",
+          "event_url": "https://ctf.osucyber.club/",
+          "weight": 24.81,
+          "organizers": [
+            "Buckeye Bureau of BOF"
+          ]
+        },
+        {
+          "id": 982,
+          "title": "\u00e5ngstromCTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/982/",
+          "event_url": "https://2020.angstromctf.com/",
+          "weight": 32.32,
+          "organizers": [
+            "\u00e5ngstromCTF Organizers"
+          ]
+        }
+      ],
+      "all_events_count": 11
+    },
+    {
+      "name": "Intigriti",
+      "count": 11,
+      "category": "Bug Bounty Platforms",
+      "website": "https://www.intigriti.com/",
+      "sponsor_portal": "https://www.intigriti.com/",
+      "typical_offering": "Cash sponsorship, European bug bounty invitations & swag",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored 11+ CTFs. Pitch European community reach & top solver spotlight.",
+      "recent_events": [
+        {
+          "id": 2342,
+          "title": "justCTF 2024 teaser",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2342/",
+          "event_url": "http://2024teaser.justctf.team/",
+          "weight": 77.17,
+          "organizers": [
+            "justCatTheFish"
+          ]
+        },
+        {
+          "id": 2428,
+          "title": "CyberSpace CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2428/",
+          "event_url": "https://2024.csc.tf/",
+          "weight": 24.83,
+          "organizers": [
+            "CyberSpace"
+          ]
+        },
+        {
+          "id": 2484,
+          "title": "justCTF 2024 finals",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2484/",
+          "event_url": "https://2024finals.justctf.team/",
+          "weight": 25.0,
+          "organizers": [
+            "justCatTheFish"
+          ]
+        },
+        {
+          "id": 2446,
+          "title": "1337UP LIVE CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2446/",
+          "event_url": "https://ctf.intigriti.io/",
+          "weight": 24.23,
+          "organizers": [
+            "CryptoCat"
+          ]
+        },
+        {
+          "id": 2134,
+          "title": "1337UP LIVE CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2134/",
+          "event_url": "https://ctf.intigriti.io/",
+          "weight": 24.23,
+          "organizers": [
+            "Intigriti"
+          ]
+        },
+        {
+          "id": 1992,
+          "title": " GlacierCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1992/",
+          "event_url": "https://glacierctf.com/",
+          "weight": 24.32,
+          "organizers": [
+            "LosFuzzys"
+          ]
+        },
+        {
+          "id": 1597,
+          "title": "1337UP LIVE CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1597/",
+          "event_url": "https://ctf.intigriti.io/",
+          "weight": 22.49,
+          "organizers": [
+            "Intigriti"
+          ]
+        },
+        {
+          "id": 1737,
+          "title": "Intigriti's September Challenge",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1737/",
+          "event_url": "https://challenge-0922.intigriti.io/",
+          "weight": 0,
+          "organizers": [
+            "Intigriti"
+          ]
+        },
+        {
+          "id": 1794,
+          "title": "Intigriti's October Challenge",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1794/",
+          "event_url": "https://challenge-1022.intigriti.io/",
+          "weight": 0.0,
+          "organizers": [
+            "Intigriti"
+          ]
+        },
+        {
+          "id": 1317,
+          "title": "3kCTF-2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1317/",
+          "event_url": "https://ctf.the3000.org/",
+          "weight": 24.14,
+          "organizers": [
+            "the3000"
+          ]
+        }
+      ],
+      "all_events_count": 11
+    },
+    {
+      "name": "PortSwigger (Burp Suite)",
+      "count": 10,
+      "category": "Web & Application Security Tools",
+      "website": "https://portswigger.net/",
+      "sponsor_portal": "https://portswigger.net/",
+      "typical_offering": "Burp Suite Professional 1-year licenses ($449 each) & Swag",
+      "recommended_tier": "Gold ($3,600) / Web Category Sponsor",
+      "pitch_strategy": "Sponsored 10+ major CTFs. Request 4x Burp Suite Pro licenses for top web solvers.",
+      "recent_events": [
+        {
+          "id": 3344,
+          "title": "TFC CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3344/",
+          "event_url": "https://ctf.thefewchosen.com/",
+          "weight": 77.08,
+          "organizers": [
+            "The Few Chosen"
+          ]
+        },
+        {
+          "id": 2822,
+          "title": "TFC CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2822/",
+          "event_url": "https://ctf.thefewchosen.com/",
+          "weight": 58.19,
+          "organizers": [
+            "The Few Chosen"
+          ]
+        },
+        {
+          "id": 2842,
+          "title": "Hack.lu CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2842/",
+          "event_url": "https://flu.xxx/",
+          "weight": 98.02,
+          "organizers": [
+            "FluxFingers"
+          ]
+        },
+        {
+          "id": 2980,
+          "title": "CSCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2980/",
+          "event_url": "https://2025.chronos-security.ro/",
+          "weight": 0.0,
+          "organizers": [
+            "Mirachron"
+          ]
+        },
+        {
+          "id": 2901,
+          "title": "Null CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2901/",
+          "event_url": "https://ctf.r0devnull.team/",
+          "weight": 25.0,
+          "organizers": [
+            "r0/dev/null"
+          ]
+        },
+        {
+          "id": 2310,
+          "title": "24@CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2310/",
+          "event_url": "https://ctf.polycyber.io/",
+          "weight": 0,
+          "organizers": [
+            "PolyCyber"
+          ]
+        },
+        {
+          "id": 2342,
+          "title": "justCTF 2024 teaser",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2342/",
+          "event_url": "http://2024teaser.justctf.team/",
+          "weight": 77.17,
+          "organizers": [
+            "justCatTheFish"
+          ]
+        },
+        {
+          "id": 2484,
+          "title": "justCTF 2024 finals",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2484/",
+          "event_url": "https://2024finals.justctf.team/",
+          "weight": 25.0,
+          "organizers": [
+            "justCatTheFish"
+          ]
+        },
+        {
+          "id": 1379,
+          "title": "SPbCTF's Student CTF 2021 Finals",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1379/",
+          "event_url": "https://student.ctf.su/",
+          "weight": 25.0,
+          "organizers": [
+            "SPbCTF"
+          ]
+        },
+        {
+          "id": 1189,
+          "title": "SPbCTF's Student CTF 2020 Finals",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1189/",
+          "event_url": "https://student2020.ctf.su/",
+          "weight": 25.0,
+          "organizers": [
+            "SPbCTF"
+          ]
+        }
+      ],
+      "all_events_count": 10
+    },
+    {
+      "name": "TCM Security",
+      "count": 9,
+      "category": "Training & Certification Labs",
+      "website": "https://tcm-sec.com/",
+      "sponsor_portal": "https://tcm-sec.com/",
+      "typical_offering": "PNPT certification vouchers & Academy all-access passes",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch student and collegiate division pentesting prize package.",
+      "recent_events": [
+        {
+          "id": 3079,
+          "title": "MetaCTF January 2026 Flash CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3079/",
+          "event_url": "https://mctf.io/jan2026",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 2759,
+          "title": "CTF@CIT 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2759/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 24.57,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 2821,
+          "title": "MetaCTF June 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2821/",
+          "event_url": "https://mctf.io/jun2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 3010,
+          "title": "MetaCTF November 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3010/",
+          "event_url": "https://mctf.io/nov2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 3036,
+          "title": "MetaCTF December 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3036/",
+          "event_url": "https://mctf.io/dec2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 2165,
+          "title": "osu!gaming CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2165/",
+          "event_url": "https://osugaming.pages.dev/",
+          "weight": 23.84,
+          "organizers": [
+            "osu!gaming"
+          ]
+        },
+        {
+          "id": 2339,
+          "title": "CTF@CIT 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2339/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 24.57,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 1792,
+          "title": "KnightCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1792/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1522,
+          "title": "YASCON CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1522/",
+          "event_url": "https://ctf.yetanothersec.com/",
+          "weight": 0.0,
+          "organizers": [
+            "Yet Another Sec"
+          ]
+        }
+      ],
+      "all_events_count": 9
+    },
+    {
+      "name": "CrowdStrike",
+      "count": 9,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://www.crowdstrike.com/",
+      "sponsor_portal": "https://www.crowdstrike.com/",
+      "typical_offering": "Corporate event sponsorship, recruiter booths, stream interview",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Pitch 20-minute live broadcast technical interview with leadership.",
+      "recent_events": [
+        {
+          "id": 2667,
+          "title": "JerseyCTF V",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2667/",
+          "event_url": "https://ctf.jerseyctf.com/",
+          "weight": 24.73,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 2789,
+          "title": "GooseCTF - misc0nfig 25",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2789/",
+          "event_url": "https://goosectf.lilypadd.com/",
+          "weight": 0.0,
+          "organizers": [
+            "Warwick Cyber Security Society"
+          ]
+        },
+        {
+          "id": 2230,
+          "title": "JerseyCTF IV",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2230/",
+          "event_url": "https://ctf.jerseyctf.com/",
+          "weight": 21.26,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 2339,
+          "title": "CTF@CIT 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2339/",
+          "event_url": "https://ctf.cyber-cit.club/",
+          "weight": 24.57,
+          "organizers": [
+            "HACK@CIT"
+          ]
+        },
+        {
+          "id": 2275,
+          "title": "UIUCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2275/",
+          "event_url": "http://2024.uiuc.tf/",
+          "weight": 67.51,
+          "organizers": [
+            "SIGPwny"
+          ]
+        },
+        {
+          "id": 1732,
+          "title": "LA CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1732/",
+          "event_url": "https://lac.tf/",
+          "weight": 24.93,
+          "organizers": [
+            "PBR | UCLA"
+          ]
+        },
+        {
+          "id": 1590,
+          "title": "JerseyCTF II",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1590/",
+          "event_url": "https://www.jerseyctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 1251,
+          "title": "Shakti CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1251/",
+          "event_url": "https://ctf.shakticon.com/",
+          "weight": 25.0,
+          "organizers": [
+            "TeamShakti"
+          ]
+        },
+        {
+          "id": 1453,
+          "title": "DeconstruCT.F 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1453/",
+          "event_url": "https://ctf.dscvit.com/",
+          "weight": 19.69,
+          "organizers": [
+            "GDSCVIT"
+          ]
+        }
+      ],
+      "all_events_count": 9
+    },
+    {
+      "name": "INE Security (eLearnSecurity)",
+      "count": 8,
+      "category": "Training & Certification Labs",
+      "website": "https://ine.com/security",
+      "sponsor_portal": "https://ine.com/",
+      "typical_offering": "eJPT / eWPTX vouchers and INE Fundamentals yearly passes",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "SecLeaf past partner! Pitch renewal with dedicated technical interview slot during live stream.",
+      "recent_events": [
+        {
+          "id": 3183,
+          "title": "KAALCHAKRA CTF Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3183/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "TH3_RANG3RS"
+          ]
+        },
+        {
+          "id": 3230,
+          "title": "KAALCHAKRA CTF Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3230/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "TH3_RANG3RS"
+          ]
+        },
+        {
+          "id": 3136,
+          "title": "SecLeaf Q2 CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3136/",
+          "event_url": "http://secleaf.xyz/",
+          "weight": 0.0,
+          "organizers": [
+            "SecLeaf"
+          ]
+        },
+        {
+          "id": 3330,
+          "title": "Thryve CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3330/",
+          "event_url": "https://ctf.thryvectf.org/",
+          "weight": 24.5,
+          "organizers": [
+            "Thryve"
+          ]
+        },
+        {
+          "id": 3454,
+          "title": "Null Origin CTF 2026: Grand finale ",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3454/",
+          "event_url": "https://nullorigin.cyberhx.com/",
+          "weight": 0.0,
+          "organizers": [
+            "CyberXoX"
+          ]
+        },
+        {
+          "id": 2527,
+          "title": "UrchinSec Aware CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2527/",
+          "event_url": "https://ctf.urchinsec.com/",
+          "weight": 0,
+          "organizers": [
+            "UrchinSec"
+          ]
+        },
+        {
+          "id": 1612,
+          "title": "Wolverine Security Conference/CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1612/",
+          "event_url": "https://ctf.wolvseccon.org/",
+          "weight": 24.33,
+          "organizers": [
+            "w01verines"
+          ]
+        },
+        {
+          "id": 1067,
+          "title": "NahamCon CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1067/",
+          "event_url": "https://ctf.nahamcon.com/",
+          "weight": 23.72,
+          "organizers": [
+            "JohnHammond"
+          ]
+        }
+      ],
+      "all_events_count": 8
+    },
+    {
+      "name": "CyberDefenders",
+      "count": 8,
+      "category": "Training & Certification Labs",
+      "website": "https://cyberdefenders.org/",
+      "sponsor_portal": "https://cyberdefenders.org/",
+      "typical_offering": "Blue team threat hunting lab subscriptions & PRO accounts",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch DFIR / SOC challenge category co-branding.",
+      "recent_events": [
+        {
+          "id": 3024,
+          "title": "0xL4ugh CTF v5",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3024/",
+          "event_url": "https://ctf.0xL4ugh.com/",
+          "weight": 29.19,
+          "organizers": [
+            "0xL4ugh"
+          ]
+        },
+        {
+          "id": 3397,
+          "title": "$N1PH\u20acRS 3.0 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3397/",
+          "event_url": "https://stjctf2026.tamilctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "Ex0rcists"
+          ]
+        },
+        {
+          "id": 3460,
+          "title": "HI Cyber Con 2026 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3460/",
+          "event_url": "https://ctf.hiddeninvestigations.net/",
+          "weight": 24.81,
+          "organizers": [
+            "HiddenInvestigations"
+          ]
+        },
+        {
+          "id": 3333,
+          "title": "CSCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3333/",
+          "event_url": "https://2026.chronos-security.ro/",
+          "weight": 0,
+          "organizers": [
+            "Mirachron"
+          ]
+        },
+        {
+          "id": 3419,
+          "title": "EyesOpenCTF 7th edition",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3419/",
+          "event_url": "https://eyesopensecurity.com/ctf-briefing.html",
+          "weight": 0.0,
+          "organizers": [
+            "EyesOpen_Security"
+          ]
+        },
+        {
+          "id": 1894,
+          "title": "NaSCon'23 CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1894/",
+          "event_url": "http://www.csl-ctf.live/",
+          "weight": 0.0,
+          "organizers": [
+            "Infinity brains"
+          ]
+        },
+        {
+          "id": 2057,
+          "title": "CAT CTF 23",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2057/",
+          "event_url": "https://catf.0xl4ugh.com/",
+          "weight": 25.0,
+          "organizers": [
+            "0xL4ugh"
+          ]
+        },
+        {
+          "id": 1468,
+          "title": "Bsides Jeddah 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1468/",
+          "event_url": "https://ctf.bsidesjeddah.com/",
+          "weight": 23.67,
+          "organizers": [
+            "CyberDefenders"
+          ]
+        }
+      ],
+      "all_events_count": 8
+    },
+    {
+      "name": "Parrot CTFs",
+      "count": 8,
+      "category": "Training & Certification Labs",
+      "website": "https://parrot-ctfs.com/",
+      "sponsor_portal": "https://parrot-ctfs.com/",
+      "typical_offering": "Parrot CTFs platform vouchers & lab subscriptions",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch training voucher prize package.",
+      "recent_events": [
+        {
+          "id": 2610,
+          "title": "KnightCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2610/",
+          "event_url": "https://2025.knightctf.com/",
+          "weight": 18.78,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2784,
+          "title": "BDSec CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2784/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 15.62,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2753,
+          "title": "World Wide CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2753/",
+          "event_url": "https://wwctf.com/",
+          "weight": 24.48,
+          "organizers": [
+            "World Wide Flags"
+          ]
+        },
+        {
+          "id": 2915,
+          "title": "BackdoorCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2915/",
+          "event_url": "https://backdoor.infoseciitr.in/",
+          "weight": 71.35,
+          "organizers": [
+            "InfoSecIITR"
+          ]
+        },
+        {
+          "id": 2209,
+          "title": "KnightCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2209/",
+          "event_url": "https://knightctf.com/",
+          "weight": 6.65,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 2360,
+          "title": "AirOverflow CTF - 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2360/",
+          "event_url": "https://ctf.airoverflow.com/",
+          "weight": 25.0,
+          "organizers": [
+            "AirOverFlow"
+          ]
+        },
+        {
+          "id": 2572,
+          "title": "World Wide CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2572/",
+          "event_url": "https://wwctf.com/",
+          "weight": 24.48,
+          "organizers": [
+            "World Wide Flags"
+          ]
+        },
+        {
+          "id": 1946,
+          "title": "BDSec CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1946/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 12.23,
+          "organizers": [
+            "Knight Squad"
+          ]
+        }
+      ],
+      "all_events_count": 8
+    },
+    {
+      "name": "ThunderCipher Security",
+      "count": 8,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://thundercipher.com/",
+      "sponsor_portal": "https://thundercipher.com/",
+      "typical_offering": "Consultancy prizes & internship vouchers",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "SecLeaf past partner! Pitch Silver/Gold renewal.",
+      "recent_events": [
+        {
+          "id": 3308,
+          "title": "ZeroDay Heist 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3308/",
+          "event_url": "https://ctf.cyberhx.com/",
+          "weight": 24.0,
+          "organizers": [
+            "CyberXoX"
+          ]
+        },
+        {
+          "id": 3052,
+          "title": "scriptCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3052/",
+          "event_url": "https://ctf.scriptsorcerers.xyz/",
+          "weight": 24.7,
+          "organizers": [
+            "ScriptSorcerers"
+          ]
+        },
+        {
+          "id": 3318,
+          "title": "HackHowl 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3318/",
+          "event_url": "https://hackhowl.com/",
+          "weight": 0.0,
+          "organizers": [
+            "Hack Howl"
+          ]
+        },
+        {
+          "id": 3397,
+          "title": "$N1PH\u20acRS 3.0 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3397/",
+          "event_url": "https://stjctf2026.tamilctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "Ex0rcists"
+          ]
+        },
+        {
+          "id": 3456,
+          "title": "kBxAc CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3456/",
+          "event_url": "https://ctf.kbxac.xyz/",
+          "weight": 24.75,
+          "organizers": [
+            "kBxAc"
+          ]
+        },
+        {
+          "id": 3333,
+          "title": "CSCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3333/",
+          "event_url": "https://2026.chronos-security.ro/",
+          "weight": 0,
+          "organizers": [
+            "Mirachron"
+          ]
+        },
+        {
+          "id": 2635,
+          "title": "ThunderCipher",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2635/",
+          "event_url": "https://thundercipher.in/",
+          "weight": 0,
+          "organizers": [
+            "ThunderCipher"
+          ]
+        },
+        {
+          "id": 2991,
+          "title": "RootCipher",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2991/",
+          "event_url": "https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910",
+          "weight": 0.0,
+          "organizers": [
+            "ThunderCipher"
+          ]
+        }
+      ],
+      "all_events_count": 8
+    },
+    {
+      "name": "No Starch Press",
+      "count": 7,
+      "category": "Books & Educational Media",
+      "website": "https://nostarch.com/",
+      "sponsor_portal": "https://nostarch.com/",
+      "typical_offering": "Free physical security books & eBook vouchers for winners",
+      "recommended_tier": "Silver ($1,800) / Book Partner",
+      "pitch_strategy": "Sponsored 7+ CTFs. Request 10-20 eBook vouchers to distribute across top solvers.",
+      "recent_events": [
+        {
+          "id": 2692,
+          "title": "Winja CTF | Nullcon Goa 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2692/",
+          "event_url": "https://ctf.winja.org/",
+          "weight": 13.0,
+          "organizers": [
+            "Winja CTF"
+          ]
+        },
+        {
+          "id": 2788,
+          "title": "Hardwear.io USA 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2788/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0,
+          "organizers": [
+            "Hardware CTF by Quarkslab"
+          ]
+        },
+        {
+          "id": 3002,
+          "title": "Hardwear.io NL 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3002/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0,
+          "organizers": [
+            "Hardware CTF by Quarkslab"
+          ]
+        },
+        {
+          "id": 1949,
+          "title": "UMDCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1949/",
+          "event_url": "https://umdctf.io/",
+          "weight": 43.77,
+          "organizers": [
+            "UMDCSEC"
+          ]
+        },
+        {
+          "id": 1380,
+          "title": "CyberThreatForce CTF | 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1380/",
+          "event_url": "https://cyberthreatforce-ctf.com/",
+          "weight": 24.06,
+          "organizers": [
+            "CyberThreatForce-CTF"
+          ]
+        },
+        {
+          "id": 1444,
+          "title": "H@cktivityCon 2021 CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1444/",
+          "event_url": "https://ctf.hacktivitycon.com/",
+          "weight": 24.98,
+          "organizers": [
+            "JohnHammond"
+          ]
+        },
+        {
+          "id": 1476,
+          "title": "MetaCTF CyberGames 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1476/",
+          "event_url": "https://metactf.com/cybergames",
+          "weight": 24.09,
+          "organizers": [
+            "MetaCTF"
+          ]
+        }
+      ],
+      "all_events_count": 7
+    },
+    {
+      "name": "Palo Alto Networks (Unit 42)",
+      "count": 6,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://www.paloaltonetworks.com/",
+      "sponsor_portal": "https://www.paloaltonetworks.com/",
+      "typical_offering": "Cash prizes & Unit 42 research spotlight",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch Cloud Security & Threat Intelligence research track.",
+      "recent_events": [
+        {
+          "id": 3234,
+          "title": "squ1rrel CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3234/",
+          "event_url": "https://ctf.squ1rrel.dev/",
+          "weight": 32.47,
+          "organizers": [
+            "squ1rrel"
+          ]
+        },
+        {
+          "id": 3298,
+          "title": "ZeroDayTM CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3298/",
+          "event_url": "https://ctf.info.uvt.ro/invite/ckhbsit2kfmk",
+          "weight": 0,
+          "organizers": [
+            "ZeroDayTM"
+          ]
+        },
+        {
+          "id": 2667,
+          "title": "JerseyCTF V",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2667/",
+          "event_url": "https://ctf.jerseyctf.com/",
+          "weight": 24.73,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 2980,
+          "title": "CSCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2980/",
+          "event_url": "https://2025.chronos-security.ro/",
+          "weight": 0.0,
+          "organizers": [
+            "Mirachron"
+          ]
+        },
+        {
+          "id": 1908,
+          "title": "JerseyCTF III",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1908/",
+          "event_url": "https://www.jerseyctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        },
+        {
+          "id": 1590,
+          "title": "JerseyCTF II",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1590/",
+          "event_url": "https://www.jerseyctf.com/",
+          "weight": 25.0,
+          "organizers": [
+            "Highlander Hackers"
+          ]
+        }
+      ],
+      "all_events_count": 6
+    },
+    {
+      "name": "Taskade",
+      "count": 6,
+      "category": "Software & Productivity Tools",
+      "website": "https://www.taskade.com/",
+      "sponsor_portal": "https://www.taskade.com/",
+      "typical_offering": "1-Year Unlimited Workspace team subscriptions",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch productivity prize for all top 20 teams.",
+      "recent_events": [
+        {
+          "id": 2085,
+          "title": "IrisCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2085/",
+          "event_url": "https://2024.irisc.tf/",
+          "weight": 24.59,
+          "organizers": [
+            "IrisSec"
+          ]
+        },
+        {
+          "id": 2179,
+          "title": "WxMCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2179/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 23.59,
+          "organizers": [
+            "wxmctf"
+          ]
+        },
+        {
+          "id": 2052,
+          "title": "Lexington Informatics Tournament CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2052/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 33.53,
+          "organizers": [
+            "LIT CTF"
+          ]
+        },
+        {
+          "id": 1545,
+          "title": "KnightCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1545/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38,
+          "organizers": [
+            "Knight Squad"
+          ]
+        },
+        {
+          "id": 1353,
+          "title": "GrabCON CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1353/",
+          "event_url": "https://ctf.thecybergrabs.org/",
+          "weight": 23.23,
+          "organizers": [
+            "The Cyber Grabs"
+          ]
+        },
+        {
+          "id": 1451,
+          "title": "Sacramentum",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1451/",
+          "event_url": "https://sacramentum.ncuindia.edu/",
+          "weight": 0.0,
+          "organizers": [
+            "Meu_Sec"
+          ]
+        }
+      ],
+      "all_events_count": 6
+    },
+    {
+      "name": "1Password",
+      "count": 6,
+      "category": "Software & Security Products",
+      "website": "https://1password.com/",
+      "sponsor_portal": "https://1password.com/",
+      "typical_offering": "1-Year 1Password Families accounts & swag",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch participant security prize bundle.",
+      "recent_events": [
+        {
+          "id": 2179,
+          "title": "WxMCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2179/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 23.59,
+          "organizers": [
+            "wxmctf"
+          ]
+        },
+        {
+          "id": 1880,
+          "title": "Incognito 4.0",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1880/",
+          "event_url": "https://ictf.ninja/",
+          "weight": 21.55,
+          "organizers": [
+            "Byt3Scr4pp3rs"
+          ]
+        },
+        {
+          "id": 1262,
+          "title": "GunnHacks 7.0",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1262/",
+          "event_url": "https://www.gunnhacks.com/",
+          "weight": 0.0,
+          "organizers": [
+            "GunnHacks"
+          ]
+        },
+        {
+          "id": 1317,
+          "title": "3kCTF-2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1317/",
+          "event_url": "https://ctf.the3000.org/",
+          "weight": 24.14,
+          "organizers": [
+            "the3000"
+          ]
+        },
+        {
+          "id": 1353,
+          "title": "GrabCON CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1353/",
+          "event_url": "https://ctf.thecybergrabs.org/",
+          "weight": 23.23,
+          "organizers": [
+            "The Cyber Grabs"
+          ]
+        },
+        {
+          "id": 1481,
+          "title": "Damncon 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1481/",
+          "event_url": "https://damncon2021.nulltrace.in/",
+          "weight": 17.54,
+          "organizers": [
+            "DSPH"
+          ]
+        }
+      ],
+      "all_events_count": 6
+    },
+    {
+      "name": "Antisyphon Training",
+      "count": 5,
+      "category": "Training & Certification Labs",
+      "website": "https://www.antisyphontraining.com/",
+      "sponsor_portal": "https://www.antisyphontraining.com/",
+      "typical_offering": "Live training course vouchers & on-demand classes",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch practical cybersecurity training sponsorship.",
+      "recent_events": [
+        {
+          "id": 3079,
+          "title": "MetaCTF January 2026 Flash CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3079/",
+          "event_url": "https://mctf.io/jan2026",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 3197,
+          "title": "VishwaCTF'2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3197/",
+          "event_url": "http://vishwactf.com/",
+          "weight": 36.0,
+          "organizers": [
+            "CyberCellVIIT"
+          ]
+        },
+        {
+          "id": 2821,
+          "title": "MetaCTF June 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2821/",
+          "event_url": "https://mctf.io/jun2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 3010,
+          "title": "MetaCTF November 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3010/",
+          "event_url": "https://mctf.io/nov2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        },
+        {
+          "id": 3036,
+          "title": "MetaCTF December 2025 Flash CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3036/",
+          "event_url": "https://mctf.io/dec2025",
+          "weight": 0,
+          "organizers": [
+            "MetaCTF"
+          ]
+        }
+      ],
+      "all_events_count": 5
+    },
+    {
+      "name": "Flatt Security",
+      "count": 5,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://flatt.tech/",
+      "sponsor_portal": "https://flatt.tech/",
+      "typical_offering": "Cash sponsorship & developer security tools",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch APAC & Japan participant outreach.",
+      "recent_events": [
+        {
+          "id": 2867,
+          "title": "TSG CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2867/",
+          "event_url": "https://score.ctf.tsg.ne.jp/",
+          "weight": 25.0,
+          "organizers": [
+            "TSG"
+          ]
+        },
+        {
+          "id": 2424,
+          "title": "TSG CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2424/",
+          "event_url": "https://ctf.tsg.ne.jp/",
+          "weight": 25.0,
+          "organizers": [
+            "TSG"
+          ]
+        },
+        {
+          "id": 2013,
+          "title": "TSG CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2013/",
+          "event_url": "https://ctf.tsg.ne.jp/",
+          "weight": 25.0,
+          "organizers": [
+            "TSG"
+          ]
+        },
+        {
+          "id": 1431,
+          "title": "TSG CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1431/",
+          "event_url": "https://ctf.tsg.ne.jp/",
+          "weight": 34.8,
+          "organizers": [
+            "TSG"
+          ]
+        },
+        {
+          "id": 1004,
+          "title": "TSG CTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1004/",
+          "event_url": "https://ctf.tsg.ne.jp/",
+          "weight": 23.75,
+          "organizers": [
+            "TSG"
+          ]
+        }
+      ],
+      "all_events_count": 5
+    },
+    {
+      "name": "Hetzner",
+      "count": 4,
+      "category": "Cloud & Infrastructure",
+      "website": "https://www.hetzner.com/",
+      "sponsor_portal": "https://www.hetzner.com/",
+      "typical_offering": "Dedicated bare-metal server sponsorship",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Request powerful dedicated compute for binary exploitation pwn challenge virtualization.",
+      "recent_events": [
+        {
+          "id": 3104,
+          "title": "OmniCTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3104/",
+          "event_url": "https://omnictf.com/",
+          "weight": 23.96,
+          "organizers": [
+            "OmniCTF"
+          ]
+        },
+        {
+          "id": 3065,
+          "title": "BrunnerCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3065/",
+          "event_url": "https://ctf.brunnerne.dk/",
+          "weight": 24.66,
+          "organizers": [
+            "SDU"
+          ]
+        },
+        {
+          "id": 3401,
+          "title": "OmniCTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3401/",
+          "event_url": "https://omnictf.com/",
+          "weight": 0.0,
+          "organizers": [
+            "OmniCTF"
+          ]
+        },
+        {
+          "id": 2835,
+          "title": "BrunnerCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2835/",
+          "event_url": "https://ctf.brunnerne.dk/",
+          "weight": 24.66,
+          "organizers": [
+            "SDU"
+          ]
+        }
+      ],
+      "all_events_count": 4
+    },
+    {
+      "name": "YesWeHack",
+      "count": 4,
+      "category": "Bug Bounty Platforms",
+      "website": "https://www.yeswehack.com/",
+      "sponsor_portal": "https://www.yeswehack.com/",
+      "typical_offering": "Bug bounty platform vouchers & swag",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch bug bounty skills track.",
+      "recent_events": [
+        {
+          "id": 1698,
+          "title": "ESAIP CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1698/",
+          "event_url": "https://ctf.esaip.org/",
+          "weight": 0.0,
+          "organizers": [
+            "Esaip CTF"
+          ]
+        },
+        {
+          "id": 1795,
+          "title": "Ph0wn 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1795/",
+          "event_url": "https://ph0wn.org/",
+          "weight": 18.0,
+          "organizers": [
+            "Pic0wn"
+          ]
+        },
+        {
+          "id": 1469,
+          "title": "VULNCON CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1469/",
+          "event_url": "https://noobarmy.org/vulncon",
+          "weight": 25.0,
+          "organizers": [
+            "DarkArmy"
+          ]
+        },
+        {
+          "id": 1067,
+          "title": "NahamCon CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1067/",
+          "event_url": "https://ctf.nahamcon.com/",
+          "weight": 23.72,
+          "organizers": [
+            "JohnHammond"
+          ]
+        }
+      ],
+      "all_events_count": 4
+    },
+    {
+      "name": "OVHcloud",
+      "count": 3,
+      "category": "Cloud & Infrastructure",
+      "website": "https://www.ovhcloud.com/",
+      "sponsor_portal": "https://www.ovhcloud.com/",
+      "typical_offering": "Cloud compute vouchers & infrastructure",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Target European regional server sponsorship.",
+      "recent_events": [
+        {
+          "id": 2675,
+          "title": "DaVinciCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2675/",
+          "event_url": "https://dvc.tf/",
+          "weight": 32.59,
+          "organizers": [
+            "DaVinciCode"
+          ]
+        },
+        {
+          "id": 2075,
+          "title": "20ans LinuxMeetup au Qu\u00e9bec",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2075/",
+          "event_url": "https://www.eventbrite.ca/e/billets-20-ans-de-linux-meetup-au-quebec-675464381147",
+          "weight": 0.0,
+          "organizers": [
+            "whoo"
+          ]
+        },
+        {
+          "id": 1646,
+          "title": "404 CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1646/",
+          "event_url": "https://www.404ctf.fr/",
+          "weight": 0,
+          "organizers": [
+            "HackademINT"
+          ]
+        }
+      ],
+      "all_events_count": 3
+    },
+    {
+      "name": "Paradigm",
+      "count": 3,
+      "category": "Web3 & Blockchain Security",
+      "website": "https://www.paradigm.xyz/",
+      "sponsor_portal": "https://www.paradigm.xyz/",
+      "typical_offering": "Direct cash prize pool ($5,000 - $20,000) & crypto research fellowships",
+      "recommended_tier": "Diamond ($10,000)",
+      "pitch_strategy": "Pitch advanced EVM, DeFi exploitation & zero-knowledge challenge track.",
+      "recent_events": [
+        {
+          "id": 2151,
+          "title": "Paradigm CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2151/",
+          "event_url": "https://ctf.paradigm.xyz/",
+          "weight": 25.0,
+          "organizers": [
+            "paradigm.xyz"
+          ]
+        },
+        {
+          "id": 1719,
+          "title": "Paradigm CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1719/",
+          "event_url": "https://ctf.paradigm.xyz/",
+          "weight": 25.0,
+          "organizers": [
+            "paradigm.xyz"
+          ]
+        },
+        {
+          "id": 1272,
+          "title": "Paradigm CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1272/",
+          "event_url": "https://ctf.paradigm.com/",
+          "weight": 0.0,
+          "organizers": [
+            "paradigm.xyz"
+          ]
+        }
+      ],
+      "all_events_count": 3
+    },
+    {
+      "name": "BSides Ahmedabad",
+      "count": 2,
+      "category": "Community & Conference Partners",
+      "website": "https://bsidesahmedabad.in/",
+      "sponsor_portal": "https://bsidesahmedabad.in/",
+      "typical_offering": "Conference passes & workshop slots",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "Co-promotion with western India infosec community.",
+      "recent_events": [
+        {
+          "id": 1466,
+          "title": "DUNGEON - BSides Ahmedabad CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1466/",
+          "event_url": "https://score.bsidesahmedabad.in/",
+          "weight": 25.0,
+          "organizers": [
+            "zer0pts"
+          ]
+        },
+        {
+          "id": 1065,
+          "title": "BatPwn - BSides Ahmedabad CTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1065/",
+          "event_url": "https://bsidesahmedabad.in/BATPWN/",
+          "weight": 21.56,
+          "organizers": [
+            "UnderDawgs"
+          ]
+        }
+      ],
+      "all_events_count": 2
+    },
+    {
+      "name": "Cloudflare",
+      "count": 1,
+      "category": "Cloud & Infrastructure",
+      "website": "https://www.cloudflare.com/",
+      "sponsor_portal": "https://www.cloudflare.com/",
+      "typical_offering": "Enterprise DDoS protection, CDN services & brand sponsorship",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Highlight SecLeaf target of 6,000+ global competitors and request Magic Transit / DDoS shielding partnership.",
+      "recent_events": [
+        {
+          "id": 1075,
+          "title": "UIUCTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1075/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 23.76,
+          "organizers": [
+            "SIGPwny"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "Bishop Fox",
+      "count": 1,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://bishopfox.com/",
+      "sponsor_portal": "https://bishopfox.com/",
+      "typical_offering": "Cash prizes, red teaming swag, recruiter speed chats",
+      "recommended_tier": "Gold ($3,600) / Recruiter Speed-Networking ($2,500)",
+      "pitch_strategy": "Pitch private recruiter speed-networking hour with top 20 solving teams.",
+      "recent_events": [
+        {
+          "id": 3473,
+          "title": "BSides Peoria CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3473/",
+          "event_url": "https://bsidespeoriac.tf/",
+          "weight": 0,
+          "organizers": [
+            "BSides Peoria CTF Village"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "NCC Group",
+      "count": 1,
+      "category": "Security Consultancies & Red Teams",
+      "website": "https://www.nccgroup.com/",
+      "sponsor_portal": "https://www.nccgroup.com/",
+      "typical_offering": "Cash prizes & university recruitment engagement",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Highlight 150+ university cyber club network.",
+      "recent_events": [
+        {
+          "id": 1372,
+          "title": "UIUCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1372/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 23.76,
+          "organizers": [
+            "SIGPwny"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "OpenZeppelin",
+      "count": 1,
+      "category": "Web3 & Blockchain Security",
+      "website": "https://www.openzeppelin.com/",
+      "sponsor_portal": "https://www.openzeppelin.com/",
+      "typical_offering": "Smart contract security audits & cash prizes",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch smart contract defense & security libraries track.",
+      "recent_events": [
+        {
+          "id": 2314,
+          "title": "Ethernaut CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2314/",
+          "event_url": "https://ctf.openzeppelin.com/",
+          "weight": 0.0,
+          "organizers": [
+            "OpenZeppelin"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "Art of Problem Solving",
+      "count": 1,
+      "category": "Educational Platforms",
+      "website": "https://artofproblemsolving.com/",
+      "sponsor_portal": "https://artofproblemsolving.com/",
+      "typical_offering": "Gift certificates & math problem sets",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pitch cryptography & math puzzle category prize.",
+      "recent_events": [
+        {
+          "id": 2085,
+          "title": "IrisCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2085/",
+          "event_url": "https://2024.irisc.tf/",
+          "weight": 24.59,
+          "organizers": [
+            "IrisSec"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "BSides Vadodara",
+      "count": 1,
+      "category": "Community & Conference Partners",
+      "website": "https://bsidesvadodara.in/",
+      "sponsor_portal": "https://bsidesvadodara.in/",
+      "typical_offering": "Conference tickets, speaking spots, community promotion",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "SecLeaf past partner! Pitch reciprocal community partnership and track hosting.",
+      "recent_events": [
+        {
+          "id": 3136,
+          "title": "SecLeaf Q2 CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3136/",
+          "event_url": "http://secleaf.xyz/",
+          "weight": 0.0,
+          "organizers": [
+            "SecLeaf"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "BSides Delhi",
+      "count": 1,
+      "category": "Community & Conference Partners",
+      "website": "https://bsidesdelhi.in/",
+      "sponsor_portal": "https://bsidesdelhi.in/",
+      "typical_offering": "Conference passes & community outreach",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "Co-promotion & community track.",
+      "recent_events": [
+        {
+          "id": 1158,
+          "title": "BSides Delhi CTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1158/",
+          "event_url": "https://ctf.bsidesdelhi.in/",
+          "weight": 22.95,
+          "organizers": [
+            "c0d3_h4cki05_"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    },
+    {
+      "name": "Legal Data Forensics",
+      "count": 1,
+      "category": "Digital Forensics & Law",
+      "website": "https://legaldataforensics.com/",
+      "sponsor_portal": "https://legaldataforensics.com/",
+      "typical_offering": "Forensic tool licenses & DFIR challenge sponsorship",
+      "recommended_tier": "Silver ($1,800) / DFIR Track Partner",
+      "pitch_strategy": "SecLeaf past partner! Pitch DFIR track sponsorship.",
+      "recent_events": [
+        {
+          "id": 3136,
+          "title": "SecLeaf Q2 CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3136/",
+          "event_url": "http://secleaf.xyz/",
+          "weight": 0.0,
+          "organizers": [
+            "SecLeaf"
+          ]
+        }
+      ],
+      "all_events_count": 1
+    }
+  ],
+  "community_partners": [
+    {
+      "name": "ASIS",
+      "ctfs_organized": 24,
+      "latest_ctf": "ASIS CTF Quals 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3033/",
+      "website": "https://asisctf.com/"
+    },
+    {
+      "name": "ENOFLAG",
+      "ctfs_organized": 19,
+      "latest_ctf": "Nullcon Goa HackIM 2026 CTF",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3066/",
+      "website": "https://ctf.nullcon.net/"
+    },
+    {
+      "name": "HackingForSoju",
+      "ctfs_organized": 17,
+      "latest_ctf": "Midnight Sun CTF 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/2773/",
+      "website": "https://play.midnightsunctf.com/"
+    },
+    {
+      "name": "pwnthem0le",
+      "ctfs_organized": 16,
+      "latest_ctf": "m0leCon CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3196/",
+      "website": "https://finals.m0lecon.it/"
+    },
+    {
+      "name": "BinaryBears",
+      "ctfs_organized": 15,
+      "latest_ctf": "M*CTF 2025 Junior Quals",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2995/",
+      "website": "https://mctf.mtuci.ru/"
+    },
+    {
+      "name": "SAFCSP",
+      "ctfs_organized": 15,
+      "latest_ctf": "BlackHat MEA CTF Qualification 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3385/",
+      "website": "https://blackhatmea.com/capture-the-flag"
+    },
+    {
+      "name": "VolgaCTF.org",
+      "ctfs_organized": 14,
+      "latest_ctf": "VolgaCTF 2026 Qualifier",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3045/",
+      "website": "https://q.2026.volgactf.ru/"
+    },
+    {
+      "name": "NYUSEC",
+      "ctfs_organized": 14,
+      "latest_ctf": "CSAW CTF Qualification Round 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3355/",
+      "website": "https://ctf.csaw.io/"
+    },
+    {
+      "name": "SECCON CTF",
+      "ctfs_organized": 14,
+      "latest_ctf": "SECCON CTF 14 International Finals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3106/",
+      "website": "https://ctf.seccon.jp/"
+    },
+    {
+      "name": "Hardware CTF by Quarkslab",
+      "ctfs_organized": 12,
+      "latest_ctf": "Hardwear.io USA 2026 Hardware CTF",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3174/",
+      "website": "https://hwc.tf/"
+    },
+    {
+      "name": "JohnHammond",
+      "ctfs_organized": 12,
+      "latest_ctf": "NahamCon CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2782/",
+      "website": "https://ctf.nahamcon.com/"
+    },
+    {
+      "name": "HackerDom",
+      "ctfs_organized": 12,
+      "latest_ctf": "RuCTF Finals 2024",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2386/",
+      "website": "http://ructf.org/"
+    },
+    {
+      "name": "AlpacaHack",
+      "ctfs_organized": 12,
+      "latest_ctf": "AlpacaHack Round 9 (Crypto)",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2633/",
+      "website": "https://alpacahack.com/"
+    },
+    {
+      "name": "HITCON",
+      "ctfs_organized": 11,
+      "latest_ctf": "HITCON CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3340/",
+      "website": "https://ctf2026.hitcon.org/"
+    },
+    {
+      "name": "haruulzangi-organizers",
+      "ctfs_organized": 11,
+      "latest_ctf": "Haruulzangi CTF 2026 Qualifier",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3379/",
+      "website": "https://2026.haruulzangi.mn/"
+    },
+    {
+      "name": "Insomni'hack Team",
+      "ctfs_organized": 10,
+      "latest_ctf": "Insomni'hack 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3146/",
+      "website": "https://insomnihack.ch/contest/"
+    },
+    {
+      "name": "CODEGATE",
+      "ctfs_organized": 10,
+      "latest_ctf": "Codegate CTF 2026 Preliminary",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3131/",
+      "website": "http://ctf.codegate.org/"
+    },
+    {
+      "name": "BIZone",
+      "ctfs_organized": 10,
+      "latest_ctf": "CTFZone 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3402/",
+      "website": "https://board.ctfz.zone/"
+    },
+    {
+      "name": "SPbCTF",
+      "ctfs_organized": 10,
+      "latest_ctf": "Alfa CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3250/",
+      "website": "https://alfactf.ru/"
+    },
+    {
+      "name": "ISITDTU",
+      "ctfs_organized": 10,
+      "latest_ctf": "ISITDTU CTF 2024 Quals",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2456/",
+      "website": "https://ctf.isitdtu.com/"
+    },
+    {
+      "name": "CCSIR.org",
+      "ctfs_organized": 10,
+      "latest_ctf": "DefCamp Capture the Flag (D-CTF) 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3392/",
+      "website": "https://dctf26-quals.cyber-edu.co/"
+    },
+    {
+      "name": "DiceGang",
+      "ctfs_organized": 10,
+      "latest_ctf": "DiceCTF 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3110/",
+      "website": "https://ctf.dicega.ng/"
+    },
+    {
+      "name": "Knight Squad",
+      "ctfs_organized": 10,
+      "latest_ctf": "KnightCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3053/",
+      "website": "https://2026.knightctf.com/"
+    },
+    {
+      "name": "Play Cyber",
+      "ctfs_organized": 10,
+      "latest_ctf": "GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3057/",
+      "website": "https://www.wicked6.com/tournament"
+    },
+    {
+      "name": "Dreamhack",
+      "ctfs_organized": 10,
+      "latest_ctf": "Dreamhack Invitational Quals 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3025/",
+      "website": "https://dreamhack.io/ctf/772"
+    },
+    {
+      "name": "b01lers",
+      "ctfs_organized": 9,
+      "latest_ctf": "b01lers CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3153/",
+      "website": "https://b01lersc.tf/"
+    },
+    {
+      "name": "Securinets",
+      "ctfs_organized": 9,
+      "latest_ctf": "Securinets CTF Quals 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3364/",
+      "website": "https://ctf.securinets.tn/"
+    },
+    {
+      "name": "[team Team]",
+      "ctfs_organized": 9,
+      "latest_ctf": "Ugra CTF Quals 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2693/",
+      "website": "https://2025.ugractf.ru/quals"
+    },
+    {
+      "name": "Hackfest.ca",
+      "ctfs_organized": 9,
+      "latest_ctf": "Hackfest CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2922/",
+      "website": "https://hfctf.ca/"
+    },
+    {
+      "name": "CyberSciOrganizers",
+      "ctfs_organized": 9,
+      "latest_ctf": "CyberSci Nationals 2025-2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3125/",
+      "website": "https://cybersecuritychallenge.ca/"
+    },
+    {
+      "name": "polygl0ts",
+      "ctfs_organized": 9,
+      "latest_ctf": "LakeCTF Finals 25-26",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3295/",
+      "website": "https://ctfnew.polygl0ts.ch/"
+    },
+    {
+      "name": "C4T BuT S4D",
+      "ctfs_organized": 8,
+      "latest_ctf": "GoldCTF 2024",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2249/",
+      "website": "https://register.cbsctf.live/"
+    },
+    {
+      "name": "0ops",
+      "ctfs_organized": 8,
+      "latest_ctf": "0CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2997/",
+      "website": "https://ctf.0ops.sjtu.cn/"
+    },
+    {
+      "name": "Google CTF",
+      "ctfs_organized": 8,
+      "latest_ctf": "Google Capture The Flag 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3222/",
+      "website": "https://g.co/ctf"
+    },
+    {
+      "name": "HKCERT",
+      "ctfs_organized": 8,
+      "latest_ctf": "HKCERT CTF 2026 (Qualifying Round)",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3418/",
+      "website": "https://ctf.hkcert.org/"
+    },
+    {
+      "name": "Nautilus Institute",
+      "ctfs_organized": 8,
+      "latest_ctf": "DEF CON CTF Qualifier 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2604/",
+      "website": "https://nautilus.institute/"
+    },
+    {
+      "name": "Pragyan",
+      "ctfs_organized": 7,
+      "latest_ctf": "Pragyan CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3058/",
+      "website": "https://ctf.prgy.in/"
+    },
+    {
+      "name": "BSidesSF",
+      "ctfs_organized": 7,
+      "latest_ctf": "BSidesSF CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3108/",
+      "website": "https://ctf.bsidessf.net/"
+    },
+    {
+      "name": "hhh_",
+      "ctfs_organized": 7,
+      "latest_ctf": "UTCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3133/",
+      "website": "https://utctf.live/"
+    },
+    {
+      "name": "TAMUctf",
+      "ctfs_organized": 7,
+      "latest_ctf": "TAMUctf 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3095/",
+      "website": "https://tamuctf.com/"
+    },
+    {
+      "name": "UMBC Cyber Dawgs",
+      "ctfs_organized": 7,
+      "latest_ctf": "DawgCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3102/",
+      "website": "https://metactf.com/join/dawgctf26"
+    },
+    {
+      "name": "hackpack",
+      "ctfs_organized": 7,
+      "latest_ctf": "HackPack CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2743/",
+      "website": "https://hackpack.club/ctf2025/"
+    },
+    {
+      "name": "UMDCSEC",
+      "ctfs_organized": 7,
+      "latest_ctf": "UMDCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3056/",
+      "website": "https://umdctf.io/"
+    },
+    {
+      "name": "Space Security Challenge Team",
+      "ctfs_organized": 7,
+      "latest_ctf": "Hack-A-Sat 4 Qualifiers",
+      "latest_year": "2023",
+      "ctftime_url": "https://ctftime.org/event/1837/",
+      "website": "https://quals.2023.hackasat.com/"
+    },
+    {
+      "name": "FAUST",
+      "ctfs_organized": 7,
+      "latest_ctf": "FAUST CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3312/",
+      "website": "https://2026.faustctf.net/"
+    },
+    {
+      "name": "SIGPwny",
+      "ctfs_organized": 7,
+      "latest_ctf": "UIUCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3148/",
+      "website": "https://uiuc.tf/"
+    },
+    {
+      "name": "CSUI",
+      "ctfs_organized": 7,
+      "latest_ctf": "COMPFEST CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3290/",
+      "website": "https://mirror-ctf.compfest.id/"
+    },
+    {
+      "name": "DownUnderCTF",
+      "ctfs_organized": 7,
+      "latest_ctf": "DownUnderCTF 2026 - CANCELLED",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3112/",
+      "website": "https://duc.tf/"
+    },
+    {
+      "name": "Cyber Hacktics",
+      "ctfs_organized": 7,
+      "latest_ctf": "DEADFACE CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3279/",
+      "website": "https://ctf.deadface.io/"
+    },
+    {
+      "name": "FluxFingers",
+      "ctfs_organized": 7,
+      "latest_ctf": "Hack.lu CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3207/",
+      "website": "https://flu.xxx/"
+    },
+    {
+      "name": "Knightsec",
+      "ctfs_organized": 7,
+      "latest_ctf": "SunshineCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3399/",
+      "website": "https://sunshinectf.org/"
+    },
+    {
+      "name": "0xL4ugh",
+      "ctfs_organized": 7,
+      "latest_ctf": "0xL4ugh CTF v5",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3024/",
+      "website": "https://ctf.0xL4ugh.com/"
+    },
+    {
+      "name": "Winja CTF",
+      "ctfs_organized": 7,
+      "latest_ctf": "Winja CTF | Nullcon Goa 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3160/",
+      "website": "https://ctf.winja.org/"
+    },
+    {
+      "name": "NUSGreyhats",
+      "ctfs_organized": 7,
+      "latest_ctf": "Grey Cat The Flag 2026 Qualifiers",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3178/",
+      "website": "https://ctf.nusgreyhats.org/"
+    },
+    {
+      "name": "ctfcup",
+      "ctfs_organized": 7,
+      "latest_ctf": "Russian CTF Cup X Qualifier",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3469/",
+      "website": "https://ctfcup.ru/"
+    },
+    {
+      "name": "BITSkrieg",
+      "ctfs_organized": 6,
+      "latest_ctf": "BITSCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3122/",
+      "website": "https://ctf.bitskrieg.in/"
+    },
+    {
+      "name": "OSUSEC",
+      "ctfs_organized": 6,
+      "latest_ctf": "DamCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2585/",
+      "website": "https://damctf.xyz/"
+    },
+    {
+      "name": "Shellphish",
+      "ctfs_organized": 6,
+      "latest_ctf": "iCTF 2024 (Undergrad)",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2565/",
+      "website": "https://ictf.cs.ucsb.edu/"
+    },
+    {
+      "name": "p4",
+      "ctfs_organized": 6,
+      "latest_ctf": "p4ctf 2023 teaser",
+      "latest_year": "2023",
+      "ctftime_url": "https://ctftime.org/event/1976/",
+      "website": "http://ctf.p4.team/"
+    },
+    {
+      "name": "saarsec",
+      "ctfs_organized": 6,
+      "latest_ctf": "saarCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2859/",
+      "website": "https://ctf.saarland/"
+    },
+    {
+      "name": "Hec\u0103rii, \u021auica \u0219i P\u0103unii",
+      "ctfs_organized": 6,
+      "latest_ctf": "X-MAS CTF 2022",
+      "latest_year": "2022",
+      "ctftime_url": "https://ctftime.org/event/1787/",
+      "website": "https://xmas.htsp.ro/"
+    },
+    {
+      "name": "Plaid Parliament of Pwning",
+      "ctfs_organized": 6,
+      "latest_ctf": "PlaidCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2508/",
+      "website": "https://plaidctf.com/"
+    },
+    {
+      "name": "NorthSec Organizers",
+      "ctfs_organized": 6,
+      "latest_ctf": "NorthSec 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3258/",
+      "website": "https://nsec.io/competition/"
+    },
+    {
+      "name": "tjcsc",
+      "ctfs_organized": 6,
+      "latest_ctf": "TJCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3195/",
+      "website": "https://tjctf.org/"
+    },
+    {
+      "name": "bi0s",
+      "ctfs_organized": 6,
+      "latest_ctf": "bi0sCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3480/",
+      "website": "https://ctf.bi0s.in/"
+    },
+    {
+      "name": "W&M",
+      "ctfs_organized": 6,
+      "latest_ctf": "WMCTF2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2910/",
+      "website": "https://wmctf.wm-team.cn/"
+    },
+    {
+      "name": "Arab Security Cyber Wargames",
+      "ctfs_organized": 6,
+      "latest_ctf": "Arab Security Cyber Wargames 2024 Qualifications",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2434/",
+      "website": "https://www.ascyberwargames.com/ascwgs2024/"
+    },
+    {
+      "name": "DarkArmy",
+      "ctfs_organized": 6,
+      "latest_ctf": "BSides Mumbai CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2781/",
+      "website": "https://ctf.bsidesmumbai.in/"
+    },
+    {
+      "name": "Nu1L",
+      "ctfs_organized": 6,
+      "latest_ctf": "N1CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2795/",
+      "website": "https://ctf2025.nu1l.com/"
+    },
+    {
+      "name": "MetaCTF",
+      "ctfs_organized": 6,
+      "latest_ctf": "MetaCTF January 2026 Flash CTF",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3079/",
+      "website": "https://mctf.io/jan2026"
+    },
+    {
+      "name": "justCatTheFish",
+      "ctfs_organized": 6,
+      "latest_ctf": "justCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2711/",
+      "website": "http://2025.justctf.team/"
+    },
+    {
+      "name": "D^3CTF Organizers",
+      "ctfs_organized": 6,
+      "latest_ctf": "D^3CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3201/",
+      "website": "https://d3c.tf/"
+    },
+    {
+      "name": "PWr Synt@x Err0r",
+      "ctfs_organized": 6,
+      "latest_ctf": "Break The Syntax CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3137/",
+      "website": "https://bts2026.wh.edu.pl/"
+    },
+    {
+      "name": "CyberCellVIIT",
+      "ctfs_organized": 6,
+      "latest_ctf": "VishwaCTF'2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3197/",
+      "website": "http://vishwactf.com/"
+    },
+    {
+      "name": "SavedByTheShell",
+      "ctfs_organized": 6,
+      "latest_ctf": "UMassCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/2937/",
+      "website": "https://ctf.umasscybersec.org/"
+    },
+    {
+      "name": "[sqrt (-1) + 1]",
+      "ctfs_organized": 6,
+      "latest_ctf": "ImaginaryCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2799/",
+      "website": "https://2025.imaginaryctf.org/"
+    },
+    {
+      "name": "TeamContagion",
+      "ctfs_organized": 6,
+      "latest_ctf": "RITSEC CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3096/",
+      "website": "https://ctfd.ritsec.club/"
+    },
+    {
+      "name": "Byt3Scr4pp3rs",
+      "ctfs_organized": 6,
+      "latest_ctf": "Incognito 7.0",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3225/",
+      "website": "https://incognito.axiosiiitl.dev/"
+    },
+    {
+      "name": "pony7",
+      "ctfs_organized": 6,
+      "latest_ctf": "THCon 2K26 CTF",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3186/",
+      "website": "https://thcon.party/"
+    },
+    {
+      "name": "LIT CTF",
+      "ctfs_organized": 6,
+      "latest_ctf": "Lexington Informatics Tournament CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3373/",
+      "website": "https://lit.lhsmathcs.org/"
+    },
+    {
+      "name": "Black Bauhinia",
+      "ctfs_organized": 6,
+      "latest_ctf": "HKCERT CTF 2026 (Qualifying Round)",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3418/",
+      "website": "https://ctf.hkcert.org/"
+    },
+    {
+      "name": "The Few Chosen",
+      "ctfs_organized": 6,
+      "latest_ctf": "TFC CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3344/",
+      "website": "https://ctf.thefewchosen.com/"
+    },
+    {
+      "name": "Cryptonite",
+      "ctfs_organized": 6,
+      "latest_ctf": "niteCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3367/",
+      "website": "https://nitectf.cryptonitemit.in/"
+    },
+    {
+      "name": "InfoSecIITR",
+      "ctfs_organized": 6,
+      "latest_ctf": "BackdoorCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3472/",
+      "website": "https://backdoor.infoseciitr.in/"
+    },
+    {
+      "name": "Highlander Hackers",
+      "ctfs_organized": 6,
+      "latest_ctf": "JerseyCTF VII",
+      "latest_year": "2027",
+      "ctftime_url": "https://ctftime.org/event/3458/",
+      "website": "https://ctf.jerseyctf.com/"
+    },
+    {
+      "name": "Srdnlen",
+      "ctfs_organized": 6,
+      "latest_ctf": "Srdnlen CTF 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3043/",
+      "website": "https://ctf.srdnlen.it/"
+    },
+    {
+      "name": "PBR | UCLA",
+      "ctfs_organized": 6,
+      "latest_ctf": "LA CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3015/",
+      "website": "https://lac.tf/"
+    },
+    {
+      "name": "x6e.x65.x78.x75.x73",
+      "ctfs_organized": 6,
+      "latest_ctf": "Cryovault 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3441/",
+      "website": "https://isfcrpesu.ctfd.io/"
+    },
+    {
+      "name": "HackDayCTF",
+      "ctfs_organized": 6,
+      "latest_ctf": "HackDay 2026 - Qualifications",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3038/",
+      "website": "https://register.hackday.fr/register/"
+    },
+    {
+      "name": "CakeisTheFake",
+      "ctfs_organized": 6,
+      "latest_ctf": "THJCC CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3088/",
+      "website": "https://ctf2026.thjcc.org/"
+    },
+    {
+      "name": "SAS CREW",
+      "ctfs_organized": 6,
+      "latest_ctf": "SAS CTF 2026 Quals",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3109/",
+      "website": "https://ctf.thesascon.com/"
+    },
+    {
+      "name": "WreckTheLine",
+      "ctfs_organized": 5,
+      "latest_ctf": "HackTM CTF 2024 - Postponed",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2452/",
+      "website": "https://ctf.hacktm.ro/"
+    },
+    {
+      "name": "zer0pts",
+      "ctfs_organized": 5,
+      "latest_ctf": "zer0pts CTF 2023",
+      "latest_year": "2023",
+      "ctftime_url": "https://ctftime.org/event/1972/",
+      "website": "https://2023.ctf.zer0pts.com/"
+    },
+    {
+      "name": "\u00e5ngstromCTF Organizers",
+      "ctfs_organized": 5,
+      "latest_ctf": "\u00e5ngstromCTF 2024",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2375/",
+      "website": "https://angstromctf.com/"
+    },
+    {
+      "name": "ROIS",
+      "ctfs_organized": 5,
+      "latest_ctf": "RCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2992/",
+      "website": "https://rctf2025.xctf.org.cn/"
+    },
+    {
+      "name": "Syclover",
+      "ctfs_organized": 5,
+      "latest_ctf": "SCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3314/",
+      "website": "https://sctf2026.xctf.org.cn/"
+    },
+    {
+      "name": "TSG",
+      "ctfs_organized": 5,
+      "latest_ctf": "TSG CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2867/",
+      "website": "https://score.ctf.tsg.ne.jp/"
+    },
+    {
+      "name": "The Cyber Grabs",
+      "ctfs_organized": 5,
+      "latest_ctf": "Cyber Grabs CTF 0x03 Junior",
+      "latest_year": "2022",
+      "ctftime_url": "https://ctftime.org/event/1556/",
+      "website": "https://ctf.thecybergrabs.org/"
+    },
+    {
+      "name": "Square",
+      "ctfs_organized": 5,
+      "latest_ctf": "BlockCTF 2024 (Formerly SquareCTF)",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2517/",
+      "website": "https://2024.blockctf.com/"
+    },
+    {
+      "name": "TeamShakti",
+      "ctfs_organized": 5,
+      "latest_ctf": "Shakti CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2803/",
+      "website": "https://ctf.teamshakti.in/"
+    },
+    {
+      "name": "hxp",
+      "ctfs_organized": 5,
+      "latest_ctf": "hxp 39C3 CTF",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2924/",
+      "website": "https://2025.ctf.link/"
+    },
+    {
+      "name": "Securebug",
+      "ctfs_organized": 5,
+      "latest_ctf": "SecureBug CTF",
+      "latest_year": "2021",
+      "ctftime_url": "https://ctftime.org/event/1263/",
+      "website": "https://securebug.se/cyber-challenge/"
+    },
+    {
+      "name": "DaVinciCode",
+      "ctfs_organized": 5,
+      "latest_ctf": "DaVinciCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3132/",
+      "website": "https://dvc.tf/"
+    },
+    {
+      "name": "Blue Hens",
+      "ctfs_organized": 5,
+      "latest_ctf": "BlueHens CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3235/",
+      "website": "https://bluehens.ctfd.io/"
+    },
+    {
+      "name": "LINE CTF",
+      "ctfs_organized": 5,
+      "latest_ctf": "LINE CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2819/",
+      "website": "https://linectf.me/"
+    },
+    {
+      "name": "Alchemists of Kernel",
+      "ctfs_organized": 5,
+      "latest_ctf": "FooBar CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3445/",
+      "website": "https://foobarctf.arhn.in/"
+    },
+    {
+      "name": "HeroCTF",
+      "ctfs_organized": 5,
+      "latest_ctf": "HeroCTF v7",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2869/",
+      "website": "https://ctf.heroctf.fr/"
+    },
+    {
+      "name": "3 Prongs And a Computer",
+      "ctfs_organized": 5,
+      "latest_ctf": "San Diego CTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2785/",
+      "website": "https://ctf.sdc.tf/"
+    },
+    {
+      "name": "BCACTF",
+      "ctfs_organized": 5,
+      "latest_ctf": "BCACTF 6.0",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2836/",
+      "website": "https://www.bcactf.com/"
+    },
+    {
+      "name": "Crusaders of Rust",
+      "ctfs_organized": 5,
+      "latest_ctf": "corCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2763/",
+      "website": "https://2025.cor.team/"
+    },
+    {
+      "name": "Buckeye Bureau of BOF",
+      "ctfs_organized": 5,
+      "latest_ctf": "BuckeyeCTF 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/2883/",
+      "website": "https://ctf.osucyber.club/"
+    },
+    {
+      "name": "RedRocket",
+      "ctfs_organized": 5,
+      "latest_ctf": "CyberSecurityRumble Quals",
+      "latest_year": "2024",
+      "ctftime_url": "https://ctftime.org/event/2224/",
+      "website": "https://quals.rumble.host/"
+    },
+    {
+      "name": "H34lthineer",
+      "ctfs_organized": 5,
+      "latest_ctf": "Guardians of the TI",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/3006/",
+      "website": "http://ctf.gematik.de/"
+    },
+    {
+      "name": "w01verines",
+      "ctfs_organized": 5,
+      "latest_ctf": "WolvCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3049/",
+      "website": "https://wolvctf.io/"
+    },
+    {
+      "name": "Platypwnies",
+      "ctfs_organized": 5,
+      "latest_ctf": "Platypwn 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3082/",
+      "website": "https://platypwnies.de/events/platypwn/"
+    },
+    {
+      "name": "Midnight Flag - INFEKTION",
+      "ctfs_organized": 5,
+      "latest_ctf": "Midnight Flag CTF - EXECUTION",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3105/",
+      "website": "https://midnightflag.fr/"
+    },
+    {
+      "name": "RPCA Cyber Club",
+      "ctfs_organized": 5,
+      "latest_ctf": "RPCA CTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3278/",
+      "website": "https://grandctf.rpca.ac.th/"
+    },
+    {
+      "name": "BYU Cyberia",
+      "ctfs_organized": 5,
+      "latest_ctf": "BYUCTF 2026",
+      "latest_year": "2026",
+      "ctftime_url": "https://ctftime.org/event/3247/",
+      "website": "https://ctfd.cyberjousting.com/"
+    },
+    {
+      "name": "CERTUNLP",
+      "ctfs_organized": 5,
+      "latest_ctf": "Metared Argentina 2025",
+      "latest_year": "2025",
+      "ctftime_url": "https://ctftime.org/event/3003/",
+      "website": "https://ctf.cert.unlp.edu.ar/"
+    }
+  ]
+}

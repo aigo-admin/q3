@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecLeaf CTF 2027 // Executive Sponsorship Presentation Deck</title>
+  <link rel="icon" type="image/png" href="assets/SecLeaf_Dark_BG.png">
+  <style>
+    /* -------------------------------------------------------------
+       SECLEAF INTERACTIVE 16:9 PRESENTATION SLIDE DECK
+       Inspired by CSI World Company Presentation & Black Hat India
+       ------------------------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+    :root {
+      --bg-dark: #0a0e17;
+      --bg-slide: #f8f7f4;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1efe9;
+      --border-card: #e3ded6;
+      --text-heading: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --accent-green: #15803d;
+      --accent-lime: #16a34a;
+      --accent-blue: #1d4ed8;
+      --accent-amber: #b45309;
+      --accent-purple: #7e22ce;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      font-family: var(--font-sans);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+    }
+
+    /* Top Navigation Bar */
+    .top-nav {
+      background: rgba(10, 14, 23, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
+    .brand-text {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .brand-pill {
+      font-size: 11px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      background: rgba(22, 163, 74, 0.2);
+      color: #4ade80;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(22, 163, 74, 0.4);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-pdf {
+      background: #16a34a;
+      color: #ffffff;
+      border: none;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.15s ease;
+    }
+    .btn-pdf:hover {
+      background: #15803d;
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #cbd5e1;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-ghost:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Deck Viewport (16:9 Aspect Ratio) */
+    .deck-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .slide-viewport {
+      width: 100%;
+      max-width: 1200px;
+      aspect-ratio: 16 / 9;
+      background: var(--bg-slide);
+      color: var(--text-body);
+      border-radius: 12px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 34px 42px;
+    }
+
+    /* Slide Content Framework */
+    .slide-frame {
+      display: none;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeIn 0.25s ease forwards;
+    }
+    .slide-frame.active {
+      display: flex;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typography & Headers */
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-card);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    .slide-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-green);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .slide-meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .slide-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.4px;
+      margin-bottom: 4px;
+    }
+    .slide-desc {
+      font-size: 13.5px;
+      color: var(--text-body);
+      max-width: 880px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .slide-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-card);
+      padding-top: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Cards & Grids */
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+    }
+    .pill-green { background: #dcfce7; color: #15803d; }
+    .pill-blue { background: #dbeafe; color: #1d4ed8; }
+    .pill-amber { background: #fef3c7; color: #b45309; }
+    .pill-purple { background: #f3e8ff; color: #7e22ce; }
+
+    /* Tables */
+    .table-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 11.5px;
+    }
+    th {
+      background: #f1efe8;
+      color: var(--text-heading);
+      font-weight: 700;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-card);
+    }
+    td {
+      padding: 8.5px 12px;
+      border-bottom: 1px solid #ece8de;
+      color: var(--text-body);
+    }
+    tr:last-child td { border-bottom: none; }
+    .diamond-cell { background: rgba(22, 163, 74, 0.05); font-weight: 600; }
+
+    /* Cover Slide Styling */
+    .slide-cover {
+      background: #0b0f19;
+      color: #ffffff;
+      padding: 34px 42px;
+      border-left: 10px solid var(--accent-lime);
+    }
+    .slide-cover .slide-title { color: #ffffff; font-size: 40px; }
+    .slide-cover .slide-desc { color: #cbd5e1; font-size: 16.5px; }
+
+    /* Bottom Slide Controls */
+    .bottom-controls {
+      background: rgba(10, 14, 23, 0.95);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .control-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+    }
+    .control-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .slide-counter {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .dot-indicators {
+      display: flex;
+      gap: 6px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .dot.active {
+      background: var(--accent-lime);
+      width: 20px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-nav">
+    <div class="brand-wrap">
+      <img src="assets/SecLeaf_Dark_BG.png" alt="SecLeaf" class="brand-logo">
+      <span class="brand-text">SecLeaf CTF 2027</span>
+      <span class="brand-pill">Sponsorship Prospectus</span>
+    </div>
+    <div class="nav-actions">
+      <a href="print.html" target="_blank" class="btn-pdf">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Printable PDF View
+      </a>
+      <button class="btn-ghost" onclick="toggleFullScreen()">⛶ Fullscreen</button>
+    </div>
+  </header>
+
+  <!-- Deck Viewport -->
+  <main class="deck-container">
+    <div class="slide-viewport" id="viewport">
+
+      <!-- SLIDE 1: COVER -->
+      <div class="slide-frame slide-cover active" data-slide="1">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <img src="assets/SecLeaf_Dark_BG.png" alt="SecLeaf" style="height: 54px; width: auto; object-fit: contain;">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; background: rgba(255,255,255,0.08); padding: 6px 12px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+            SPONSORSHIP PROSPECTUS // Q3 2027
+          </div>
+        </div>
+
+        <div>
+          <div style="color: var(--accent-lime); font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">
+            ● 24TH &amp; 25TH JULY 2027 • FLAGSHIP CTF
+          </div>
+          <h1 class="slide-title">SECLEAF CTF 2027<br><span style="color: var(--accent-lime);">GLOBAL CYBER OPERATIONS</span></h1>
+          <p class="slide-desc">
+            Connecting our target community of 6,000+ cybersecurity operators, university researchers, and industry engineers across 100+ countries with world-class security organizations.
+          </p>
+
+          <div style="display: flex; gap: 32px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 18px;">
+            <div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #ffffff;">6,000+</div>
+              <div style="font-size: 10.5px; color: #94a3b8; text-transform: uppercase;">Target Participants (Goal)</div>
+            </div>
+            <div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #ffffff;">3,116</div>
+              <div style="font-size: 10.5px; color: #94a3b8; text-transform: uppercase;">Proven Q2 Solvers (Track Record)</div>
+            </div>
+            <div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #ffffff;">100+</div>
+              <div style="font-size: 10.5px; color: #94a3b8; text-transform: uppercase;">Target Countries</div>
+            </div>
+            <div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #ffffff;">1,500+</div>
+              <div style="font-size: 10.5px; color: #94a3b8; text-transform: uppercase;">Projected Teams</div>
+            </div>
+            <div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #ffffff;">24 Hours</div>
+              <div style="font-size: 10.5px; color: #94a3b8; text-transform: uppercase;">Live Competition</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; font-size: 11px; color: #64748b; font-family: var(--font-mono); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+          <div>SecLeaf Platform • Founded in Nagpur, MH, India • "Securing the Future, Together."</div>
+          <div>contact@secleaf.xyz • https://ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2: ABOUT SECLEAF -->
+      <div class="slide-frame" data-slide="2">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">01 // Overview</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Connecting Skilled Security Talent with Hiring Teams</h2>
+          <p class="slide-desc">
+            Founded in Nagpur in September 2025, SecLeaf provides a hands-on arena where students and engineers test their abilities on realistic challenges, not keyword tests.
+          </p>
+
+          <div class="grid-3" style="margin-bottom: 16px;">
+            <div class="card" style="border-top: 4px solid var(--accent-lime);">
+              <span class="pill pill-green" style="margin-bottom: 6px;">SKILL-BASED HIRING</span>
+              <h4 style="font-size: 14.5px; font-weight: 700; margin-bottom: 4px;">Hire by Solves, Not Keywords</h4>
+              <p style="font-size: 12px; color: var(--text-body); line-height: 1.5;">
+                Traditional recruiting filters out great hackers. SecLeaf lets sponsors identify talent based on real-time problem-solving performance under competitive conditions.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--accent-blue);">
+              <span class="pill pill-blue" style="margin-bottom: 6px;">HANDS-ON CHALLENGES</span>
+              <h4 style="font-size: 14.5px; font-weight: 700; margin-bottom: 4px;">Realistic Threat Scenarios</h4>
+              <p style="font-size: 12px; color: var(--text-body); line-height: 1.5;">
+                40+ curated challenges in Binary Exploitation, Cloud Security, AI/LLM Security, Digital Forensics, and Reverse Engineering—modeled on real vulnerabilities.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--accent-amber);">
+              <span class="pill pill-amber" style="margin-bottom: 6px;">GLOBAL REACH</span>
+              <h4 style="font-size: 14.5px; font-weight: 700; margin-bottom: 4px;">Targeting 100+ Countries</h4>
+              <p style="font-size: 12px; color: var(--text-body); line-height: 1.5;">
+                Building on our 40+ country footprint from Q2, Q3 2027 targets over 100 nations, connecting sponsors directly with university clubs and active practitioners worldwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-4">
+            <div class="card" style="padding: 12px; background: var(--bg-subtle);">
+              <div style="font-size: 20px; font-weight: 800; font-family: var(--font-mono);">6,000+</div>
+              <div style="font-size: 11px; font-weight: 700;">Target Competitors</div>
+            </div>
+            <div class="card" style="padding: 12px; background: var(--bg-subtle);">
+              <div style="font-size: 20px; font-weight: 800; font-family: var(--font-mono);">3,116</div>
+              <div style="font-size: 11px; font-weight: 700;">Proven Q2 Past Base</div>
+            </div>
+            <div class="card" style="padding: 12px; background: var(--bg-subtle);">
+              <div style="font-size: 20px; font-weight: 800; font-family: var(--font-mono);">150+</div>
+              <div style="font-size: 11px; font-weight: 700;">College Cyber Hubs</div>
+            </div>
+            <div class="card" style="padding: 12px; background: var(--bg-subtle);">
+              <div style="font-size: 20px; font-weight: 800; font-family: var(--font-mono);">24 Hours</div>
+              <div style="font-size: 11px; font-weight: 700;">Live Stream Desk</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 02 // Overview</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: TRACK RECORD -->
+      <div class="slide-frame" data-slide="3">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">02 // Track Record</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Our Track Record: What We Built in Q2</h2>
+          <p class="slide-desc">
+            We don't sell unverified projections as finished facts. Here is our verified data from our previous edition, demonstrating high completion rates and community trust.
+          </p>
+
+          <div class="grid-4" style="margin-bottom: 16px;">
+            <div class="card" style="border-left: 4px solid var(--accent-lime);">
+              <div class="pill pill-green" style="margin-bottom: 5px;">VERIFIED PAST RESULT</div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono);">3,116</div>
+              <div style="font-size: 12px; font-weight: 700;">Total Registrations</div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-blue);">
+              <div class="pill pill-blue" style="margin-bottom: 5px;">HIGH PARTICIPATION</div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono);">92.9%</div>
+              <div style="font-size: 12px; font-weight: 700;">2,896 Active Solvers</div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-amber);">
+              <div class="pill pill-amber" style="margin-bottom: 5px;">ACTIVE SQUADS</div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono);">769</div>
+              <div style="font-size: 12px; font-weight: 700;">Competing Teams</div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-purple);">
+              <div class="pill pill-purple" style="margin-bottom: 5px;">GLOBAL FOOTPRINT</div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono);">40+</div>
+              <div style="font-size: 12px; font-weight: 700;">Countries in Q2</div>
+            </div>
+          </div>
+
+          <!-- Past Partners -->
+          <div class="card">
+            <div style="font-size: 13px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">
+              Past Community &amp; Industry Collaborations:
+            </div>
+            <div class="grid-4" style="font-size: 12.5px; font-weight: 700; color: var(--text-heading); text-align: center;">
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">TryHackMe</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">INE Security</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">Caido</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">BSides Vadodara</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">Legal Data Forensics</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">Crypto Forensic Tech</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">ThunderCipher</div>
+              <div style="background: var(--bg-subtle); padding: 9px; border-radius: 6px;">BlackShell Tech</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 03 // Track Record</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: AUDIENCE DEMOGRAPHICS -->
+      <div class="slide-frame" data-slide="4">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">03 // Audience &amp; Roles</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Who Competes: Demographics and Roles</h2>
+          <p class="slide-desc">
+            Our competitors are hands-on practitioners who build tools, solve vulnerabilities, and compete in global rankings.
+          </p>
+
+          <div class="grid-3" style="margin-bottom: 14px;">
+            <div class="card">
+              <h4 style="font-size: 14px; font-weight: 700; margin-bottom: 6px;">Geographic Footprint</h4>
+              <div style="font-size: 11.5px; line-height: 1.8;">
+                <div>• <strong>India &amp; APAC:</strong> 40% (2,400+ goal)</div>
+                <div>• <strong>Americas (US/Canada):</strong> 28% (1,700+ goal)</div>
+                <div>• <strong>Europe &amp; UK:</strong> 22% (1,300+ goal)</div>
+                <div>• <strong>Middle East &amp; Africa:</strong> 10% (600+ goal)</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 style="font-size: 14px; font-weight: 700; margin-bottom: 6px;">Role Distribution</h4>
+              <div style="font-size: 11.5px; line-height: 1.8;">
+                <div>• <strong>CS Students &amp; Grads:</strong> 40%</div>
+                <div>• <strong>Security Engineers &amp; Red Team:</strong> 35%</div>
+                <div>• <strong>SOC Analysts &amp; Bounty Hunters:</strong> 25%</div>
+                <div>• <strong>Top 5% Solvers Pool:</strong> ~300 Elite</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 style="font-size: 14px; font-weight: 700; margin-bottom: 6px;">150+ College Hubs</h4>
+              <div style="font-size: 11px; line-height: 1.45; color: var(--text-body);">
+                Active club partnerships across premier universities: IIT Bombay, Delhi, Madras, BITS Pilani, CMU, UC Berkeley, UIUC, Cambridge, Oxford, and ETH Zurich.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 12px 16px;">
+            <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: 4px;">
+              Target Roles &amp; Alumni Workplaces in our Community:
+            </div>
+            <div style="font-size: 11px; color: var(--text-body); line-height: 1.5;">
+              Application Security Engineers • Penetration Testers • Red Team Operators • Vulnerability Researchers • Cloud Security Specialists • Reverse Engineers • Cryptanalysts • Incident Responders.
+              Alumni at Google, Microsoft, AWS, CrowdStrike, SentinelOne, Snyk, Palo Alto Networks, Razorpay, CRED, HDFC Bank, TCS, Infosys, Accenture, Trail of Bits, EY.
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 04 // Audience &amp; Roles</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5: VALUE PROPOSITION (Vetted CV Bank) -->
+      <div class="slide-frame" data-slide="5">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">04 // Sponsor Value</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Why Companies Sponsor SecLeaf</h2>
+          <p class="slide-desc">
+            Four clear ways your company benefits: hiring vetted engineers, getting hands-on adoption for your security tools, brand exposure, and live stage presence.
+          </p>
+
+          <div class="grid-2" style="margin-bottom: 14px;">
+            <div class="card" style="border: 2px solid var(--accent-lime);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <span class="pill pill-green">TALENT RECRUITMENT</span>
+                <span style="font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;">BENEFIT 01</span>
+              </div>
+              <h3 style="font-size: 15px; font-weight: 800; margin-bottom: 5px;">Vetted Resume Bank (Top 5% Solvers)</h3>
+              <p style="font-size: 12px; line-height: 1.5; color: var(--text-body);">
+                Direct access to our curated resume bank of top-performing solvers. Contains verified CVs, GitHub repositories, and solved challenge analytics from the top 5% performers. Pre-screened for practical offensive and defensive skills.
+              </p>
+            </div>
+
+            <div class="card" style="border: 2px solid var(--accent-blue);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <span class="pill pill-blue">PRODUCT IMMERSION</span>
+                <span style="font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;">BENEFIT 02</span>
+              </div>
+              <h3 style="font-size: 15px; font-weight: 800; margin-bottom: 5px;">Custom Challenge Co-Creation</h3>
+              <p style="font-size: 12px; line-height: 1.5; color: var(--text-body);">
+                Hackers ignore static ads—they spend hours breaking down problems. We co-design dedicated challenges built around your software, API, cloud SDK, or hardware security device.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <span class="pill pill-amber" style="margin-bottom: 5px;">BRAND VISIBILITY</span>
+              <h4 style="font-size: 13.5px; font-weight: 700; margin-bottom: 3px;">Brand Exposure to 6,000+ Hackers</h4>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                Your logo featured on the CTF platform header, registration flow, live scoreboard, and digital event certificates issued to solvers.
+              </p>
+            </div>
+
+            <div class="card">
+              <span class="pill pill-purple" style="margin-bottom: 5px;">STAGE PRESENCE</span>
+              <h4 style="font-size: 13.5px; font-weight: 700; margin-bottom: 3px;">24-Hour Live Stream Stage</h4>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                Feature your security leadership, engineers, or founders in an on-air keynote or technical interview streamed live to thousands of concurrent viewers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 05 // Sponsor Value</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6: PACKAGES MATRIX -->
+      <div class="slide-frame" data-slide="6">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">05 // Packages &amp; Pricing</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Sponsorship Packages &amp; Deliverables</h2>
+          <p class="slide-desc">
+            Four straightforward tiers designed for clear return on investment. All pricing is in USD and tiers are strictly capped to ensure premier partner visibility.
+          </p>
+
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 36%;">Deliverables &amp; Benefits</th>
+                  <th class="diamond-cell" style="width: 16%;">DIAMOND</th>
+                  <th style="width: 16%;">PLATINUM</th>
+                  <th style="width: 16%;">GOLD</th>
+                  <th style="width: 16%;">SILVER</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background: #fdfbf7; font-weight: 700;">
+                  <td><strong>Direct Investment (USD)</strong></td>
+                  <td class="diamond-cell" style="color: var(--accent-green); font-size: 13.5px;"><strong>$10,000</strong></td>
+                  <td style="font-size: 13.5px;"><strong>$6,000</strong></td>
+                  <td style="font-size: 13.5px;"><strong>$3,600</strong></td>
+                  <td style="font-size: 13.5px;"><strong>$1,800</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Slots Available (Strictly Capped)</strong></td>
+                  <td class="diamond-cell">Exclusive (3 Slots)</td>
+                  <td>Limited (5 Slots)</td>
+                  <td>Limited (8 Slots)</td>
+                  <td>Available (12)</td>
+                </tr>
+                <tr>
+                  <td><strong>Vetted Resume Bank Access</strong></td>
+                  <td class="diamond-cell"><strong>Full Opt-in Bank (Top 5%)</strong></td>
+                  <td>Top 10% Solvers Bank</td>
+                  <td>Top 25 Opt-in Resumes</td>
+                  <td>Top 10 Opt-in Resumes</td>
+                </tr>
+                <tr>
+                  <td><strong>Custom Technical Challenges</strong></td>
+                  <td class="diamond-cell"><strong>2 Custom Challenges</strong></td>
+                  <td>1 Custom Challenge</td>
+                  <td>Category Pin</td>
+                  <td>Standard</td>
+                </tr>
+                <tr>
+                  <td><strong>Logo on Platform &amp; Live Scoreboard</strong></td>
+                  <td class="diamond-cell">Primary Header Logo</td>
+                  <td>Prominent Tier Banner</td>
+                  <td>Featured Logo</td>
+                  <td>Grid Logo</td>
+                </tr>
+                <tr>
+                  <td><strong>Logo on Digital Solver Certificates</strong></td>
+                  <td class="diamond-cell"><strong>Signature Partner</strong></td>
+                  <td>Prominent Logo</td>
+                  <td>Standard Logo</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td><strong>Live Stream Broadcast Inclusion</strong></td>
+                  <td class="diamond-cell">Keynote + 20-min Interview</td>
+                  <td>20-min Tech Interview</td>
+                  <td>Stream Ad Bumpers</td>
+                  <td>Overlay Ticker</td>
+                </tr>
+                <tr>
+                  <td><strong>Dedicated Discord Channel &amp; Role</strong></td>
+                  <td class="diamond-cell">Branded Room + Bot</td>
+                  <td>Dedicated Channel</td>
+                  <td>Official Role</td>
+                  <td>Official Role</td>
+                </tr>
+                <tr>
+                  <td><strong>Social Media Announcements</strong></td>
+                  <td class="diamond-cell">3 Dedicated Campaigns</td>
+                  <td>2 Targeted Posts</td>
+                  <td>1 Announcement</td>
+                  <td>Group Shoutout</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 06 // Packages &amp; Pricing</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7: CUSTOM ADD-ONS -->
+      <div class="slide-frame" data-slide="7">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">06 // Custom Add-Ons</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Custom Sponsorship Add-Ons</h2>
+          <p class="slide-desc">
+            Add-ons you can attach to any tier to get more hiring face-time, showcase your security product, or put your brand on physical swag.
+          </p>
+
+          <div class="grid-2" style="margin-bottom: 12px;">
+            <div class="card" style="border-left: 4px solid var(--accent-lime);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <h4 style="font-size: 14.5px; font-weight: 700;">Sponsored Challenge Track</h4>
+                <span class="pill pill-green">$3,500</span>
+              </div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                Own an entire specialized category (such as Cloud Defense or AI Security). Challenges feature your product documentation and APIs, creating direct developer adoption.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-blue);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <h4 style="font-size: 14.5px; font-weight: 700;">Live Technical Interview &amp; Demo</h4>
+                <span class="pill pill-blue">$2,000</span>
+              </div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                A 20-minute live spotlight during prime hours on the official 24-hour stream. Feature your security architect or engineering lead walking through a real technical topic.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-amber);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <h4 style="font-size: 14.5px; font-weight: 700;">Recruiter Speed-Networking Session</h4>
+                <span class="pill pill-amber">$2,500</span>
+              </div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                Direct video call access to the Top 20 solving teams immediately post-event. Share engineering job openings and fast-track interviews with top performers.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-purple);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <h4 style="font-size: 14.5px; font-weight: 700;">Hardware PCB Badge &amp; Swag Partner</h4>
+                <span class="pill pill-purple">$4,000</span>
+              </div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+                Your logo printed directly onto custom electronic PCB badges, event hoodies, and swag boxes shipped to top 50 winners and college club leaders worldwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; padding: 12px 18px;">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: var(--text-heading);">First-Blood Category Bounty Sponsor</div>
+              <div style="font-size: 11.5px; color: var(--text-body);">Fund an instant cash bounty ($1,000) for the first team to solve the hardest challenge in your chosen category, announced live with your brand name.</div>
+            </div>
+            <div style="font-size: 15px; font-weight: 800; color: var(--accent-green); font-family: var(--font-mono); white-space: nowrap;">$1,000 / Category</div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 07 // Custom Add-Ons</div>
+          <div>ctf.secleaf.tech</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 8: LEADERSHIP & CONTACT -->
+      <div class="slide-frame" data-slide="8">
+        <div class="slide-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" style="height: 28px; width: auto; object-fit: contain;">
+            <span class="slide-tag">07 // Leadership &amp; Contact</span>
+          </div>
+          <span class="slide-meta">SecLeaf CTF 2027 • 24–25 July 2027</span>
+        </div>
+
+        <div>
+          <h2 class="slide-title">Get in Touch with the Founders</h2>
+          <p class="slide-desc">
+            SecLeaf was founded in Nagpur, India by cybersecurity practitioners. Reach out directly to discuss your hiring needs, challenge integrations, or custom sponsorship deliverables.
+          </p>
+
+          <div class="grid-2" style="margin-bottom: 16px;">
+            <div class="card" style="border-top: 4px solid var(--accent-lime);">
+              <span class="pill pill-green" style="margin-bottom: 6px;">FOUNDER &amp; TECHNICAL LEAD</span>
+              <h3 style="font-size: 16px; font-weight: 800; color: var(--text-heading);">Aditya Pidurkar</h3>
+              <div style="font-size: 12px; font-weight: 700; color: var(--accent-green); margin-bottom: 6px;">Principal Co-Founder, SecLeaf</div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45; margin-bottom: 8px;">
+                Leads platform architecture, competition operations, and enterprise partner integrations. Built SecLeaf from community origins to thousands of active international competitors.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--text-heading);">
+                <div>📞 +91 99753 56540</div>
+                <div>✉️ contact@secleaf.xyz</div>
+              </div>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--accent-blue);">
+              <span class="pill pill-blue" style="margin-bottom: 6px;">CO-FOUNDER &amp; OPERATIONS</span>
+              <h3 style="font-size: 16px; font-weight: 800; color: var(--text-heading);">Parvesh Dahale</h3>
+              <div style="font-size: 12px; font-weight: 700; color: var(--accent-blue); margin-bottom: 6px;">Co-Founder, SecLeaf</div>
+              <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45; margin-bottom: 8px;">
+                Leads community relations, university club outreach, and partner onboarding. Coordinates with collegiate clubs, academic mentors, and corporate sponsors for smooth onboarding.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--text-heading);">
+                <div>📞 +91 93702 98553</div>
+                <div>✉️ contact@secleaf.xyz</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="background: #0f172a; color: #ffffff; padding: 12px 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h4 style="color: #ffffff; font-size: 14px; font-weight: 800;">Ready to Sponsor SecLeaf Q3 2027?</h4>
+                <p style="color: #94a3b8; font-size: 11px;">Tier slots are strictly capped to ensure premier visibility. Contact our team to confirm your deliverables.</p>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 11px; display: flex; gap: 16px; color: #e2e8f0;">
+                <div>🌐 ctf.secleaf.tech</div>
+                <div>💼 linkedin.com/company/secleaf</div>
+                <div>💬 discord.gg/DvNtgNaYBG</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <div>SecLeaf Sponsorship Prospectus</div>
+          <div>Slide 08 // Leadership &amp; Contact</div>
+          <div>contact@secleaf.xyz</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bottom Slide Navigation Controls -->
+  <footer class="bottom-controls">
+    <button class="control-btn" onclick="prevSlide()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Previous Slide
+    </button>
+
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div class="dot-indicators" id="dots"></div>
+      <span class="slide-counter" id="counter">Slide 1 of 8</span>
+    </div>
+
+    <button class="control-btn" onclick="nextSlide()">
+      Next Slide
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </footer>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 8;
+
+    function initDots() {
+      const dotsContainer = document.getElementById('dots');
+      dotsContainer.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.className = `dot ${i === 1 ? 'active' : ''}`;
+        dot.onclick = () => goToSlide(i);
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateSlide() {
+      document.querySelectorAll('.slide-frame').forEach(el => {
+        el.classList.remove('active');
+        if (parseInt(el.getAttribute('data-slide'), 10) === currentSlide) {
+          el.classList.add('active');
+        }
+      });
+
+      document.querySelectorAll('.dot').forEach((dot, idx) => {
+        dot.classList.toggle('active', idx + 1 === currentSlide);
+      });
+
+      document.getElementById('counter').innerText = `Slide ${currentSlide} of ${totalSlides}`;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        updateSlide();
+      }
+    }
+
+    function goToSlide(n) {
+      currentSlide = n;
+      updateSlide();
+    }
+
+    // Keyboard Arrow Controls
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+    // Fullscreen Toggle
+    function toggleFullScreen() {
+      const elem = document.getElementById('viewport');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch(err => alert(err.message));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initDots();
+      updateSlide();
+    });
+  </script>
+</body>
+</html>

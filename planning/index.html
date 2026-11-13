@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecLeaf CTF Q3 2027 // Master Planning & Execution Guide</title>
+  <meta name="description" content="Clear, step-by-step master operational blueprint for SecLeaf CTF 2027 (July 24–25, 2027). Target: 6,000+ participants, 100+ countries, record sponsors, and zero server crashes.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <style>
+    /* -------------------------------------------------------------
+       SECLEAF WARM LIGHT DESIGN SYSTEM
+       Gentle, warm-toned (not harsh pure white), highly readable
+       ------------------------------------------------------------- */
+    :root {
+      --bg-page: #f5f3ec;        /* Warm natural linen / soft oat */
+      --bg-subtle: #ede9df;      /* Slightly deeper warm neutral */
+      --bg-card: #ffffff;        /* Pure card surface for contrast */
+      --bg-card-hover: #faf9f6;  /* Soft cream hover */
+      --bg-accent-soft: #f0eee6; /* Soft button/badge background */
+
+      --border-light: #e4dfd3;   /* Soft warm border */
+      --border-card: #e0dbce;    /* Card outline */
+      --border-active: #16a34a;  /* SecLeaf vibrant leaf green */
+
+      --text-heading: #18181b;   /* Deep charcoal for maximum readability */
+      --text-body: #374151;      /* Crisp readable slate text */
+      --text-muted: #6b7280;     /* Soft secondary text */
+      --text-green: #15803d;     /* High-contrast brand green */
+
+      --color-green-bg: #dcfce7;
+      --color-green-text: #15803d;
+      --color-blue-bg: #dbeafe;
+      --color-blue-text: #1d4ed8;
+      --color-amber-bg: #fef3c7;
+      --color-amber-text: #b45309;
+      --color-purple-bg: #f3e8ff;
+      --color-purple-text: #7e22ce;
+
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Sticky Top Header */
+    .top-banner {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+    .top-banner-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-logo {
+      height: 32px;
+      width: auto;
+    }
+    .brand-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.3px;
+    }
+    .brand-pill {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--color-green-bg);
+      color: var(--color-green-text);
+      padding: 3px 8px;
+      border-radius: 999px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+      overflow-x: auto;
+    }
+    .nav-item-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .nav-item-link:hover, .nav-item-link.active {
+      color: var(--text-heading);
+      background: var(--bg-subtle);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 50px 0 40px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .date-badge .dot {
+      width: 8px;
+      height: 8px;
+      background: #16a34a;
+      border-radius: 50%;
+    }
+
+    .hero-heading {
+      font-size: clamp(32px, 4.5vw, 48px);
+      font-weight: 800;
+      color: var(--text-heading);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .hero-subheading {
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: var(--text-body);
+      max-width: 820px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    /* 4 Big Stat Cards */
+    .stat-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .stat-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .stat-number {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--text-heading);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      font-family: var(--font-mono);
+    }
+    .stat-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-top: 4px;
+    }
+    .stat-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .section-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-green);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-body);
+      max-width: 800px;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    /* Cards & Grids */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 20px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    /* Visual Diagram Frame */
+    .diagram-frame {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+    .diagram-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* Clean Comparison Table */
+    .table-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 28px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: var(--bg-subtle);
+      color: var(--text-heading);
+      font-weight: 700;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-body);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover td {
+      background: var(--bg-card-hover);
+    }
+    .highlight-cell {
+      background: rgba(22, 163, 74, 0.05);
+      font-weight: 700;
+      color: var(--color-green-text);
+    }
+
+    /* Easy-to-Understand Explainer Steps */
+    .step-box {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .step-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--color-green-bg);
+      color: var(--color-green-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .step-content h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.5;
+    }
+
+    /* Interactive Calculators */
+    .interactive-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-card);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      margin-top: 24px;
+    }
+    .interactive-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .calc-slider {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-subtle);
+      border-radius: 4px;
+      outline: none;
+      -webkit-appearance: none;
+      margin: 14px 0 20px;
+    }
+    .calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--border-active);
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(22, 163, 74, 0.4);
+    }
+    .calc-output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .calc-result-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .calc-result-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .calc-result-value {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-heading);
+      font-family: var(--font-mono);
+      margin-top: 4px;
+    }
+
+    /* Filter Buttons */
+    .filter-btn-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .pill-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-body);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .pill-btn:hover {
+      background: var(--bg-subtle);
+    }
+    .pill-btn.active {
+      background: #18181b;
+      color: #ffffff;
+      border-color: #18181b;
+    }
+
+    /* Copyable Email Template Box */
+    .template-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 20px;
+      position: relative;
+      margin-top: 14px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-body);
+      white-space: pre-wrap;
+    }
+    .copy-button {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-heading);
+      padding: 5px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+    }
+    .copy-button:hover {
+      background: var(--color-green-bg);
+      color: var(--color-green-text);
+      border-color: #86efac;
+    }
+
+    /* Interactive Checklist */
+    .checklist-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .check-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      padding: 14px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+    }
+    .check-card:hover {
+      background: var(--bg-card-hover);
+    }
+    .check-card input[type=checkbox] {
+      width: 18px;
+      height: 18px;
+      accent-color: #16a34a;
+      cursor: pointer;
+    }
+    .check-card.completed {
+      background: #fbfbf9;
+      opacity: 0.7;
+    }
+    .check-card.completed .check-text {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+    .check-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-heading);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-light);
+      padding: 36px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav-menu { display: none; }
+      .hero-heading { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="top-banner">
+    <div class="container top-banner-inner">
+      <a href="#top" class="brand-group">
+        <img src="assets/logo.png" alt="SecLeaf" class="brand-logo" onerror="this.style.display='none'">
+        <span class="brand-title">SecLeaf CTF 2027</span>
+        <span class="brand-pill">Q3 Master Plan</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-item-link active">Overview</a></li>
+        <li><a href="#growth" class="nav-item-link">6,000 Players</a></li>
+        <li><a href="#sponsors" class="nav-item-link">Sponsors</a></li>
+        <li><a href="#challenges" class="nav-item-link">Challenges</a></li>
+        <li><a href="#infrastructure" class="nav-item-link">Zero-Crash Servers</a></li>
+        <li><a href="#anticheat" class="nav-item-link">Anti-Cheat</a></li>
+        <li><a href="#checklist" class="nav-item-link">Action Checklist</a></li>
+        <li><a href="/sponsors-db.html" target="_blank" class="nav-item-link" style="background: var(--color-blue-bg); color: var(--color-blue-text); font-weight: 700;">🔍 CTFtime Sponsors DB →</a></li>
+        <li><a href="/brochure/" target="_blank" class="nav-item-link" style="background: var(--color-green-bg); color: var(--color-green-text); font-weight: 700;">📄 View Brochure Deck →</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="overview">
+    <div class="container">
+      <div class="date-badge">
+        <span class="dot"></span>
+        <span>Mark the Date: <strong>24th July &amp; 25th July, 2027</strong> (Q3 Flagship)</span>
+      </div>
+      <h1 class="hero-heading">How We Break Every Record in Q3 2027</h1>
+      <p class="hero-subheading">
+        A crystal-clear, foolproof master plan built from our real experiences running <strong>Q2</strong> and <strong>Q4 CTF</strong>. No confusing jargon — just clear goals, step-by-step strategies, and practical tools to make this event our grandest achievement.
+      </p>
+
+      <!-- 4 Core Targets Cards -->
+      <div class="stat-cards-grid">
+        <div class="stat-card">
+          <span class="stat-badge" style="background: var(--color-green-bg); color: var(--color-green-text);">TARGET 01</span>
+          <div class="stat-number">6,000+</div>
+          <div class="stat-title">Participants (1,500+ Teams)</div>
+          <div class="stat-desc">Nearly double our Q2 record of 3,116 participants.</div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-badge" style="background: var(--color-blue-bg); color: var(--color-blue-text);">TARGET 02</span>
+          <div class="stat-number">100+</div>
+          <div class="stat-title">Countries Worldwide</div>
+          <div class="stat-desc">From 40 nations in Q2 to true global coverage across 6 continents.</div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-badge" style="background: var(--color-amber-bg); color: var(--color-amber-text);">TARGET 03</span>
+          <div class="stat-number">$50,000+</div>
+          <div class="stat-title">Sponsor Value Pipeline</div>
+          <div class="stat-desc">Cash prizes, tooling licenses, cloud hosting, and hardware swag.</div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-badge" style="background: var(--color-purple-bg); color: var(--color-purple-text);">TARGET 04</span>
+          <div class="stat-number">100%</div>
+          <div class="stat-title">Server Uptime &amp; Fair Play</div>
+          <div class="stat-desc">Zero first-minute crashes, fast database, and vetted Top 10.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: THE SCORECARD -->
+  <section id="scorecard">
+    <div class="container">
+      <span class="section-badge">01 // THE BENCHMARK</span>
+      <h2 class="section-title">Where We Were vs. Where We Are Going</h2>
+      <p class="section-subtitle">
+        Here is the clear, honest comparison showing exactly how Q3 2027 will shatter our previous records.
+      </p>
+
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Competition Metric</th>
+              <th>SecLeaf Q2 CTF 2026</th>
+              <th>SecLeaf Q4 CTF 2026</th>
+              <th class="highlight-cell">SecLeaf Q3 2027 Goal</th>
+              <th>What This Means</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Total Registered Players</strong></td>
+              <td>3,116 Players</td>
+              <td>~4,200 Players</td>
+              <td class="highlight-cell"><strong>6,000+ Players</strong></td>
+              <td>Double the community size and talent pool</td>
+            </tr>
+            <tr>
+              <td><strong>Active Teams</strong></td>
+              <td>769 Teams</td>
+              <td>~1,050 Teams</td>
+              <td class="highlight-cell"><strong>1,500+ Active Teams</strong></td>
+              <td>Massive competition on the leaderboard</td>
+            </tr>
+            <tr>
+              <td><strong>Countries Reached</strong></td>
+              <td>40 Countries</td>
+              <td>58 Countries</td>
+              <td class="highlight-cell"><strong>100+ Countries</strong></td>
+              <td>Players competing across every single timezone</td>
+            </tr>
+            <tr>
+              <td><strong>Total Prize &amp; Tool Pool</strong></td>
+              <td>$5,000 Equivalent</td>
+              <td>$12,000 Equivalent</td>
+              <td class="highlight-cell"><strong>$30,000+ Cash &amp; Tools</strong></td>
+              <td>Attracts elite world-ranked teams to play</td>
+            </tr>
+            <tr>
+              <td><strong>Server Performance</strong></td>
+              <td>Slow at game start</td>
+              <td>Better with tuned Nginx</td>
+              <td class="highlight-cell"><strong>Zero Downtime (ProxySQL)</strong></td>
+              <td>Instant page loads even when 6,000 people click</td>
+            </tr>
+            <tr>
+              <td><strong>Challenge Quality</strong></td>
+              <td>40 Challenges</td>
+              <td>45 Challenges</td>
+              <td class="highlight-cell"><strong>52 Balanced Challenges</strong></td>
+              <td>Beginners have fun, experts get real 0-day tests</td>
+            </tr>
+            <tr>
+              <td><strong>Anti-Cheat Verification</strong></td>
+              <td>Manual check after event</td>
+              <td>Log heuristics analysis</td>
+              <td class="highlight-cell"><strong>Automated Bots + Live Defense</strong></td>
+              <td>100% genuine winners who can prove their skill</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 6,000+ PARTICIPANTS GROWTH PLAN -->
+  <section id="growth">
+    <div class="container">
+      <span class="section-badge">02 // PARTICIPANT ACQUISITION</span>
+      <h2 class="section-title">How We Get 6,000+ Players From 100+ Countries</h2>
+      <p class="section-subtitle">
+        We don't hope people will show up — we run a 4-step outreach system that guarantees thousands of students, researchers, and professional hackers register.
+      </p>
+
+      <div class="diagram-frame">
+        <img src="assets/global-map-diagram.svg" alt="Global Participant Targets by Region">
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="step-box">
+            <div class="step-icon">1</div>
+            <div class="step-content">
+              <h4>150+ College Campus Ambassadors</h4>
+              <p>
+                Colleges are our biggest growth driver. We appoint 1 student ambassador per college (in IITs, NITs, BITS, US colleges, UK universities).
+                <br><br>
+                <strong>The incentive:</strong> If an ambassador brings 15+ student teams, they get an official Certificate, exclusive SecLeaf Swag Pack, and their college gets featured on the special <em>University Leaderboard</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-icon">2</div>
+            <div class="step-content">
+              <h4>CTFtime High Weight Rating</h4>
+              <p>
+                Serious global players check CTFtime every single week. We submit our event <strong>4 months early</strong> with verified prize escrow.
+                <br><br>
+                <strong>The incentive:</strong> Getting a high CTFtime weight (target 35.0+) automatically attracts top international teams from the US, Japan, South Korea, Poland, and Germany.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="step-box">
+            <div class="step-icon">3</div>
+            <div class="step-content">
+              <h4>Cyber Community Partnerships</h4>
+              <p>
+                We do cross-promotions with top cybersecurity hubs:
+                <br><br>
+                • <strong>Reddit:</strong> Value-packed teasers on <code>r/netsec</code> and <code>r/securityCTF</code>.<br>
+                • <strong>Discord:</strong> Announcements in HackTheBox, TryHackMe, and DEFCON group servers.<br>
+                • <strong>LinkedIn &amp; X:</strong> Daily technical challenge previews and sponsor shoutouts.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-icon">4</div>
+            <div class="step-content">
+              <h4>YouTubers &amp; Creator Walkthroughs</h4>
+              <p>
+                We give early access to respected creators (e.g. John Hammond, LiveOverflow, CryptoCat) so they can create teaser shorts.
+                <br><br>
+                <strong>Writeup Prize:</strong> We offer a dedicated $1,500 prize pool just for the best community blog writeups and video walkthroughs published after the event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: HOW WE GET SPONSORS -->
+  <section id="sponsors">
+    <div class="container">
+      <span class="section-badge">03 // SPONSORSHIP MACHINE</span>
+      <h2 class="section-title">How We Attract as Many Sponsors as Possible</h2>
+      <p class="section-subtitle">
+        Companies don't sponsor events just to put a logo on a poster. They sponsor to <strong>hire brilliant cybersecurity talent</strong> and <strong>showcase their security tools</strong>. Here is our win-win offering.
+      </p>
+
+      <div class="diagram-frame">
+        <img src="assets/sponsor-funnel.svg" alt="Sponsor Tiers and Deliverables">
+      </div>
+
+      <!-- What Sponsors Get -->
+      <div class="grid-3" style="margin-bottom: 24px;">
+        <div class="card">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">1. Direct Talent Recruiting</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5;">
+            Sponsors get access to the vetted resumes of the top 5% problem-solvers. In Q2 and Q4, companies hired directly from our leaderboard.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">2. Branded Custom Challenges</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5;">
+            We build a challenge around their software, API, or tool (e.g. Caido, Burp Suite, Cloud tools). 6,000 hackers spend hours learning their product.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">3. Live Stream Keynotes</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5;">
+            Sponsors get dedicated video interview slots on our 24-hour live stream broadcast watched by thousands of engineers worldwide.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ready-to-Send Email Template -->
+      <div class="card" style="margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 style="font-size: 17px; font-weight: 800; color: var(--text-heading);">Ready-to-Send Sponsor Pitch Email (Copy &amp; Paste)</h3>
+          <span class="stat-badge" style="background: var(--color-green-bg); color: var(--color-green-text);">PROVEN TEMPLATE</span>
+        </div>
+        <p style="font-size: 14px; color: var(--text-muted);">
+          You can copy this exact pitch email and send it to CISOs, DevRel leads, and recruiting managers at target companies:
+        </p>
+
+        <div class="template-box" id="email-template">Subject: SecLeaf CTF 2027 (Q3) — Partnering with 6,000+ Global Cybersecurity Talents
+
+Hi [Name / Team],
+
+I hope you're having a productive week!
+
+I'm Aditya Kumar, Founder of SecLeaf (https://secleaf.tech). Following our successful Q2 and Q4 CTF events which engaged over 3,100 active security practitioners from 40+ countries, we are launching our flagship event:
+
+SecLeaf CTF 2027 (Q3) — 24th & 25th July 2027
+Target: 6,000+ verified security engineers, researchers, and students from 100+ countries.
+
+We would love to partner with [Company Name]. Rather than standard logo placement, we offer high-ROI strategic value:
+1. Direct Hiring Pipeline: Access vetted CVs of the top 5% problem solvers on our leaderboard.
+2. Custom Branded Challenge: We can build an exclusive challenge featuring [Company Name]'s platform or API for 6,000 hackers to solve.
+3. Live Stream Broadcast: A dedicated speaker slot on our 24-hour live stream.
+
+Past partners include TryHackMe, INE, Caido, BSides, and leading forensics firms.
+
+Would you be open to a brief 10-minute chat this Thursday or Friday to explore how we can tailor this for [Company Name]?
+
+Warm regards,
+Aditya Kumar
+Founder, SecLeaf | aditya@secleaf.tech
+https://ctf.secleaf.tech</div>
+        <button class="copy-button" onclick="copyEmail()">📋 Copy Pitch Email</button>
+      </div>
+
+      <!-- Interactive Sponsor Revenue Calculator -->
+      <div class="interactive-card">
+        <div class="interactive-header">
+          <div>
+            <h3 style="font-size: 17px; font-weight: 800; color: var(--text-heading);">Interactive Sponsor Revenue &amp; Prize Budget Calculator</h3>
+            <p style="font-size: 13px; color: var(--text-muted);">Select the number of sponsors you expect to close to calculate your total cash budget and prize pool:</p>
+          </div>
+          <span class="stat-badge" style="background: var(--color-amber-bg); color: var(--color-amber-text);">BUDGET MODEL</span>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 18px;">
+          <div>
+            <label style="font-size: 12px; font-weight: 700; color: var(--text-heading);">TITLE ($15k / ₹12.5L):</label>
+            <select id="sel-title" class="pill-btn" style="width: 100%; margin-top: 6px; border-radius: 8px;" onchange="recalcBudget()">
+              <option value="1" selected>1 Partner ($15,000)</option>
+              <option value="0">0 Partners ($0)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 12px; font-weight: 700; color: var(--text-heading);">DIAMOND ($7.5k / ₹6.2L):</label>
+            <select id="sel-diamond" class="pill-btn" style="width: 100%; margin-top: 6px; border-radius: 8px;" onchange="recalcBudget()">
+              <option value="3" selected>3 Partners ($22,500)</option>
+              <option value="2">2 Partners ($15,000)</option>
+              <option value="1">1 Partner ($7,500)</option>
+              <option value="0">0 Partners ($0)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 12px; font-weight: 700; color: var(--text-heading);">PLATINUM ($3.5k / ₹2.9L):</label>
+            <select id="sel-platinum" class="pill-btn" style="width: 100%; margin-top: 6px; border-radius: 8px;" onchange="recalcBudget()">
+              <option value="5" selected>5 Partners ($17,500)</option>
+              <option value="3">3 Partners ($10,500)</option>
+              <option value="2">2 Partners ($7,000)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 12px; font-weight: 700; color: var(--text-heading);">GOLD ($1.5k / ₹1.25L):</label>
+            <select id="sel-gold" class="pill-btn" style="width: 100%; margin-top: 6px; border-radius: 8px;" onchange="recalcBudget()">
+              <option value="8" selected>8 Partners ($12,000)</option>
+              <option value="5">5 Partners ($7,500)</option>
+              <option value="2">2 Partners ($3,000)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-output-grid">
+          <div class="calc-result-box">
+            <div class="calc-result-label">Total Sponsor Revenue</div>
+            <div class="calc-result-value" id="res-total" style="color: var(--color-green-text);">$67,000</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Direct cash sponsorship</div>
+          </div>
+          <div class="calc-result-box">
+            <div class="calc-result-label">Cash Prize Pool (40%)</div>
+            <div class="calc-result-value" id="res-prizes">$26,800</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">For Top 10 + 1st Bloods</div>
+          </div>
+          <div class="calc-result-box">
+            <div class="calc-result-label">Cloud &amp; Servers Cost</div>
+            <div class="calc-result-value" id="res-infra">$6,500</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">GKE, Aurora DB, Cloudflare</div>
+          </div>
+          <div class="calc-result-box">
+            <div class="calc-result-label">SecLeaf Growth Fund</div>
+            <div class="calc-result-value" id="res-surplus">$33,700</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Swag, studio, future events</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CHALLENGES MADE FOR EVERYONE -->
+  <section id="challenges">
+    <div class="container">
+      <span class="section-badge">04 // CHALLENGE MATRIX</span>
+      <h2 class="section-title">52 Balanced Challenges: From First-Timer to Master</h2>
+      <p class="section-subtitle">
+        A common mistake in CTFs is making all challenges too hard (beginners quit after 1 hour) or too easy (experts get bored). Here is how we balance all 52 challenges perfectly.
+      </p>
+
+      <div class="diagram-frame">
+        <img src="assets/difficulty-curve.svg" alt="Dynamic Scoring Curve Explained">
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 24px;">
+        <div class="card" style="border-top: 4px solid #16a34a;">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">30% Beginner (16 Challenges)</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 6px; line-height: 1.5;">
+            <strong>Purpose:</strong> Instant confidence boost! College students and beginners solve 2–3 challenges in their first hour.
+            <br><br>
+            <strong>Examples:</strong> Basic SQLi bypass, inspecting hidden cookies, decoding base64/rot13, finding hidden GPS coordinates in an image.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #2563eb;">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">45% Intermediate (23 Challenges)</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 6px; line-height: 1.5;">
+            <strong>Purpose:</strong> The core meat of the competition. Tests real engineering and analytical skills.
+            <br><br>
+            <strong>Examples:</strong> SSRF to extract cloud metadata, heap exploitation, reversing obfuscated Go binaries, AI prompt injection, Wireshark malware PCAPs.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #dc2626;">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">25% Advanced (13 Challenges)</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 6px; line-height: 1.5;">
+            <strong>Purpose:</strong> The deciders for Rank 1–10. Real-world 0-day style vulnerabilities that elite teams fight over.
+            <br><br>
+            <strong>Examples:</strong> Linux kernel eBPF privilege escalation, V8 browser JIT compiler bugs, post-quantum crypto fractures, hypervisor escapes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Category Filter -->
+      <div class="filter-btn-group">
+        <button class="pill-btn active" onclick="filterChall('all', this)">All Categories (52)</button>
+        <button class="pill-btn" onclick="filterChall('web', this)">Web Security (10)</button>
+        <button class="pill-btn" onclick="filterChall('pwn', this)">Binary / Pwn (8)</button>
+        <button class="pill-btn" onclick="filterChall('rev', this)">Reverse Engineering (8)</button>
+        <button class="pill-btn" onclick="filterChall('crypto', this)">Cryptography (7)</button>
+        <button class="pill-btn" onclick="filterChall('forensics', this)">Digital Forensics (7)</button>
+        <button class="pill-btn" onclick="filterChall('ai', this)">AI / LLM Security (4)</button>
+        <button class="pill-btn" onclick="filterChall('cloud', this)">Cloud / DevOps (4)</button>
+        <button class="pill-btn" onclick="filterChall('hardware', this)">Hardware / IoT (4)</button>
+      </div>
+
+      <div class="grid-3" id="sample-challs">
+        <div class="card chall-sample" data-c="web">
+          <span class="stat-badge" style="background: var(--color-green-bg); color: var(--color-green-text);">WEB • BEGINNER</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Cookie Inspector</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            A simple web portal where the admin role flag is hidden inside an encrypted JWT cookie with a weak secret key.
+          </p>
+        </div>
+
+        <div class="card chall-sample" data-c="web">
+          <span class="stat-badge" style="background: var(--color-blue-bg); color: var(--color-blue-text);">WEB • INTERMEDIATE</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Cloud Metadata SSRF</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            Exploit an internal image renderer to query the AWS IMDSv2 metadata endpoint and steal temporary IAM security credentials.
+          </p>
+        </div>
+
+        <div class="card chall-sample" data-c="pwn">
+          <span class="stat-badge" style="background: var(--color-amber-bg); color: var(--color-amber-text);">PWN • INTERMEDIATE</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Heap Overlap 101</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            Modern Linux GLIBC 2.39 heap exploitation. Players must corrupt tcache pointers to gain arbitrary memory write.
+          </p>
+        </div>
+
+        <div class="card chall-sample" data-c="pwn">
+          <span class="stat-badge" style="background: #fee2e2; color: #dc2626;">PWN • ADVANCED</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Kernel Ring Buffer 0-Day</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            A custom Linux 6.6 kernel module with an out-of-bounds array access. Players must build a kernel ROP chain to become root.
+          </p>
+        </div>
+
+        <div class="card chall-sample" data-c="ai">
+          <span class="stat-badge" style="background: var(--color-purple-bg); color: var(--color-purple-text);">AI • INTERMEDIATE</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Autonomous Agent Jailbreak</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            Bypass safety guardrails of an AI code review agent by injecting subtle instructions inside pull request comments.
+          </p>
+        </div>
+
+        <div class="card chall-sample" data-c="forensics">
+          <span class="stat-badge" style="background: var(--color-green-bg); color: var(--color-green-text);">FORENSICS • BEGINNER</span>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-top: 6px;">Hidden in the Packets</h4>
+          <p style="font-size: 13px; color: var(--text-body); margin-top: 4px;">
+            Open a Wireshark capture, filter DNS and HTTP streams, and extract an image file that was secretly exfiltrated.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: ZERO-CRASH INFRASTRUCTURE -->
+  <section id="infrastructure">
+    <div class="container">
+      <span class="section-badge">05 // SERVER STABILITY</span>
+      <h2 class="section-title">How We Guarantee Zero Server Crashes with 6,000 Players</h2>
+      <p class="section-subtitle">
+        Here is how we ensure that when 6,000 players hit the site at the exact same second, the website loads instantly and flag submissions never hang.
+      </p>
+
+      <div class="diagram-frame">
+        <img src="assets/architecture-diagram.svg" alt="How 6,000 Players are Handled Smoothly">
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-bottom: 12px;">Why CTF Websites Crash (The Problem)</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.6;">
+            1. <strong>The 2:00 PM Stampede:</strong> The second challenges open, 6,000 people spam F5 (refresh). A single server gets overwhelmed in seconds.<br><br>
+            2. <strong>Database Connection Limit:</strong> Every web thread tries to open a direct database socket. MySQL hits <code>Too Many Connections</code> and locks up.<br><br>
+            3. <strong>Heavy File Downloads:</strong> If 2,000 people download a 100MB PCAP file directly from the CTF web server, bandwidth drops to zero.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading); margin-bottom: 12px;">How We Fix It (Our 4-Part Solution)</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.6;">
+            1. <strong>Cloudflare Magic Transit:</strong> Absorbs 95% of traffic, blocks bots, and caches all pages globally.<br><br>
+            2. <strong>15–30 Auto-Scaling Servers:</strong> We run multiple stateless CTFd servers. If one gets heavy load, Kubernetes adds more instantly.<br><br>
+            3. <strong>ProxySQL Traffic Police:</strong> Condenses 2,000 player queries into just 50 clean connections to the database. The database never crashes.<br><br>
+            4. <strong>100% CDN File Offload:</strong> All challenge files are stored on S3/Cloudflare R2. Players download at gigabit speeds without touching our servers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: ANTI-CHEAT & FAIR PLAY -->
+  <section id="anticheat">
+    <div class="container">
+      <span class="section-badge">06 // INTEGRITY &amp; FAIR PLAY</span>
+      <h2 class="section-title">Stopping Cheaters &amp; Automated AI Bots (Learned from Q4)</h2>
+      <p class="section-subtitle">
+        In Q4 CTF, we identified teams attempting automated flag sharing and bot scripts. For Q3 2027, we have a clear, transparent 3-step integrity system.
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-icon" style="background: var(--color-amber-bg); color: var(--color-amber-text); margin-bottom: 12px;">1</div>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">Shared IP Detection</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5; margin-top: 6px;">
+            If two different teams submit flags from the exact same IP address or device within a short window, the system automatically flags them for review.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="step-icon" style="background: var(--color-blue-bg); color: var(--color-blue-text); margin-bottom: 12px;">2</div>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">Speed &amp; Bot Heuristics</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5; margin-top: 6px;">
+            If an account solves a complex 500-point binary reverse engineering challenge in under 30 seconds after release, an admin is notified to review the solve.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="step-icon" style="background: var(--color-green-bg); color: var(--color-green-text); margin-bottom: 12px;">3</div>
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--text-heading);">Top 10 Live Defense</h4>
+          <p style="font-size: 14px; color: var(--text-body); line-height: 1.5; margin-top: 6px;">
+            The top 10 winning teams must submit their written writeups within 24 hours and do a 10-minute live Discord demo. No writeup = prize shifts to the next team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: INTERACTIVE CHECKLIST -->
+  <section id="checklist">
+    <div class="container">
+      <span class="section-badge">07 // ACTION ROADMAP</span>
+      <h2 class="section-title">Your Month-by-Month Action Checklist</h2>
+      <p class="section-subtitle">
+        Click any task to check it off. Your progress is saved automatically in your browser so you can use this as your live preparation dashboard.
+      </p>
+
+      <div class="checklist-container">
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">Nov 2026 – Jan 2027: Confirm event theme "SecLeaf CTF: Q3 Vanguard" &amp; dates (24–25 July 2027)</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">Feb 2027: Send out Wave 1 sponsor pitch emails to Cloud &amp; Security tool companies</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">Mar 2027: Recruit 8 trusted challenge authors and assign categories (Web, Pwn, Rev, Crypto)</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">Apr 2027: List the event on CTFtime 4 months early to guarantee high rating weight</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">May 2027: Launch the registration website and recruit 150+ college campus ambassadors</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">June 2027: Run a 5,000-bot stress test on the server cluster to test ProxySQL &amp; Redis</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">July 10, 2027: Final challenge freeze — test all 52 challenges with automated canary solver bots</div>
+        </div>
+
+        <div class="check-card" onclick="toggleBox(this)">
+          <input type="checkbox">
+          <div class="check-text">July 24, 2027 (Game Day): Launch the 24-hour live stream, open challenges, and monitor live solves!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>SecLeaf Cybersecurity Platform</strong> • Founded in Nagpur, Maharashtra, India
+        <div style="margin-top: 4px;">"Securing the Future, Together." • Executive Master Plan for Q3 2027</div>
+      </div>
+      <div>
+        <span class="brand-pill">July 24 – 25, 2027</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Copy pitch email
+    function copyEmail() {
+      const text = document.getElementById('email-template').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector('.copy-button');
+        btn.innerText = '✓ Copied to Clipboard!';
+        setTimeout(() => { btn.innerText = '📋 Copy Pitch Email'; }, 2500);
+      });
+    }
+
+    // Budget Calculator
+    function recalcBudget() {
+      const title = parseInt(document.getElementById('sel-title').value, 10);
+      const diamond = parseInt(document.getElementById('sel-diamond').value, 10);
+      const platinum = parseInt(document.getElementById('sel-platinum').value, 10);
+      const gold = parseInt(document.getElementById('sel-gold').value, 10);
+
+      const total = (title * 15000) + (diamond * 7500) + (platinum * 3500) + (gold * 1500);
+      const prizes = Math.round(total * 0.40);
+      const infra = 6500;
+      const surplus = total - prizes - infra;
+
+      document.getElementById('res-total').innerText = `$${total.toLocaleString()}`;
+      document.getElementById('res-prizes').innerText = `$${prizes.toLocaleString()}`;
+      document.getElementById('res-infra').innerText = `$${infra.toLocaleString()}`;
+      document.getElementById('res-surplus').innerText = `$${Math.max(0, surplus).toLocaleString()}`;
+    }
+
+    // Challenge filter
+    function filterChall(cat, btn) {
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.chall-sample');
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-c') === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Interactive Checklist Persistence
+    function toggleBox(el) {
+      const cb = el.querySelector('input[type=checkbox]');
+      if (event.target !== cb) {
+        cb.checked = !cb.checked;
+      }
+      if (cb.checked) {
+        el.classList.add('completed');
+      } else {
+        el.classList.remove('completed');
+      }
+      saveChecks();
+    }
+
+    function saveChecks() {
+      const items = document.querySelectorAll('.check-card input[type=checkbox]');
+      const states = Array.from(items).map(i => i.checked);
+      localStorage.setItem('secleaf_q3_light_checks', JSON.stringify(states));
+    }
+
+    function loadChecks() {
+      const saved = localStorage.getItem('secleaf_q3_light_checks');
+      if (saved) {
+        const states = JSON.parse(saved);
+        const cards = document.querySelectorAll('.check-card');
+        cards.forEach((card, idx) => {
+          if (states[idx]) {
+            card.querySelector('input[type=checkbox]').checked = true;
+            card.classList.add('completed');
+          }
+        });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadChecks();
+      recalcBudget();
+    });
+  </script>
+</body>
+</html>

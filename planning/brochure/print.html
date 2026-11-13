@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecLeaf CTF 2027 // Executive Sponsorship Brochure</title>
+  <link rel="icon" type="image/png" href="assets/SecLeaf_Dark_BG.png">
+  <style>
+    /* -------------------------------------------------------------
+       SECLEAF EXECUTIVE SPONSORSHIP BROCHURE
+       Landscape A4 (297mm x 210mm) Multi-Page Print & Presentation
+       Direct, honest, professional writing for enterprise sponsors.
+       ------------------------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+    :root {
+      --bg-page: #f8f7f4;        /* Warm light stone */
+      --bg-card: #ffffff;        /* Pure white card surface */
+      --bg-subtle: #f1efe9;      /* Subtle contrast background */
+      --border-card: #e3ded6;    /* Soft structural border */
+      --border-light: #ece8e1;
+
+      --text-heading: #0f172a;   /* Obsidian slate */
+      --text-body: #334155;      /* Crisp readable charcoal */
+      --text-muted: #64748b;     /* Muted slate for captions */
+      
+      --accent-green: #15803d;   /* SecLeaf Forest Green */
+      --accent-green-light: #dcfce7;
+      --accent-lime: #16a34a;    /* SecLeaf Leaf Accent */
+
+      --accent-blue: #1d4ed8;
+      --accent-blue-light: #dbeafe;
+      --accent-amber: #b45309;
+      --accent-amber-light: #fef3c7;
+      --accent-purple: #7e22ce;
+      --accent-purple-light: #f3e8ff;
+
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #52525b;
+      font-family: var(--font-sans);
+      color: var(--text-body);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 24px 0;
+    }
+
+    /* Print & Screen Page Settings */
+    @page {
+      size: 297mm 210mm; /* A4 Landscape */
+      margin: 0;
+    }
+
+    .page {
+      width: 297mm;
+      height: 210mm;
+      background-color: var(--bg-page);
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 16mm 20mm;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+        gap: 0;
+      }
+      .page {
+        box-shadow: none;
+        width: 297mm;
+        height: 210mm;
+        page-break-after: always;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Floating Print & Navigation Toolbar */
+    .toolbar {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 10px 18px;
+      border-radius: 999px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .toolbar button {
+      background: var(--accent-lime);
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .toolbar button:hover {
+      background: #15803d;
+    }
+    .toolbar a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+    }
+    .toolbar a:hover {
+      color: #ffffff;
+    }
+
+    /* Common Page Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-card);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    .header-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-logo {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+    }
+    .header-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-green);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header-meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Common Page Footer */
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-card);
+      padding-top: 8px;
+      margin-top: 10px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      color: var(--text-heading);
+      letter-spacing: -0.4px;
+    }
+    .page-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .page-subtitle {
+      font-size: 12.5px;
+      color: var(--text-body);
+      max-width: 840px;
+      margin-bottom: 14px;
+      line-height: 1.45;
+    }
+
+    /* Grids & Cards */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .card-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 5px;
+    }
+    .card-desc {
+      font-size: 12px;
+      color: var(--text-body);
+      line-height: 1.45;
+    }
+
+    /* Badges */
+    .pill {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+    }
+    .pill-green { background: var(--accent-green-light); color: var(--accent-green); }
+    .pill-blue { background: var(--accent-blue-light); color: var(--accent-blue); }
+    .pill-amber { background: var(--accent-amber-light); color: var(--accent-amber); }
+    .pill-purple { background: var(--accent-purple-light); color: var(--accent-purple); }
+
+    /* Tables */
+    .table-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 11.5px;
+    }
+    th {
+      background: #f1efe8;
+      color: var(--text-heading);
+      font-weight: 700;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-card);
+    }
+    td {
+      padding: 8.5px 12px;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-body);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .tier-diamond-col {
+      background: rgba(22, 163, 74, 0.05);
+      font-weight: 600;
+    }
+
+    /* -------------------------------------------------------------
+       PAGE 1: COVER SLIDE
+       ------------------------------------------------------------- */
+    .cover-page {
+      background: #0b0f19;
+      color: #ffffff;
+      position: relative;
+      padding: 20mm 22mm;
+      justify-content: space-between;
+      border-left: 10px solid var(--accent-lime);
+    }
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .cover-logo {
+      height: 64px;
+      width: auto;
+      object-fit: contain;
+    }
+    .cover-confidential {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: #94a3b8;
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 14px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .cover-body {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .cover-tagline {
+      color: var(--accent-lime);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cover-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+    .cover-title span {
+      color: var(--accent-lime);
+    }
+    .cover-desc {
+      font-size: 16.5px;
+      color: #cbd5e1;
+      max-width: 820px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .cover-stats-bar {
+      display: flex;
+      gap: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+    }
+    .cover-stat-item h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      font-family: var(--font-mono);
+    }
+    .cover-stat-item p {
+      font-size: 11px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+    .cover-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 12px;
+      font-size: 11px;
+      color: #64748b;
+      font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print & Nav Controls -->
+  <div class="toolbar no-print">
+    <button onclick="window.print()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+      Print / Save as PDF
+    </button>
+    <a href="index.html" target="_blank">View Presentation Slides →</a>
+  </div>
+
+  <!-- =============================================================
+       PAGE 1: COVER SLIDE
+       ============================================================= -->
+  <div class="page cover-page">
+    <div class="cover-top">
+      <img src="assets/SecLeaf_Dark_BG.png" alt="SecLeaf" class="cover-logo">
+      <div class="cover-confidential">SPONSORSHIP PROSPECTUS // Q3 2027</div>
+    </div>
+
+    <div class="cover-body">
+      <div class="cover-tagline">
+        <span>●</span> 24TH &amp; 25TH JULY 2027 • FLAGSHIP CTF EDITION
+      </div>
+      <h1 class="cover-title">SECLEAF CTF 2027<br><span>GLOBAL CYBER OPERATIONS</span></h1>
+      <p class="cover-desc">
+        Connecting our target community of 6,000+ cybersecurity operators, university researchers, and industry engineers across 100+ countries with world-class security organizations.
+      </p>
+
+      <div class="cover-stats-bar">
+        <div class="cover-stat-item">
+          <h3>6,000+</h3>
+          <p>Target Participants (Goal)</p>
+        </div>
+        <div class="cover-stat-item">
+          <h3>3,116</h3>
+          <p>Proven Q2 Solvers (Track Record)</p>
+        </div>
+        <div class="cover-stat-item">
+          <h3>100+</h3>
+          <p>Target Countries</p>
+        </div>
+        <div class="cover-stat-item">
+          <h3>1,500+</h3>
+          <p>Projected Teams</p>
+        </div>
+        <div class="cover-stat-item">
+          <h3>24 Hours</h3>
+          <p>Live Competition</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-footer">
+      <div>SecLeaf Platform • Founded in Nagpur, Maharashtra, India • "Securing the Future, Together."</div>
+      <div>contact@secleaf.xyz • https://ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 2: EXECUTIVE SUMMARY & MISSION
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">01 // Overview</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Connecting Serious Security Talent with Hiring Teams</h2>
+      <p class="page-subtitle">
+        SecLeaf was founded in Nagpur, India in September 2025. We run practical, hands-on security competitions where students and engineers prove their skills on real-world challenges, not multiple-choice tests.
+      </p>
+
+      <div class="grid-3" style="margin-bottom: 14px;">
+        <div class="card" style="border-top: 4px solid var(--accent-lime);">
+          <span class="pill pill-green" style="margin-bottom: 6px;">SKILL-BASED HIRING</span>
+          <h3 class="card-title">Hire by Solves, Not Keywords</h3>
+          <p class="card-desc">
+            Traditional recruiting filters out great hackers because they lack standard keywords. SecLeaf lets sponsors identify talent based on real-time problem-solving performance under competitive pressure.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <span class="pill pill-blue" style="margin-bottom: 6px;">HANDS-ON CHALLENGES</span>
+          <h3 class="card-title">Realistic Threat Scenarios</h3>
+          <p class="card-desc">
+            40+ curated challenges in Binary Exploitation, Cloud Security, AI/LLM Security, Digital Forensics, and Reverse Engineering—modeled directly on real vulnerabilities and defender workflows.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-amber);">
+          <span class="pill pill-amber" style="margin-bottom: 6px;">GLOBAL REACH</span>
+          <h3 class="card-title">Targeting 100+ Countries</h3>
+          <p class="card-desc">
+            Building on our 40+ country footprint from Q2, Q3 2027 targets over 100 nations. Sponsors get direct brand visibility across university security clubs and active practitioner communities worldwide.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Pillars Row -->
+      <div class="grid-4">
+        <div class="card" style="background: var(--bg-subtle);">
+          <div style="font-size: 20px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">6,000+</div>
+          <div style="font-size: 11.5px; font-weight: 700; color: var(--text-heading); margin-top: 2px;">Target Competitors</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">Projected goal for Q3 2027 flagship</div>
+        </div>
+
+        <div class="card" style="background: var(--bg-subtle);">
+          <div style="font-size: 20px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">3,116</div>
+          <div style="font-size: 11.5px; font-weight: 700; color: var(--text-heading); margin-top: 2px;">Proven Past Base</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">Verified registered players in Q2 edition</div>
+        </div>
+
+        <div class="card" style="background: var(--bg-subtle);">
+          <div style="font-size: 20px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">150+</div>
+          <div style="font-size: 11.5px; font-weight: 700; color: var(--text-heading); margin-top: 2px;">College Clubs</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">IITs, NITs, BITS, CMU, Berkeley network</div>
+        </div>
+
+        <div class="card" style="background: var(--bg-subtle);">
+          <div style="font-size: 20px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">24 Hours</div>
+          <div style="font-size: 11.5px; font-weight: 700; color: var(--text-heading); margin-top: 2px;">Live Broadcast Desk</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">Live casters, challenge walk-throughs &amp; sponsor demos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 02 // Overview</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 3: RETROSPECTIVE TRACK RECORD (Q2 PROOF)
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">02 // Track Record</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Our Track Record: What We Built in Q2</h2>
+      <p class="page-subtitle">
+        We don't sell unverified projections as finished facts. Here is our verified data from our previous edition, showing high completion rates and real community trust.
+      </p>
+
+      <div class="grid-4" style="margin-bottom: 16px;">
+        <div class="card" style="border-left: 4px solid var(--accent-lime);">
+          <span class="pill pill-green" style="margin-bottom: 5px;">VERIFIED PAST RESULT</span>
+          <div style="font-size: 26px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">3,116</div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--text-heading);">Total Registrations</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">+42% growth over inaugural competition</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-blue);">
+          <span class="pill pill-blue" style="margin-bottom: 5px;">HIGH PARTICIPATION</span>
+          <div style="font-size: 26px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">92.9%</div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--text-heading);">Active Solvers</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">2,896 active solvers (industry average is ~55%)</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-amber);">
+          <span class="pill pill-amber" style="margin-bottom: 5px;">ACTIVE SQUADS</span>
+          <div style="font-size: 26px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">769</div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--text-heading);">Competing Teams</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">Coordinated student &amp; workplace squads</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-purple);">
+          <span class="pill pill-purple" style="margin-bottom: 5px;">GLOBAL FOOTPRINT</span>
+          <div style="font-size: 26px; font-weight: 800; color: var(--text-heading); font-family: var(--font-mono);">40+</div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--text-heading);">Countries in Q2</div>
+          <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 3px;">Targeting 100+ countries for Q3 2027</div>
+        </div>
+      </div>
+
+      <!-- Past Partners Showcase -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <h3 style="font-size: 14px; font-weight: 700; color: var(--text-heading);">Past Community &amp; Industry Collaborations</h3>
+          <span class="pill pill-green">ORGANIZATIONS THAT BACKED US</span>
+        </div>
+        <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45; margin-bottom: 10px;">
+          Organizations that supported our previous editions with challenge tracks, platform licenses, community prizes, and technical sessions:
+        </p>
+
+        <div class="grid-4">
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">TryHackMe</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">INE Security</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">Caido</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">BSides Vadodara</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">Legal Data Forensics</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">Crypto Forensic Tech</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">ThunderCipher Security</div>
+          <div style="background: var(--bg-subtle); padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 13px; color: var(--text-heading);">BlackShell Tech</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 03 // Track Record</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 4: ATTENDEE DEMOGRAPHICS & COMMUNITY (BH India Style)
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">03 // Audience &amp; Roles</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Who Competes: Demographics and Roles</h2>
+      <p class="page-subtitle">
+        SecLeaf attracts self-taught security researchers, computer science students, and working engineers who spend their weekends solving technical problems and finding bugs.
+      </p>
+
+      <div class="grid-3" style="margin-bottom: 12px;">
+        <!-- Geographic Breakdown -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <h3 class="card-title">Geographic Footprint</h3>
+            <span class="pill pill-blue">TARGET SPLIT</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 8px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>India &amp; Asia-Pacific</span><span>40% (2,400+ goal)</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 40%; height: 5px; background: var(--accent-lime); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>Americas (US, Canada, LATAM)</span><span>28% (1,700+ goal)</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 28%; height: 5px; background: var(--accent-blue); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>Europe &amp; United Kingdom</span><span>22% (1,300+ goal)</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 22%; height: 5px; background: var(--accent-amber); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>Middle East &amp; Africa</span><span>10% (600+ goal)</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 10%; height: 5px; background: var(--accent-purple); border-radius: 3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience & Job Role Breakdown -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <h3 class="card-title">Role Distribution</h3>
+            <span class="pill pill-green">COMMUNITY PROFILE</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 8px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>CS Students &amp; Grads</span><span>40%</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 40%; height: 5px; background: var(--accent-green); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>Security Engineers &amp; Red Teamers</span><span>35%</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 35%; height: 5px; background: #0f172a; border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600;">
+                <span>SOC Analysts &amp; Bounty Hunters</span><span>25%</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 3px; margin-top: 3px;">
+                <div style="width: 25%; height: 5px; background: var(--accent-amber); border-radius: 3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & University Affiliations -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <h3 class="card-title">150+ University Hubs</h3>
+            <span class="pill pill-amber">STUDENT NETWORK</span>
+          </div>
+          <p style="font-size: 11px; color: var(--text-body); line-height: 1.45; margin-top: 4px;">
+            Active club partnerships across premier universities:
+            <br><br>
+            • <strong>India:</strong> IIT Bombay, Delhi, Kanpur, Madras, NITs, BITS Pilani.<br>
+            • <strong>USA:</strong> Carnegie Mellon, UC Berkeley, UIUC, Georgia Tech.<br>
+            • <strong>Europe:</strong> Cambridge, Oxford, ETH Zurich, TU Munich.<br>
+            • <strong>APAC:</strong> NUS &amp; NTU Singapore, Tokyo Cyber, Korea BoB.
+          </p>
+        </div>
+      </div>
+
+      <!-- Targeted Solver Titles & Companies -->
+      <div class="card" style="padding: 12px 16px;">
+        <div style="font-size: 10.5px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 4px;">
+          Job Roles &amp; Alumni Workplaces in our Community:
+        </div>
+        <div style="font-size: 11px; color: var(--text-body); line-height: 1.5;">
+          <strong>Target Roles:</strong> Application Security Engineer • Penetration Tester • Red Team Operator • Reverse Engineer • SOC Analyst • Cloud Security Specialist • Vulnerability Researcher • Cryptanalyst • DevSecOps Lead • Incident Responder
+          <br>
+          <strong>Alumni &amp; Competitor Workplaces:</strong> Google • Microsoft • AWS • CrowdStrike • SentinelOne • Snyk • Palo Alto Networks • Razorpay • CRED • HDFC Bank • TCS • Infosys • Accenture • Trail of Bits • EY • KPMG
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 04 // Audience &amp; Roles</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 5: WHY SPONSOR SECLEAF (Four Practical Benefits)
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">04 // Sponsor Value</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Why Companies Sponsor SecLeaf</h2>
+      <p class="page-subtitle">
+        Four clear ways your company benefits: hiring vetted engineers, getting hands-on adoption for your security tools, brand exposure, and live stage presence.
+      </p>
+
+      <div class="grid-2" style="margin-bottom: 12px;">
+        <!-- Benefit 1: Vetted CV Bank -->
+        <div class="card" style="border: 2px solid var(--accent-lime); background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span class="pill pill-green">PRIMARY TALENT ADVANTAGE</span>
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--accent-green);">BENEFIT 01</span>
+          </div>
+          <h3 style="font-size: 15px; font-weight: 800; color: var(--text-heading); margin-bottom: 6px;">Vetted Resume Bank (Top 5% Solvers)</h3>
+          <p style="font-size: 12px; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+            Skip keyword filters and recruiter agency fees. Sponsors receive direct access to our opt-in resume bank containing verified candidate CVs, GitHub repositories, LinkedIn profiles, and solve analytics from the <strong>Top 5% performers</strong>.
+          </p>
+          <ul style="padding-left: 16px; font-size: 11.5px; color: var(--text-body); line-height: 1.5;">
+            <li><strong>Verified Skills:</strong> Candidates proved their abilities by solving real exploitation and reverse engineering challenges under timed conditions.</li>
+            <li><strong>Direct Outreach:</strong> Your talent team can email candidates directly with priority interview invitations.</li>
+          </ul>
+        </div>
+
+        <!-- Benefit 2: Technical Product Immersion -->
+        <div class="card" style="border: 2px solid var(--accent-blue); background: #ffffff;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span class="pill pill-blue">PRODUCT IMMERSION</span>
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--accent-blue);">BENEFIT 02</span>
+          </div>
+          <h3 style="font-size: 15px; font-weight: 800; color: var(--text-heading); margin-bottom: 6px;">Custom Challenge Co-Creation</h3>
+          <p style="font-size: 12px; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+            Hackers ignore static ads—they spend hours breaking down problems. We co-design dedicated challenges built around your software, API, cloud SDK, or hardware security device.
+          </p>
+          <ul style="padding-left: 16px; font-size: 11.5px; color: var(--text-body); line-height: 1.5;">
+            <li><strong>Real Hands-on Adoption:</strong> Competitors actively test, interact with, and learn your tooling during the event.</li>
+            <li><strong>Community Writeups:</strong> Top solvers publish public walkthroughs detailing how they interacted with your platform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Benefit 3: Multi-Channel Brand Exposure -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span class="pill pill-amber">BRAND VISIBILITY</span>
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--accent-amber);">BENEFIT 03</span>
+          </div>
+          <h4 style="font-size: 14px; font-weight: 700; color: var(--text-heading); margin-bottom: 4px;">Brand Exposure to 6,000+ Hackers</h4>
+          <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+            Your logo is featured on the CTF registration portal, the real-time dynamic scoreboard, digital achievement certificates issued to all solvers, and in dedicated social announcements across LinkedIn and X reaching over 100,000 views.
+          </p>
+        </div>
+
+        <!-- Benefit 4: Live Stream Platform -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span class="pill pill-purple">STAGE PRESENCE</span>
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--accent-purple);">BENEFIT 04</span>
+          </div>
+          <h4 style="font-size: 14px; font-weight: 700; color: var(--text-heading); margin-bottom: 4px;">24-Hour Live Stream Stage</h4>
+          <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45;">
+            Feature your security leadership, engineers, or founders in an on-air keynote or technical interview streamed live to thousands of concurrent viewers worldwide throughout the 24-hour event.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 05 // Sponsor Value</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 6: SPONSORSHIP TIERS & PRICING
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">05 // Packages &amp; Pricing</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Sponsorship Packages &amp; Deliverables</h2>
+      <p class="page-subtitle">
+        Four straightforward tiers designed for clear return on investment. All pricing is in USD and tiers are strictly capped to ensure premier sponsor visibility.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 36%;">Deliverables &amp; Benefits</th>
+              <th class="tier-diamond-col" style="width: 16%;">DIAMOND</th>
+              <th style="width: 16%;">PLATINUM</th>
+              <th style="width: 16%;">GOLD</th>
+              <th style="width: 16%;">SILVER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: #fdfbf7; font-weight: 700;">
+              <td><strong>Direct Investment (USD)</strong></td>
+              <td class="tier-diamond-col" style="color: var(--accent-green); font-size: 13.5px;"><strong>$10,000</strong></td>
+              <td style="font-size: 13.5px;"><strong>$6,000</strong></td>
+              <td style="font-size: 13.5px;"><strong>$3,600</strong></td>
+              <td style="font-size: 13.5px;"><strong>$1,800</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Slots Available (Strictly Capped)</strong></td>
+              <td class="tier-diamond-col">Exclusive (3 Slots)</td>
+              <td>Limited (5 Slots)</td>
+              <td>Limited (8 Slots)</td>
+              <td>Available (12 Slots)</td>
+            </tr>
+            <tr>
+              <td><strong>Vetted Resume Bank Access</strong></td>
+              <td class="tier-diamond-col"><strong>Full Opt-in Bank (Top 5%)</strong></td>
+              <td>Top 10% Solvers Bank</td>
+              <td>Top 25 Opt-in Resumes</td>
+              <td>Top 10 Opt-in Resumes</td>
+            </tr>
+            <tr>
+              <td><strong>Custom Technical Challenges</strong></td>
+              <td class="tier-diamond-col"><strong>2 Custom Challenges</strong></td>
+              <td>1 Custom Challenge</td>
+              <td>Category Pin</td>
+              <td>Standard Category</td>
+            </tr>
+            <tr>
+              <td><strong>Logo on Platform &amp; Live Scoreboard</strong></td>
+              <td class="tier-diamond-col">Primary Header Logo</td>
+              <td>Prominent Tier Banner</td>
+              <td>Featured Logo</td>
+              <td>Grid Logo</td>
+            </tr>
+            <tr>
+              <td><strong>Logo on Digital Solver Certificates</strong></td>
+              <td class="tier-diamond-col"><strong>Signature Partner Logo</strong></td>
+              <td>Prominent Logo</td>
+              <td>Standard Logo</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>Live Stream Broadcast Inclusion</strong></td>
+              <td class="tier-diamond-col"><strong>Keynote + 20-min Interview</strong></td>
+              <td>20-min Interview</td>
+              <td>Stream Ad Bumpers</td>
+              <td>Logo on Stream Ticker</td>
+            </tr>
+            <tr>
+              <td><strong>Dedicated Discord Channel &amp; Role</strong></td>
+              <td class="tier-diamond-col">Branded Room + Custom Bot</td>
+              <td>Dedicated Channel + Role</td>
+              <td>Official Sponsor Role</td>
+              <td>Official Sponsor Role</td>
+            </tr>
+            <tr>
+              <td><strong>Social Media Announcements</strong></td>
+              <td class="tier-diamond-col">3 Dedicated Campaigns</td>
+              <td>2 Targeted Posts</td>
+              <td>1 Announcement Post</td>
+              <td>Group Shoutout</td>
+            </tr>
+            <tr>
+              <td><strong>Email Announcement to Competitors</strong></td>
+              <td class="tier-diamond-col">Dedicated Standalone Email</td>
+              <td>Co-Branded Inclusion</td>
+              <td>Event Digest Mention</td>
+              <td>Digest Mention</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 06 // Packages &amp; Pricing</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 7: CUSTOM SPONSORSHIP ADD-ONS
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">06 // Custom Add-Ons</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Custom Sponsorship Add-Ons</h2>
+      <p class="page-subtitle">
+        Add-ons you can attach to any tier to get more hiring face-time, showcase your security product, or put your brand on physical swag.
+      </p>
+
+      <div class="grid-2" style="margin-bottom: 12px;">
+        <div class="card" style="border-left: 4px solid var(--accent-lime);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+            <h3 class="card-title">Sponsored Challenge Track</h3>
+            <span class="pill pill-green">$3,500</span>
+          </div>
+          <p class="card-desc">
+            Own an entire specialized category (such as Cloud Defense or AI Security). All challenges in that track feature your product documentation and API. Competitors solve problems using your developer tools.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-blue);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+            <h3 class="card-title">Live Technical Interview &amp; Demo</h3>
+            <span class="pill pill-blue">$2,000</span>
+          </div>
+          <p class="card-desc">
+            A dedicated 20-minute live spotlight during prime hours on the official 24-hour YouTube and Twitch stream. Feature your security architect or engineering lead walking through a real technical topic.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-amber);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+            <h3 class="card-title">Recruiter Speed-Networking Session</h3>
+            <span class="pill pill-amber">$2,500</span>
+          </div>
+          <p class="card-desc">
+            Direct video call access to the Top 20 solving teams immediately following the competition. Run 1-on-1 chats, share engineering job openings, and fast-track interviews with top performers.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-purple);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+            <h3 class="card-title">Hardware PCB Badge &amp; Swag Partner</h3>
+            <span class="pill pill-purple">$4,000</span>
+          </div>
+          <p class="card-desc">
+            Your logo printed directly onto custom electronic PCB badges, event hoodies, and swag boxes shipped to top 50 winners and college club leaders worldwide.
+          </p>
+        </div>
+      </div>
+
+      <!-- First Blood Bounties Banner -->
+      <div class="card" style="background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; padding: 12px 18px;">
+        <div>
+          <h4 style="font-size: 13.5px; font-weight: 800; color: var(--text-heading);">First-Blood Category Bounty Sponsor</h4>
+          <p style="font-size: 11.5px; color: var(--text-body); margin-top: 2px;">
+            Fund an instant cash bounty ($1,000) for the first team to solve the hardest challenge in your chosen category, announced live with your brand name.
+          </p>
+        </div>
+        <div style="font-size: 15px; font-weight: 800; color: var(--accent-green); font-family: var(--font-mono); white-space: nowrap;">
+          $1,000 / Category
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 07 // Custom Add-Ons</div>
+      <div>www.secleaf.tech • ctf.secleaf.tech</div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       PAGE 8: LEADERSHIP & CONTACT
+       ============================================================= -->
+  <div class="page">
+    <div>
+      <div class="page-header">
+        <div class="header-logo-group">
+          <img src="assets/SecLeaf_Light_BG.png" alt="SecLeaf" class="header-logo">
+          <span class="header-tag">07 // Leadership &amp; Contact</span>
+        </div>
+        <div class="header-meta">SecLeaf CTF 2027 • 24–25 July 2027</div>
+      </div>
+
+      <h2 class="page-title">Get in Touch with the Founders</h2>
+      <p class="page-subtitle">
+        SecLeaf was founded in Nagpur, India by cybersecurity practitioners. Reach out directly to discuss your hiring needs, challenge integrations, or custom sponsorship deliverables.
+      </p>
+
+      <div class="grid-2" style="margin-bottom: 16px;">
+        <!-- Leadership Card 1: Aditya Pidurkar -->
+        <div class="card" style="border-top: 4px solid var(--accent-lime);">
+          <span class="pill pill-green" style="margin-bottom: 6px;">FOUNDER &amp; TECHNICAL LEAD</span>
+          <h3 style="font-size: 16px; font-weight: 800; color: var(--text-heading);">Aditya Pidurkar</h3>
+          <div style="font-size: 12px; font-weight: 700; color: var(--accent-green); margin-bottom: 8px;">Principal Co-Founder, SecLeaf</div>
+          <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45; margin-bottom: 10px;">
+            Leads platform architecture, competition operations, and enterprise partner integrations. Built SecLeaf from community origins to thousands of active international competitors.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--text-heading); display: flex; flex-direction: column; gap: 3px;">
+            <div><strong>Direct Phone:</strong> +91 99753 56540</div>
+            <div><strong>Email:</strong> contact@secleaf.xyz</div>
+          </div>
+        </div>
+
+        <!-- Leadership Card 2: Parvesh Dahale -->
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <span class="pill pill-blue" style="margin-bottom: 6px;">CO-FOUNDER &amp; OPERATIONS</span>
+          <h3 style="font-size: 16px; font-weight: 800; color: var(--text-heading);">Parvesh Dahale</h3>
+          <div style="font-size: 12px; font-weight: 700; color: var(--accent-blue); margin-bottom: 8px;">Co-Founder, SecLeaf</div>
+          <p style="font-size: 11.5px; color: var(--text-body); line-height: 1.45; margin-bottom: 10px;">
+            Leads community relations, university club outreach, and partner onboarding. Coordinates with collegiate clubs, academic mentors, and corporate sponsors for smooth onboarding.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--text-heading); display: flex; flex-direction: column; gap: 3px;">
+            <div><strong>Direct Phone:</strong> +91 93702 98553</div>
+            <div><strong>Email:</strong> contact@secleaf.xyz</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Box & Contact Grid -->
+      <div class="card" style="background: #0f172a; color: #ffffff;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h3 style="color: #ffffff; font-size: 15px; font-weight: 800;">Ready to Sponsor SecLeaf Q3 2027?</h3>
+            <p style="color: #94a3b8; font-size: 11.5px; margin-top: 2px;">
+              Tier slots are strictly capped to ensure premier visibility. Contact our team to confirm your deliverables.
+            </p>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 11px; display: flex; gap: 18px; color: #e2e8f0;">
+            <div>🌐 <strong>Web:</strong> https://ctf.secleaf.tech</div>
+            <div>💼 <strong>LinkedIn:</strong> linkedin.com/company/secleaf</div>
+            <div>💬 <strong>Discord:</strong> discord.gg/DvNtgNaYBG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>SecLeaf Sponsorship Prospectus</div>
+      <div>Page 08 // Leadership &amp; Contact</div>
+      <div>Nagpur, MH, India • contact@secleaf.xyz</div>
+    </div>
+  </div>
+
+</body>
+</html>

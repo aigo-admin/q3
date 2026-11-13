@@ -1,0 +1,2287 @@
+{
+  "total_non_surface_sponsors": 65,
+  "sponsors": [
+    {
+      "name": ".XYZ Domains (Gen.xyz)",
+      "count": 25,
+      "category": "Domain Registry & Web Presence",
+      "website": "https://gen.xyz/",
+      "sponsor_portal": "https://gen.xyz/",
+      "typical_offering": "Free 1-Year .xyz domain registrations for top 10 - 25 teams",
+      "recommended_tier": "Domain Registration Partner",
+      "pitch_strategy": "Sponsored UofTCTF 2026 and 07CTF 2025. Great low-friction digital prize for all participating finalists.",
+      "recent_events": [
+        {
+          "id": 3081,
+          "title": "0xFUN CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3081/",
+          "event_url": "https://ctf.0xfun.org/",
+          "weight": 17.74
+        },
+        {
+          "id": 3183,
+          "title": "KAALCHAKRA CTF Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3183/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 3175,
+          "title": "CITEFLAG QUALS 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3175/",
+          "event_url": "https://ctf.citeflag.online/",
+          "weight": 25.0
+        },
+        {
+          "id": 3230,
+          "title": "KAALCHAKRA CTF Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3230/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 3323,
+          "title": "TraceBash CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3323/",
+          "event_url": "https://ctf.tracebash.xyz/",
+          "weight": 25.0
+        },
+        {
+          "id": 3104,
+          "title": "OmniCTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3104/",
+          "event_url": "https://omnictf.com/",
+          "weight": 23.96
+        }
+      ],
+      "sample_events_str": "0xFUN CTF 2026 (2026); KAALCHAKRA CTF Qualifiers (2026); CITEFLAG QUALS 2026 (2026)"
+    },
+    {
+      "name": "zSecurity",
+      "count": 15,
+      "category": "Ethical Hacking Courses & Hardware",
+      "website": "https://zsecurity.org/",
+      "sponsor_portal": "https://zsecurity.org/",
+      "typical_offering": "Ethical hacking course bundles & wireless adapter hardware kits",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored CrewCTF. Pitch student beginner-friendly prize package.",
+      "recent_events": [
+        {
+          "id": 3183,
+          "title": "KAALCHAKRA CTF Qualifiers",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3183/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 3230,
+          "title": "KAALCHAKRA CTF Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3230/",
+          "event_url": "https://kaalchakractf.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 3052,
+          "title": "scriptCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3052/",
+          "event_url": "https://ctf.scriptsorcerers.xyz/",
+          "weight": 24.7
+        },
+        {
+          "id": 2792,
+          "title": "scriptCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2792/",
+          "event_url": "https://ctf.scriptsorcerers.xyz/",
+          "weight": 24.7
+        },
+        {
+          "id": 2826,
+          "title": "QnQSec CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2826/",
+          "event_url": "https://ctf.qnqsec.team/",
+          "weight": 24.76
+        },
+        {
+          "id": 2378,
+          "title": "n00bzCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2378/",
+          "event_url": "https://ctf.n00bzunit3d.xyz/",
+          "weight": 24.23
+        }
+      ],
+      "sample_events_str": "KAALCHAKRA CTF Qualifiers (2026); KAALCHAKRA CTF Finals (2026); scriptCTF 2026 (2026)"
+    },
+    {
+      "name": "Quarkslab",
+      "count": 14,
+      "category": "Boutique Offensive Security & Binary Research",
+      "website": "https://www.quarkslab.com/",
+      "sponsor_portal": "https://www.quarkslab.com/careers/",
+      "typical_offering": "Hardware challenge kits, research cash bounties & event hosting",
+      "recommended_tier": "Platinum ($6,000) / Hardware Track",
+      "pitch_strategy": "Sponsored 12+ CTFs. Creators of Hardwear.io CTF. Pitch binary analysis and cryptographic vulnerability challenge tracks.",
+      "recent_events": [
+        {
+          "id": 3174,
+          "title": "Hardwear.io USA 2026 Hardware CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3174/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0
+        },
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2788,
+          "title": "Hardwear.io USA 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2788/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 3002,
+          "title": "Hardwear.io NL 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3002/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0
+        },
+        {
+          "id": 2400,
+          "title": "Hardwear.io USA 2024 Hardware CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2400/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2026 Hardware CTF (2026); PwnMe CTF Quals 2025 (2025); PwnMe CTF Finals 2025 (2025)"
+    },
+    {
+      "name": "Orange Cyberdefense",
+      "count": 11,
+      "category": "Telecom & Enterprise Infrastructure",
+      "website": "https://www.orangecyberdefense.com/",
+      "sponsor_portal": "https://www.orangecyberdefense.com/global/careers",
+      "typical_offering": "Tiered cash sponsorships (\u20ac2,000 - \u20ac8,000) & stream branding",
+      "recommended_tier": "Diamond ($10,000) / Platinum ($6,000)",
+      "pitch_strategy": "Major recurring European sponsor (11+ CTFs). Pitch global brand prominence reaching 100+ countries.",
+      "recent_events": [
+        {
+          "id": 2615,
+          "title": "HackDay 2025 - Qualifications",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2615/",
+          "event_url": "https://hackday.fr/",
+          "weight": 20.29
+        },
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2616,
+          "title": "HackDay 2025 - Finals",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2616/",
+          "event_url": "https://hackday.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2790,
+          "title": "AMSI CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2790/",
+          "event_url": "https://amsi-sorbonne.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2822,
+          "title": "TFC CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2822/",
+          "event_url": "https://ctf.thefewchosen.com/",
+          "weight": 58.19
+        }
+      ],
+      "sample_events_str": "HackDay 2025 - Qualifications (2025); PwnMe CTF Quals 2025 (2025); HackDay 2025 - Finals (2025)"
+    },
+    {
+      "name": "Ledger",
+      "count": 11,
+      "category": "Hardware Security & Crypto Storage",
+      "website": "https://www.ledger.com/",
+      "sponsor_portal": "https://donjon.ledger.com/",
+      "typical_offering": "Ledger Nano X hardware devices & smart card exploitation research grants",
+      "recommended_tier": "Gold ($3,600) / Hardware Prize Partner",
+      "pitch_strategy": "Ledger Donjon team is legendary in CTF. Pitch hardware enclave and embedded crypto challenges.",
+      "recent_events": [
+        {
+          "id": 3174,
+          "title": "Hardwear.io USA 2026 Hardware CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3174/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0
+        },
+        {
+          "id": 2874,
+          "title": "Nullcon Berlin HackIM 2025 CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2874/",
+          "event_url": "https://ctf.nullcon.net/",
+          "weight": 30.0
+        },
+        {
+          "id": 3002,
+          "title": "Hardwear.io NL 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/3002/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0
+        },
+        {
+          "id": 2183,
+          "title": "Hardwear.io USA 2023 Hardware CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2183/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 1663,
+          "title": "HeroCTF v4",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1663/",
+          "event_url": "https://ctf.heroctf.fr/",
+          "weight": 24.23
+        },
+        {
+          "id": 2186,
+          "title": "Hardwear.io USA 2022 Hardware CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/2186/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2026 Hardware CTF (2026); Nullcon Berlin HackIM 2025 CTF (2025); Hardwear.io NL 2025 Hardware CTF (2025)"
+    },
+    {
+      "name": "Synacktiv",
+      "count": 10,
+      "category": "Boutique Offensive Security & Binary Research",
+      "website": "https://www.synacktiv.com/",
+      "sponsor_portal": "https://www.synacktiv.com/en/careers",
+      "typical_offering": "Cash sponsorships (\u20ac1,500 - \u20ac5,000), custom binary challenges, direct recruiter fast-tracks",
+      "recommended_tier": "Diamond ($10,000) / Platinum ($6,000)",
+      "pitch_strategy": "Sponsored 10+ CTFs (PwnMe, FwordCTF). World-renowned Pwn2Own winners. Pitch access to the top 5% Pwn/Rev solvers.",
+      "recent_events": [
+        {
+          "id": 2615,
+          "title": "HackDay 2025 - Qualifications",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2615/",
+          "event_url": "https://hackday.fr/",
+          "weight": 20.29
+        },
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2616,
+          "title": "HackDay 2025 - Finals",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2616/",
+          "event_url": "https://hackday.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 1858,
+          "title": "DaVinciCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1858/",
+          "event_url": "https://dvc.tf/",
+          "weight": 29.26
+        },
+        {
+          "id": 1924,
+          "title": "PwnMe Qualifications : \"8 bits\"",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1924/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 23.55
+        }
+      ],
+      "sample_events_str": "HackDay 2025 - Qualifications (2025); PwnMe CTF Quals 2025 (2025); HackDay 2025 - Finals (2025)"
+    },
+    {
+      "name": "Samsung",
+      "count": 10,
+      "category": "Consumer Electronics & Mobile Security",
+      "website": "https://www.samsung.com/",
+      "sponsor_portal": "https://research.samsung.com/security",
+      "typical_offering": "High cash prizes & Galaxy flagship device hardware prizes",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Sponsored Hacker's Playground (10+ CTFs). Pitch mobile security and ARM reverse engineering track.",
+      "recent_events": [
+        {
+          "id": 2047,
+          "title": "Hacker's Playground 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2047/",
+          "event_url": "https://playground.sstf.site/",
+          "weight": 51.0
+        },
+        {
+          "id": 2122,
+          "title": "HK Cyber Security New Generation CTF Challenge 2023 (Online)",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2122/",
+          "event_url": "https://ctf.hkcert.org/",
+          "weight": 55.0
+        },
+        {
+          "id": 1715,
+          "title": "Hacker's Playground 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1715/",
+          "event_url": "https://playground.sstf.site/",
+          "weight": 34.0
+        },
+        {
+          "id": 1722,
+          "title": "HK Cyber Security New Generation CTF Challenge 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1722/",
+          "event_url": "https://ctf.hkcert.org/",
+          "weight": 37.0
+        },
+        {
+          "id": 1396,
+          "title": "Hacker's Playground 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1396/",
+          "event_url": "https://playground.sstf.site/",
+          "weight": 24.5
+        },
+        {
+          "id": 1436,
+          "title": "Reply Cyber Security Challenge 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1436/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 27.83
+        }
+      ],
+      "sample_events_str": "Hacker's Playground 2023 (2023); HK Cyber Security New Generation CTF Challenge 2023 (Online) (2023); Hacker's Playground 2022 (2022)"
+    },
+    {
+      "name": "hackrocks",
+      "count": 8,
+      "category": "Cybersecurity Training Platform",
+      "website": "https://hackrocks.com/",
+      "sponsor_portal": "https://hackrocks.com/",
+      "typical_offering": "hackrocks PRO annual licenses for top 3 teams",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored 8+ CTFs. Pitch European community training platform prize.",
+      "recent_events": [
+        {
+          "id": 2213,
+          "title": "ESCAPE CTF Final",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2213/",
+          "event_url": "https://ctf.t3n4ci0us.kr/",
+          "weight": 9.64
+        },
+        {
+          "id": 2393,
+          "title": "Break The Wall - Dystopia 2099",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2393/",
+          "event_url": "https://breakthewall.hackrocks.com/",
+          "weight": 0
+        },
+        {
+          "id": 2029,
+          "title": "The Odyssey CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2029/",
+          "event_url": "https://odyssey.hackrocks.com/",
+          "weight": 24.81
+        },
+        {
+          "id": 2022,
+          "title": "ESCAPE CTF 2023 Preliminary",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2022/",
+          "event_url": "https://ctf.t3n4ci0us.kr/",
+          "weight": 0.0
+        },
+        {
+          "id": 1622,
+          "title": "hackrocks & HackArmour CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1622/",
+          "event_url": "https://hackarmour.hackrocks.com/",
+          "weight": 23.61
+        },
+        {
+          "id": 1710,
+          "title": "PwnverseCTF22",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1710/",
+          "event_url": "https://pwnverse.hackrocks.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "ESCAPE CTF Final (2024); Break The Wall - Dystopia 2099 (2024); The Odyssey CTF (2023)"
+    },
+    {
+      "name": "IIT Bombay Trust Lab",
+      "count": 8,
+      "category": "Indian Academic & Research Hub",
+      "website": "https://trustlab.iitb.ac.in/",
+      "sponsor_portal": "https://trustlab.iitb.ac.in/",
+      "typical_offering": "Cash prize pool backing, academic certification & problem creation",
+      "recommended_tier": "Academic Partner",
+      "pitch_strategy": "Backed BackdoorCTF and RVCE CTF (8+ CTFs). Pitch academic co-hosting and collegiate outreach across Indian institutions.",
+      "recent_events": [
+        {
+          "id": 2668,
+          "title": "Kashi CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2668/",
+          "event_url": "https://kashictf.iitbhucybersec.in/",
+          "weight": 21.78
+        },
+        {
+          "id": 2671,
+          "title": "Breach CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2671/",
+          "event_url": "https://www.breachers.in/",
+          "weight": 23.86
+        },
+        {
+          "id": 2815,
+          "title": "GIT X IITB Trust Lab CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2815/",
+          "event_url": "https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610",
+          "weight": 0.0
+        },
+        {
+          "id": 2851,
+          "title": "niteCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2851/",
+          "event_url": "https://nitectf.cryptonitemit.in/",
+          "weight": 39.87
+        },
+        {
+          "id": 2385,
+          "title": "RVCE x IITB x YCF CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2385/",
+          "event_url": "https://rvctf.tech/",
+          "weight": 0.0
+        },
+        {
+          "id": 2461,
+          "title": "niteCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2461/",
+          "event_url": "https://play.nitectf2024.live/",
+          "weight": 29.33
+        }
+      ],
+      "sample_events_str": "Kashi CTF 2025 (2025); Breach CTF 2025 (2025); GIT X IITB Trust Lab CTF (2025)"
+    },
+    {
+      "name": "Battelle",
+      "count": 7,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.battelle.org/",
+      "sponsor_portal": "https://www.battelle.org/careers",
+      "typical_offering": "Direct cash sponsorship ($2,500 - $7,500) & cyber researcher recruitment",
+      "recommended_tier": "Platinum ($6,000) / Gold ($3,600)",
+      "pitch_strategy": "Battelle sponsored UIUCTF and BuckeyeCTF. Pitch direct CV access to reverse engineering and exploit development competitors.",
+      "recent_events": [
+        {
+          "id": 2240,
+          "title": " WolvCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2240/",
+          "event_url": "https://wolvctf.io/",
+          "weight": 35.25
+        },
+        {
+          "id": 2275,
+          "title": "UIUCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2275/",
+          "event_url": "http://2024.uiuc.tf/",
+          "weight": 67.51
+        },
+        {
+          "id": 2426,
+          "title": "PatriotCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2426/",
+          "event_url": "http://pctf.competitivecyber.club/",
+          "weight": 31.83
+        },
+        {
+          "id": 1866,
+          "title": "WolvCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1866/",
+          "event_url": "https://wolvctf.io/",
+          "weight": 24.33
+        },
+        {
+          "id": 1899,
+          "title": "UIUCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1899/",
+          "event_url": "https://2023.uiuc.tf/",
+          "weight": 50.75
+        },
+        {
+          "id": 1600,
+          "title": "UIUCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1600/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 34.64
+        }
+      ],
+      "sample_events_str": " WolvCTF 2024 (2024); UIUCTF 2024 (2024); PatriotCTF 2024 (2024)"
+    },
+    {
+      "name": "NewAE Technology (ChipWhisperer)",
+      "count": 6,
+      "category": "Hardware Security & Side-Channel Tools",
+      "website": "https://www.newae.com/",
+      "sponsor_portal": "https://www.newae.com/",
+      "typical_offering": "ChipWhisperer-Nano / Lite hardware side-channel analysis boards ($100 - $350 each)",
+      "recommended_tier": "Hardware Prize Partner",
+      "pitch_strategy": "Sponsored 6+ CTFs (Hardwear.io & Nullcon). Essential hardware sponsor for physical fault injection track.",
+      "recent_events": [
+        {
+          "id": 3174,
+          "title": "Hardwear.io USA 2026 Hardware CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3174/",
+          "event_url": "https://hwc.tf/",
+          "weight": 0.0
+        },
+        {
+          "id": 2183,
+          "title": "Hardwear.io USA 2023 Hardware CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2183/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 2176,
+          "title": "Hardwear.io NL 2023 Hardware CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2176/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 2185,
+          "title": "Nullcon Goa 2022 Hardware CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/2185/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 2187,
+          "title": "Hardwear.io NL 2021 Hardware CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/2187/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 2188,
+          "title": "Nullcon Goa 2020 Hardware CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/2188/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2026 Hardware CTF (2026); Hardwear.io USA 2023 Hardware CTF (2023); Hardwear.io NL 2023 Hardware CTF (2023)"
+    },
+    {
+      "name": "JetBrains",
+      "count": 6,
+      "category": "Developer Tools & IDEs",
+      "website": "https://www.jetbrains.com/",
+      "sponsor_portal": "https://www.jetbrains.com/community/education/#students",
+      "typical_offering": "All Products Pack 1-Year Licenses ($289 each) for top solving squads",
+      "recommended_tier": "Gold ($3,600) / Developer Tool Partner",
+      "pitch_strategy": "Sponsored 6+ CTFs (idekCTF, LIT CTF, BDSec). Easily awards 10-20 All Products Pack licenses for top student teams.",
+      "recent_events": [
+        {
+          "id": 3419,
+          "title": "EyesOpenCTF 7th edition",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3419/",
+          "event_url": "https://eyesopensecurity.com/ctf-briefing.html",
+          "weight": 0.0
+        },
+        {
+          "id": 1839,
+          "title": "idekCTF 2022*",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1839/",
+          "event_url": "https://ctf.idek.team/",
+          "weight": 24.56
+        },
+        {
+          "id": 1792,
+          "title": "KnightCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1792/",
+          "event_url": "https://knightctf.com/",
+          "weight": 17.38
+        },
+        {
+          "id": 2004,
+          "title": "BxMCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2004/",
+          "event_url": "https://ctfmgci.jonathanw.dev/",
+          "weight": 23.59
+        },
+        {
+          "id": 1946,
+          "title": "BDSec CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1946/",
+          "event_url": "https://bdsec-ctf.com/",
+          "weight": 12.23
+        },
+        {
+          "id": 1694,
+          "title": "Lexington Informatics Tournament CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1694/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 23.87
+        }
+      ],
+      "sample_events_str": "EyesOpenCTF 7th edition (2026); idekCTF 2022* (2023); KnightCTF 2023 (2023)"
+    },
+    {
+      "name": "REDLattice",
+      "count": 5,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.redlattice.com/",
+      "sponsor_portal": "https://www.redlattice.com/careers",
+      "typical_offering": "Cash prize sponsorship ($1,500 - $5,000) & elite vulnerability research hiring",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "REDLattice sponsored UIUCTF multiple years. Focus purely on elite Pwn / Reverse Engineering solver telemetry.",
+      "recent_events": [
+        {
+          "id": 2275,
+          "title": "UIUCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2275/",
+          "event_url": "http://2024.uiuc.tf/",
+          "weight": 67.51
+        },
+        {
+          "id": 1866,
+          "title": "WolvCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1866/",
+          "event_url": "https://wolvctf.io/",
+          "weight": 24.33
+        },
+        {
+          "id": 1600,
+          "title": "UIUCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1600/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 34.64
+        },
+        {
+          "id": 1372,
+          "title": "UIUCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1372/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 23.76
+        },
+        {
+          "id": 1075,
+          "title": "UIUCTF 2020",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1075/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 23.76
+        }
+      ],
+      "sample_events_str": "UIUCTF 2024 (2024); WolvCTF 2023 (2023); UIUCTF 2022 (2022)"
+    },
+    {
+      "name": "Interview Cake",
+      "count": 5,
+      "category": "Technical Interview Prep",
+      "website": "https://www.interviewcake.com/",
+      "sponsor_portal": "https://www.interviewcake.com/",
+      "typical_offering": "Full access coding interview prep vouchers for winning students",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored 5+ CTFs. Pitch student division career readiness prize package.",
+      "recent_events": [
+        {
+          "id": 3373,
+          "title": "Lexington Informatics Tournament CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3373/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 84.79
+        },
+        {
+          "id": 2890,
+          "title": "Lexington Informatics Tournament CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2890/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 67.32
+        },
+        {
+          "id": 2179,
+          "title": "WxMCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2179/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 23.59
+        },
+        {
+          "id": 2444,
+          "title": "Lexington Informatics Tournament CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2444/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 46.25
+        },
+        {
+          "id": 2052,
+          "title": "Lexington Informatics Tournament CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2052/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 33.53
+        }
+      ],
+      "sample_events_str": "Lexington Informatics Tournament CTF 2026 (2026); Lexington Informatics Tournament CTF 2025 (2025); WxMCTF 2024 (2024)"
+    },
+    {
+      "name": "Thales Cyber Solutions",
+      "count": 4,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.thalesgroup.com/en/markets/digital-identity-and-security",
+      "sponsor_portal": "https://www.thalesgroup.com/en/careers",
+      "typical_offering": "Direct cash prizes (\u20ac1,500 - \u20ac5,000), hardware challenges & defense recruitment",
+      "recommended_tier": "Platinum ($6,000) / Custom Track ($3,500)",
+      "pitch_strategy": "Thales sponsored HackDay 2024. Offer custom Aerospace & Defense Network challenge category sponsorship.",
+      "recent_events": [
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        },
+        {
+          "id": 2265,
+          "title": "HackDay 2024 - Qualifications",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2265/",
+          "event_url": "https://www.hackday.fr/",
+          "weight": 0
+        },
+        {
+          "id": 2267,
+          "title": "HackDay 2024 - Finals",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2267/",
+          "event_url": "https://www.hackday.fr/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "PwnMe CTF Quals 2025 (2025); PwnMe CTF Finals 2025 (2025); HackDay 2024 - Qualifications (2024)"
+    },
+    {
+      "name": "Sec3",
+      "count": 4,
+      "category": "Web3 & Smart Contract Auditing",
+      "website": "https://www.sec3.dev/",
+      "sponsor_portal": "https://www.sec3.dev/",
+      "typical_offering": "Cash sponsorships ($1,500 - $3,500) & Solana smart contract challenges",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored SekaiCTF and N1CTF. Pitch Solana / Rust smart contract audit track.",
+      "recent_events": [
+        {
+          "id": 2683,
+          "title": "SekaiCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2683/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 55.0
+        },
+        {
+          "id": 2243,
+          "title": "SekaiCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2243/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 36.96
+        },
+        {
+          "id": 1923,
+          "title": "SekaiCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1923/",
+          "event_url": "https://ctf.sekai.team/",
+          "weight": 24.86
+        },
+        {
+          "id": 2062,
+          "title": "N1CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2062/",
+          "event_url": "https://ctf2023.nu1l.com/",
+          "weight": 97.33
+        }
+      ],
+      "sample_events_str": "SekaiCTF 2025 (2025); SekaiCTF 2024 (2024); SekaiCTF 2023 (2023)"
+    },
+    {
+      "name": "SSD Secure Disclosure",
+      "count": 4,
+      "category": "Vulnerability Research & Bounties",
+      "website": "https://ssd-disclosure.com/",
+      "sponsor_portal": "https://ssd-disclosure.com/",
+      "typical_offering": "Direct cash prize funding ($2,000 - $5,000) & premium bounty platform invites",
+      "recommended_tier": "Platinum ($6,000) / First-Blood Bounties ($1,000)",
+      "pitch_strategy": "Sponsored TyphoonCon and CrewCTF (4+ CTFs). Pitch First-Blood Category Bounty Sponsorship ($1,000 per track).",
+      "recent_events": [
+        {
+          "id": 1997,
+          "title": "TyphoonCon CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1997/",
+          "event_url": "https://typhoonconctf-2023.ctfd.io/",
+          "weight": 9.0
+        },
+        {
+          "id": 1568,
+          "title": "CrewCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1568/",
+          "event_url": "https://crewc.tf/",
+          "weight": 20.33
+        },
+        {
+          "id": 1672,
+          "title": "TyphoonCon CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1672/",
+          "event_url": "https://typhooncon.ctfd.io/",
+          "weight": 21.5
+        },
+        {
+          "id": 1390,
+          "title": "TyphoonCon CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1390/",
+          "event_url": "https://typhooncon.ctfd.io/",
+          "weight": 21.5
+        }
+      ],
+      "sample_events_str": "TyphoonCon CTF 2023 (2023); CrewCTF 2022 (2022); TyphoonCon CTF 2022 (2022)"
+    },
+    {
+      "name": "K7 Computing",
+      "count": 4,
+      "category": "Indian Enterprise Cybersecurity",
+      "website": "https://www.k7computing.com/",
+      "sponsor_portal": "https://www.k7computing.com/",
+      "typical_offering": "Cash rewards & endpoint security product licenses",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored Eschaton CTF 2026. Pitch malware analysis and antivirus evasion challenge track.",
+      "recent_events": [
+        {
+          "id": 3072,
+          "title": "Eschaton CTF 2026 Quals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3072/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 23.42
+        },
+        {
+          "id": 3078,
+          "title": "Eschaton CTF 2026 Finals",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3078/",
+          "event_url": "https://esch26.mcsc.space/",
+          "weight": 0.0
+        },
+        {
+          "id": 3182,
+          "title": "Dark ctf",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3182/",
+          "event_url": "https://crack-on.live/",
+          "weight": 0
+        },
+        {
+          "id": 3397,
+          "title": "$N1PH\u20acRS 3.0 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3397/",
+          "event_url": "https://stjctf2026.tamilctf.com/",
+          "weight": 25.0
+        }
+      ],
+      "sample_events_str": "Eschaton CTF 2026 Quals (2026); Eschaton CTF 2026 Finals (2026); Dark ctf (2026)"
+    },
+    {
+      "name": "GiveMyCertificate",
+      "count": 4,
+      "category": "Verifiable Digital Credentials",
+      "website": "https://givemycertificate.com/",
+      "sponsor_portal": "https://givemycertificate.com/",
+      "typical_offering": "Free verifiable digital certificate generation & blockchain verification sponsorship",
+      "recommended_tier": "Certificate Partner",
+      "pitch_strategy": "Sponsored 4+ major student CTFs (vishwaCTF, CrewCTF). Power official digital certificate delivery for SecLeaf's 6,000+ expected solvers.",
+      "recent_events": [
+        {
+          "id": 1548,
+          "title": "VishwaCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1548/",
+          "event_url": "https://www.vishwactf.com/",
+          "weight": 20.79
+        },
+        {
+          "id": 1568,
+          "title": "CrewCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1568/",
+          "event_url": "https://crewc.tf/",
+          "weight": 20.33
+        },
+        {
+          "id": 1286,
+          "title": "vishwaCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1286/",
+          "event_url": "https://vishwactf.com/",
+          "weight": 20.79
+        },
+        {
+          "id": 1481,
+          "title": "Damncon 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1481/",
+          "event_url": "https://damncon2021.nulltrace.in/",
+          "weight": 17.54
+        }
+      ],
+      "sample_events_str": "VishwaCTF 2022 (2022); CrewCTF 2022 (2022); vishwaCTF 2021 (2021)"
+    },
+    {
+      "name": "SECFORCE",
+      "count": 3,
+      "category": "Boutique Offensive Security & Pentesting",
+      "website": "https://www.secforce.com/",
+      "sponsor_portal": "https://www.secforce.com/careers/",
+      "typical_offering": "Red teaming cash rewards & UK penetration tester recruitment",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored justCTF. Offer priority outreach to top UK/European contestants.",
+      "recent_events": [
+        {
+          "id": 2342,
+          "title": "justCTF 2024 teaser",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2342/",
+          "event_url": "http://2024teaser.justctf.team/",
+          "weight": 77.17
+        },
+        {
+          "id": 2484,
+          "title": "justCTF 2024 finals",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2484/",
+          "event_url": "https://2024finals.justctf.team/",
+          "weight": 25.0
+        },
+        {
+          "id": 1930,
+          "title": "justCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1930/",
+          "event_url": "https://2023.justctf.team/",
+          "weight": 53.0
+        }
+      ],
+      "sample_events_str": "justCTF 2024 teaser (2024); justCTF 2024 finals (2024); justCTF 2023 (2023)"
+    },
+    {
+      "name": "Raytheon (RTX)",
+      "count": 3,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.rtx.com/",
+      "sponsor_portal": "https://careers.rtx.com/",
+      "typical_offering": "Event sponsorship funding & defense systems cyber challenges",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored Reply Cyber Security Challenge. Pitch embedded systems and RF / satellite exploitation track.",
+      "recent_events": [
+        {
+          "id": 2086,
+          "title": "Reply Cyber Security Challenge 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2086/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 23.12
+        },
+        {
+          "id": 1731,
+          "title": "Reply Cyber Security Challenge 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1731/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 23.12
+        },
+        {
+          "id": 1436,
+          "title": "Reply Cyber Security Challenge 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1436/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 27.83
+        }
+      ],
+      "sample_events_str": "Reply Cyber Security Challenge 2023 (2023); Reply Cyber Security Challenge 2022 (2022); Reply Cyber Security Challenge 2021 (2021)"
+    },
+    {
+      "name": "RandoriSec",
+      "count": 3,
+      "category": "Boutique Offensive Security & Pentesting",
+      "website": "https://randorisec.fr/",
+      "sponsor_portal": "https://randorisec.fr/en/careers/",
+      "typical_offering": "Cash prizes & offensive training licenses",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored PwnMe & FwordCTF. Pitch web and binary challenge track sponsorship.",
+      "recent_events": [
+        {
+          "id": 1924,
+          "title": "PwnMe Qualifications : \"8 bits\"",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1924/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 23.55
+        },
+        {
+          "id": 1945,
+          "title": "PwnMe Finals : \"8 bits\"",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1945/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 24.5
+        },
+        {
+          "id": 1405,
+          "title": "FwordCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1405/",
+          "event_url": "https://ctf.fword.tech/",
+          "weight": 24.42
+        }
+      ],
+      "sample_events_str": "PwnMe Qualifications : \"8 bits\" (2023); PwnMe Finals : \"8 bits\" (2023); FwordCTF 2021 (2021)"
+    },
+    {
+      "name": "Intel",
+      "count": 3,
+      "category": "Semiconductor & Hardware Security",
+      "website": "https://www.intel.com/",
+      "sponsor_portal": "https://www.intel.com/content/www/us/en/developer/topic-technology/open/security.html",
+      "typical_offering": "Hardware security cash prizes & microarchitecture research grants",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Sponsored BSidesTLV and Reply Challenge. Pitch side-channel, speculative execution, and x86 enclave security track.",
+      "recent_events": [
+        {
+          "id": 2086,
+          "title": "Reply Cyber Security Challenge 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2086/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 23.12
+        },
+        {
+          "id": 1731,
+          "title": "Reply Cyber Security Challenge 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1731/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 23.12
+        },
+        {
+          "id": 1078,
+          "title": "BSidesTLV 2020 CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1078/",
+          "event_url": "https://bsidestlv.com/CTF/2020/",
+          "weight": 21.38
+        }
+      ],
+      "sample_events_str": "Reply Cyber Security Challenge 2023 (2023); Reply Cyber Security Challenge 2022 (2022); BSidesTLV 2020 CTF (2020)"
+    },
+    {
+      "name": "Huawei",
+      "count": 3,
+      "category": "Telecom & Enterprise Infrastructure",
+      "website": "https://www.huawei.com/",
+      "sponsor_portal": "https://www.huawei.com/en/careers",
+      "typical_offering": "Direct cash prize pool ($2,000 - $5,000) & flagship smartphone prizes",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored HKUST Firebird and Hardwear.io CTF. Pitch 5G and telecom security challenge track.",
+      "recent_events": [
+        {
+          "id": 2225,
+          "title": "HKUST Firebird CTF Competition 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2225/",
+          "event_url": "http://ctf.firebird.sh/",
+          "weight": 0.0
+        },
+        {
+          "id": 2184,
+          "title": "Hardwear.io NL 2022 Hardware CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/2184/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 1363,
+          "title": "OMH 2021 CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1363/",
+          "event_url": "https://omh2021.p4.team/",
+          "weight": 34.65
+        }
+      ],
+      "sample_events_str": "HKUST Firebird CTF Competition 2024 (2024); Hardwear.io NL 2022 Hardware CTF (2022); OMH 2021 CTF (2021)"
+    },
+    {
+      "name": "Check Point Software",
+      "count": 3,
+      "category": "Enterprise Threat Defense",
+      "website": "https://www.checkpoint.com/",
+      "sponsor_portal": "https://careers.checkpoint.com/",
+      "typical_offering": "Cash prize sponsorship & Check Point Research spotlight",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Sponsored BSidesTLV and corCTF. Pitch enterprise firewall & threat emulation challenges.",
+      "recent_events": [
+        {
+          "id": 1364,
+          "title": "corCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1364/",
+          "event_url": "https://ctf.cor.team/",
+          "weight": 24.92
+        },
+        {
+          "id": 1432,
+          "title": "HK Cyber Security New Generation CTF Challenge 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1432/",
+          "event_url": "https://ctf.hkcert.org/",
+          "weight": 25.0
+        },
+        {
+          "id": 1078,
+          "title": "BSidesTLV 2020 CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1078/",
+          "event_url": "https://bsidestlv.com/CTF/2020/",
+          "weight": 21.38
+        }
+      ],
+      "sample_events_str": "corCTF 2021 (2021); HK Cyber Security New Generation CTF Challenge 2021 (2021); BSidesTLV 2020 CTF (2020)"
+    },
+    {
+      "name": "Carrier",
+      "count": 3,
+      "category": "IoT & Building Automation",
+      "website": "https://www.carrier.com/",
+      "sponsor_portal": "https://www.carrier.com/corporate/en/worldwide/careers/",
+      "typical_offering": "Cash sponsorship & IoT firmware challenge hardware kits",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored Nullcon Goa Hardware CTF and Ctrl+Space. Pitch IoT device reverse engineering track.",
+      "recent_events": [
+        {
+          "id": 2872,
+          "title": "Ctrl+Space CTF Quals",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2872/",
+          "event_url": "https://ctrl-space.gg/",
+          "weight": 25.0
+        },
+        {
+          "id": 2989,
+          "title": "Ctrl+Space CTF Finals",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2989/",
+          "event_url": "https://ctrl-space.gg/",
+          "weight": 25.0
+        },
+        {
+          "id": 2185,
+          "title": "Nullcon Goa 2022 Hardware CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/2185/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Ctrl+Space CTF Quals (2025); Ctrl+Space CTF Finals (2025); Nullcon Goa 2022 Hardware CTF (2022)"
+    },
+    {
+      "name": "Campfire Security",
+      "count": 3,
+      "category": "Cybersecurity Training Labs",
+      "website": "https://campfiresecurity.dk/",
+      "sponsor_portal": "https://campfiresecurity.dk/",
+      "typical_offering": "Unlimited Access 1-Year Hacker Lab subscriptions (worth 2,990 DKK / ~$430 each)",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored BrunnerCTF 2025 & 2026. Provided 50 annual lab subscriptions for top teams.",
+      "recent_events": [
+        {
+          "id": 3065,
+          "title": "BrunnerCTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3065/",
+          "event_url": "https://ctf.brunnerne.dk/",
+          "weight": 24.66
+        },
+        {
+          "id": 3460,
+          "title": "HI Cyber Con 2026 CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3460/",
+          "event_url": "https://ctf.hiddeninvestigations.net/",
+          "weight": 24.81
+        },
+        {
+          "id": 2835,
+          "title": "BrunnerCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2835/",
+          "event_url": "https://ctf.brunnerne.dk/",
+          "weight": 24.66
+        }
+      ],
+      "sample_events_str": "BrunnerCTF 2026 (2026); HI Cyber Con 2026 CTF (2026); BrunnerCTF 2025 (2025)"
+    },
+    {
+      "name": "Bitdefender",
+      "count": 3,
+      "category": "Endpoint Security & Anti-Malware",
+      "website": "https://www.bitdefender.com/",
+      "sponsor_portal": "https://www.bitdefender.com/company/careers/",
+      "typical_offering": "Cash prizes, Bitdefender Premium Security subscriptions & swag",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored TFC CTF multiple years. Pitch malware reverse engineering category.",
+      "recent_events": [
+        {
+          "id": 2901,
+          "title": "Null CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2901/",
+          "event_url": "https://ctf.r0devnull.team/",
+          "weight": 25.0
+        },
+        {
+          "id": 1647,
+          "title": "TFC CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1647/",
+          "event_url": "http://ctf.thefewchosen.com/",
+          "weight": 24.27
+        },
+        {
+          "id": 1501,
+          "title": "TFC CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1501/",
+          "event_url": "https://ctf.thefewchosen.com/",
+          "weight": 24.27
+        }
+      ],
+      "sample_events_str": "Null CTF 2025 (2025); TFC CTF 2022 (2022); TFC CTF 2021 (2021)"
+    },
+    {
+      "name": "BSides Mumbai",
+      "count": 3,
+      "category": "Indian Infosec Community",
+      "website": "https://bsidesmumbai.in/",
+      "sponsor_portal": "https://bsidesmumbai.in/",
+      "typical_offering": "Conference tickets, workshop passes & mutual CTF promotion",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "Western India community partner; coordinate with Maharashtra student network.",
+      "recent_events": [
+        {
+          "id": 2781,
+          "title": "BSides Mumbai CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2781/",
+          "event_url": "https://ctf.bsidesmumbai.in/",
+          "weight": 0.0
+        },
+        {
+          "id": 2369,
+          "title": "BSides Mumbai CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2369/",
+          "event_url": "https://ctf.bsidesmumbai.in/",
+          "weight": 0
+        },
+        {
+          "id": 1800,
+          "title": "BSides Mumbai CTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1800/",
+          "event_url": "https://ctf.bsidesmumbai.in/",
+          "weight": 24.62
+        }
+      ],
+      "sample_events_str": "BSides Mumbai CTF 2025 (2025); BSides Mumbai CTF 2024 (2024); BSides Mumbai CTF 2022 (2022)"
+    },
+    {
+      "name": "Axure",
+      "count": 3,
+      "category": "Software & UI Prototyping",
+      "website": "https://www.axure.com/",
+      "sponsor_portal": "https://www.axure.com/edu",
+      "typical_offering": "1-Year Axure RP Pro licenses for all winners",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored Incognito 4.0 & WxMCTF. Software licenses for tech teams.",
+      "recent_events": [
+        {
+          "id": 2179,
+          "title": "WxMCTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2179/",
+          "event_url": "https://ctf.mcpt.ca/contest/wxmctf",
+          "weight": 23.59
+        },
+        {
+          "id": 2444,
+          "title": "Lexington Informatics Tournament CTF 2024",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2444/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 46.25
+        },
+        {
+          "id": 1880,
+          "title": "Incognito 4.0",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1880/",
+          "event_url": "https://ictf.ninja/",
+          "weight": 21.55
+        }
+      ],
+      "sample_events_str": "WxMCTF 2024 (2024); Lexington Informatics Tournament CTF 2024 (2024); Incognito 4.0 (2023)"
+    },
+    {
+      "name": "Airbus Cybersecurity",
+      "count": 3,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.cyber.airbus.com/",
+      "sponsor_portal": "https://www.airbus.com/en/careers",
+      "typical_offering": "Cash prize funding & specialized avionics / SCADA challenge tracks",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Airbus sponsored Midnight Flag Black Box. Pitch critical infrastructure and aerospace firmware security track.",
+      "recent_events": [
+        {
+          "id": 2959,
+          "title": "ECW Online Qualifiers",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2959/",
+          "event_url": "https://challenge-ecw.eu/",
+          "weight": 0
+        },
+        {
+          "id": 1947,
+          "title": "Midnight Flag - Black Box",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1947/",
+          "event_url": "https://ctf.midnightflag.fr/",
+          "weight": 25.0
+        },
+        {
+          "id": 1994,
+          "title": "ESAIP CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1994/",
+          "event_url": "https://ctf.esaip.org/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "ECW Online Qualifiers (2025); Midnight Flag - Black Box (2023); ESAIP CTF 2023 (2023)"
+    },
+    {
+      "name": "Veria Labs",
+      "count": 2,
+      "category": "Zero-Knowledge & Blockchain Auditing",
+      "website": "https://verialabs.com/",
+      "sponsor_portal": "https://verialabs.com/",
+      "typical_offering": "Direct cash prize pools ($1,000 - $2,500)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored smileyCTF 2025 and squ1rrel CTF 2026. Pitch Zero-Knowledge cryptographic track.",
+      "recent_events": [
+        {
+          "id": 3234,
+          "title": "squ1rrel CTF 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3234/",
+          "event_url": "https://ctf.squ1rrel.dev/",
+          "weight": 32.47
+        },
+        {
+          "id": 2591,
+          "title": "smileyCTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2591/",
+          "event_url": "https://play.ctf.gg/",
+          "weight": 48.61
+        }
+      ],
+      "sample_events_str": "squ1rrel CTF 2026 (2026); smileyCTF 2025 (2025)"
+    },
+    {
+      "name": "Patrowl",
+      "count": 2,
+      "category": "Attack Surface Management",
+      "website": "https://patrowl.com/",
+      "sponsor_portal": "https://patrowl.com/",
+      "typical_offering": "SaaS vouchers & cash prize pool",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored PwnMe Qualifications & Finals. Pitch attack surface management challenge.",
+      "recent_events": [
+        {
+          "id": 1924,
+          "title": "PwnMe Qualifications : \"8 bits\"",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1924/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 23.55
+        },
+        {
+          "id": 1945,
+          "title": "PwnMe Finals : \"8 bits\"",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1945/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 24.5
+        }
+      ],
+      "sample_events_str": "PwnMe Qualifications : \"8 bits\" (2023); PwnMe Finals : \"8 bits\" (2023)"
+    },
+    {
+      "name": "Leviathan Security Group",
+      "count": 2,
+      "category": "Boutique Offensive Security & Pentesting",
+      "website": "https://www.leviathansecurity.com/",
+      "sponsor_portal": "https://www.leviathansecurity.com/careers",
+      "typical_offering": "Direct cash prizes ($1,500 - $3,000) & cloud security research jobs",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored UIUCTF and Hardwear.io. Pitch cloud auditing and penetration testing recruitment.",
+      "recent_events": [
+        {
+          "id": 2186,
+          "title": "Hardwear.io USA 2022 Hardware CTF",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/2186/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        },
+        {
+          "id": 1372,
+          "title": "UIUCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1372/",
+          "event_url": "https://uiuc.tf/",
+          "weight": 23.76
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2022 Hardware CTF (2022); UIUCTF 2021 (2021)"
+    },
+    {
+      "name": "Jane Street",
+      "count": 2,
+      "category": "Quant Trading & High Finance",
+      "website": "https://www.janestreet.com/",
+      "sponsor_portal": "https://www.janestreet.com/join-jane-street/",
+      "typical_offering": "Direct cash sponsorship ($2,500 - $10,000) & elite software/quant recruitment outreach",
+      "recommended_tier": "Diamond ($10,000) / Platinum ($6,000)",
+      "pitch_strategy": "Jane Street actively recruits top algorithmic, reverse engineering, and math problem-solvers. Pitch the Top 5% Vetted Resume Bank and offer a custom algorithmic/cryptographic challenge track.",
+      "recent_events": [
+        {
+          "id": 1770,
+          "title": "PlaidCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1770/",
+          "event_url": "https://plaidctf.com/",
+          "weight": 100.0
+        },
+        {
+          "id": 2052,
+          "title": "Lexington Informatics Tournament CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2052/",
+          "event_url": "https://lit.lhsmathcs.org/",
+          "weight": 33.53
+        }
+      ],
+      "sample_events_str": "PlaidCTF 2023 (2023); Lexington Informatics Tournament CTF 2023 (2023)"
+    },
+    {
+      "name": "IDEMIA Public Security",
+      "count": 2,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.idemia.com/",
+      "sponsor_portal": "https://www.idemia.com/careers",
+      "typical_offering": "Cash prize pool & biometric / identity security challenge support",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored PwnMe 2025. Pitch cryptographic verification & identity token challenge sponsorship.",
+      "recent_events": [
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "PwnMe CTF Quals 2025 (2025); PwnMe CTF Finals 2025 (2025)"
+    },
+    {
+      "name": "Hunchly",
+      "count": 2,
+      "category": "OSINT Investigation Tools",
+      "website": "https://hunchly.com/",
+      "sponsor_portal": "https://hunchly.com/",
+      "typical_offering": "1-Year Hunchly OSINT investigation licenses",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored Trace Labs OSINT Search Party and Maltego OSINT CTF. Request 4x Hunchly licenses for OSINT solvers.",
+      "recent_events": [
+        {
+          "id": 3267,
+          "title": "Maltego Community OSINT CTF",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3267/",
+          "event_url": "https://maltego.ctfd.io/",
+          "weight": 25.0
+        },
+        {
+          "id": 1085,
+          "title": "Trace Labs Global OSINT Search Party CTF V",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1085/",
+          "event_url": "https://tracelabs-globalctf5.eventbrite.ca/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Maltego Community OSINT CTF (2026); Trace Labs Global OSINT Search Party CTF V (2020)"
+    },
+    {
+      "name": "Group-IB",
+      "count": 2,
+      "category": "Threat Intelligence & Fraud Prevention",
+      "website": "https://www.group-ib.com/",
+      "sponsor_portal": "https://www.group-ib.com/career/",
+      "typical_offering": "Threat intelligence portal licenses, cash bounties & specialized forensic badges",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored YauzaCTF and organized official anniversary CTFs. Pitch cyber threat intelligence category.",
+      "recent_events": [
+        {
+          "id": 2177,
+          "title": "HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/2177/",
+          "event_url": "https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime",
+          "weight": 0.0
+        },
+        {
+          "id": 1417,
+          "title": "YauzaCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1417/",
+          "event_url": "https://yauzactf.com/",
+          "weight": 21.73
+        }
+      ],
+      "sample_events_str": "HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF (2023); YauzaCTF 2021 (2021)"
+    },
+    {
+      "name": "FuzzingLabs",
+      "count": 2,
+      "category": "Vulnerability Research & Fuzzing",
+      "website": "https://fuzzinglabs.com/",
+      "sponsor_portal": "https://fuzzinglabs.com/",
+      "typical_offering": "Advanced fuzzing courses & vulnerability research certifications ($500+ value)",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored PwnMe 2025. Pitch Fuzzing & Exploit Development challenge track.",
+      "recent_events": [
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "PwnMe CTF Quals 2025 (2025); PwnMe CTF Finals 2025 (2025)"
+    },
+    {
+      "name": "Epieos",
+      "count": 2,
+      "category": "OSINT & Digital Investigation Tools",
+      "website": "https://epieos.com/",
+      "sponsor_portal": "https://epieos.com/",
+      "typical_offering": "Epieos Pro OSINT investigator annual subscriptions",
+      "recommended_tier": "Silver ($1,800) / OSINT Prize Partner",
+      "pitch_strategy": "Sponsored PwnMe 2025. Request Pro subscriptions for all OSINT challenge first-bloods.",
+      "recent_events": [
+        {
+          "id": 2658,
+          "title": "PwnMe CTF Quals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2658/",
+          "event_url": "https://pwnme.phreaks.fr/",
+          "weight": 24.95
+        },
+        {
+          "id": 2659,
+          "title": "PwnMe CTF Finals 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2659/",
+          "event_url": "https://pwnme.fr/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "PwnMe CTF Quals 2025 (2025); PwnMe CTF Finals 2025 (2025)"
+    },
+    {
+      "name": "Belkasoft",
+      "count": 2,
+      "category": "Digital Forensics & Incident Response",
+      "website": "https://belkasoft.com/",
+      "sponsor_portal": "https://belkasoft.com/x",
+      "typical_offering": "Evidence Center X full-featured forensic investigator licenses ($2,000+ value)",
+      "recommended_tier": "Gold ($3,600) / DFIR Category Sponsor",
+      "pitch_strategy": "Organizes BelkaCTF. Top choice for Digital Forensics prize sponsor; request 4x Evidence Center X licenses.",
+      "recent_events": [
+        {
+          "id": 2858,
+          "title": "BelkaCTF #7",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2858/",
+          "event_url": "https://belkasoft.com/belkactf7/",
+          "weight": 0
+        },
+        {
+          "id": 2326,
+          "title": "BelkaCTF #6",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2326/",
+          "event_url": "https://belkasoft.com/belkactf6/",
+          "weight": 0
+        }
+      ],
+      "sample_events_str": "BelkaCTF #7 (2025); BelkaCTF #6 (2024)"
+    },
+    {
+      "name": "BSides Noida",
+      "count": 2,
+      "category": "Indian Infosec Community",
+      "website": "https://bsidesnoida.in/",
+      "sponsor_portal": "https://bsidesnoida.in/",
+      "typical_offering": "Major cash prize pool (\u20b91,00,000 INR), speaker slots & community promotion",
+      "recommended_tier": "Community Partner",
+      "pitch_strategy": "Funded HackornCTF 2025 with \u20b91 Lakh prize pool. Pitch reciprocal community partnership and cross-CTF promotion.",
+      "recent_events": [
+        {
+          "id": 2919,
+          "title": "HackornCTF 2025 Quals",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2919/",
+          "event_url": "https://ctf.secpen.org/",
+          "weight": 0
+        },
+        {
+          "id": 1397,
+          "title": "BSides Noida CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1397/",
+          "event_url": "https://ctf.bsidesnoida.in/",
+          "weight": 24.46
+        }
+      ],
+      "sample_events_str": "HackornCTF 2025 Quals (2025); BSides Noida CTF (2021)"
+    },
+    {
+      "name": "zkSync (Matter Labs)",
+      "count": 1,
+      "category": "Zero-Knowledge Layer 2",
+      "website": "https://zksync.io/",
+      "sponsor_portal": "https://matter-labs.io/",
+      "typical_offering": "EVM rollup bounties & cash rewards",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored Ingonyama ZK CTF. Pitch Layer-2 smart contract optimization and security track.",
+      "recent_events": [
+        {
+          "id": 1996,
+          "title": "Ingonyama ZK CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1996/",
+          "event_url": "https://ctf.ingonyama.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Ingonyama ZK CTF (2023)"
+    },
+    {
+      "name": "Virtual Cyber Labs (VCL)",
+      "count": 1,
+      "category": "Indian Hands-on Cyber Labs",
+      "website": "https://virtualcyberlabs.com/",
+      "sponsor_portal": "https://virtualcyberlabs.com/",
+      "typical_offering": "Indian hands-on cyber lab passes & student certificates",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored Cyber Grabs CTF. Pitch student beginner challenge prizes.",
+      "recent_events": [
+        {
+          "id": 1556,
+          "title": "Cyber Grabs CTF 0x03 Junior",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1556/",
+          "event_url": "https://ctf.thecybergrabs.org/",
+          "weight": 23.23
+        }
+      ],
+      "sample_events_str": "Cyber Grabs CTF 0x03 Junior (2022)"
+    },
+    {
+      "name": "Viasat",
+      "count": 1,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.viasat.com/",
+      "sponsor_portal": "https://careers.viasat.com/",
+      "typical_offering": "Satellite / RF security prizes & cash support",
+      "recommended_tier": "Silver ($1,800) / Hardware Track",
+      "pitch_strategy": "Sponsored Hardwear.io USA Hardware CTF. Pitch satellite protocol & space cybersecurity track.",
+      "recent_events": [
+        {
+          "id": 2400,
+          "title": "Hardwear.io USA 2024 Hardware CTF",
+          "year": "2024",
+          "ctftime_url": "https://ctftime.org/event/2400/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2024 Hardware CTF (2024)"
+    },
+    {
+      "name": "Siemens",
+      "count": 1,
+      "category": "Industrial Control & OT Security",
+      "website": "https://www.siemens.com/",
+      "sponsor_portal": "https://www.siemens.com/global/en/company/jobs.html",
+      "typical_offering": "SCADA/ICS security challenge co-creation & cash rewards",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch industrial control systems (ICS/PLC) security challenges.",
+      "recent_events": [
+        {
+          "id": 1251,
+          "title": "Shakti CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1251/",
+          "event_url": "https://ctf.shakticon.com/",
+          "weight": 25.0
+        }
+      ],
+      "sample_events_str": "Shakti CTF 2021 (2021)"
+    },
+    {
+      "name": "Sandia National Laboratories",
+      "count": 1,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.sandia.gov/",
+      "sponsor_portal": "https://www.sandia.gov/careers/",
+      "typical_offering": "Collegiate cash prizes, research grants & national lab recruitment",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sandia sponsored LA CTF. Highlight student talent pipeline across top engineering universities.",
+      "recent_events": [
+        {
+          "id": 1732,
+          "title": "LA CTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1732/",
+          "event_url": "https://lac.tf/",
+          "weight": 24.93
+        }
+      ],
+      "sample_events_str": "LA CTF 2023 (2023)"
+    },
+    {
+      "name": "RiscZero",
+      "count": 1,
+      "category": "Zero-Knowledge Virtual Machine",
+      "website": "https://www.risczero.com/",
+      "sponsor_portal": "https://www.risczero.com/",
+      "typical_offering": "ZK challenge bounties & research prizes",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored Ingonyama ZK CTF. Pitch RISC-V zero-knowledge proof verification challenges.",
+      "recent_events": [
+        {
+          "id": 1996,
+          "title": "Ingonyama ZK CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1996/",
+          "event_url": "https://ctf.ingonyama.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Ingonyama ZK CTF (2023)"
+    },
+    {
+      "name": "Quick Heal / Seqrite",
+      "count": 1,
+      "category": "Indian Enterprise Cybersecurity",
+      "website": "https://www.seqrite.com/",
+      "sponsor_portal": "https://www.seqrite.com/careers",
+      "typical_offering": "Direct cash sponsorship, enterprise antivirus software licenses & student hiring",
+      "recommended_tier": "Platinum ($6,000) / Gold ($3,600)",
+      "pitch_strategy": "Headquartered in Pune (neighboring Maharashtra hub to Nagpur). Sponsored VishwaCTF. Pitch premier Indian cybersecurity talent pipeline and live stream leadership interview.",
+      "recent_events": [
+        {
+          "id": 1904,
+          "title": "VishwaCTF 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1904/",
+          "event_url": "https://www.vishwactf.com/",
+          "weight": 22.69
+        }
+      ],
+      "sample_events_str": "VishwaCTF 2023 (2023)"
+    },
+    {
+      "name": "Phosphorus Cybersecurity",
+      "count": 1,
+      "category": "Enterprise IoT / OT Security",
+      "website": "https://phosphorus.io/",
+      "sponsor_portal": "https://phosphorus.io/careers/",
+      "typical_offering": "Cash sponsorship & IoT firmware analysis challenges",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored Hardwear.io USA Hardware CTF 2025. Pitch IoT device vulnerability track.",
+      "recent_events": [
+        {
+          "id": 2788,
+          "title": "Hardwear.io USA 2025 Hardware CTF",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2788/",
+          "event_url": "https://hwctf.quarkslab.com/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Hardwear.io USA 2025 Hardware CTF (2025)"
+    },
+    {
+      "name": "Offside Labs",
+      "count": 1,
+      "category": "Web3 & AI Security Research",
+      "website": "https://offside.io/",
+      "sponsor_portal": "https://offside.io/",
+      "typical_offering": "Gold cash sponsorship ($3,500+) for high-profile CTFs",
+      "recommended_tier": "Platinum ($6,000) / Gold ($3,600)",
+      "pitch_strategy": "Sponsored R3CTF 2025. Pitch AI security & blockchain audit challenge track.",
+      "recent_events": [
+        {
+          "id": 2731,
+          "title": "R3CTF 2025",
+          "year": "2025",
+          "ctftime_url": "https://ctftime.org/event/2731/",
+          "event_url": "https://ctf2025.r3kapig.com/",
+          "weight": 24.5
+        }
+      ],
+      "sample_events_str": "R3CTF 2025 (2025)"
+    },
+    {
+      "name": "NotSoSecure (Claranet)",
+      "count": 1,
+      "category": "Offensive Training & Pentesting",
+      "website": "https://notsosecure.com/",
+      "sponsor_portal": "https://notsosecure.com/",
+      "typical_offering": "Advanced Web & Infrastructure Hacking course vouchers",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Pioneers of Black Hat training. Pitch specialized hands-on web exploitation vouchers.",
+      "recent_events": [
+        {
+          "id": 1251,
+          "title": "Shakti CTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1251/",
+          "event_url": "https://ctf.shakticon.com/",
+          "weight": 25.0
+        }
+      ],
+      "sample_events_str": "Shakti CTF 2021 (2021)"
+    },
+    {
+      "name": "Northrop Grumman",
+      "count": 1,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.northropgrumman.com/",
+      "sponsor_portal": "https://www.northropgrumman.com/careers",
+      "typical_offering": "Event sponsorship & cyber defense recruitment booths",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch defense networking challenge co-design.",
+      "recent_events": [
+        {
+          "id": 1862,
+          "title": "Summit CTF",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1862/",
+          "event_url": "https://summitctf.org/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "Summit CTF (2023)"
+    },
+    {
+      "name": "Lockheed Martin",
+      "count": 1,
+      "category": "Defense, Aerospace & Government",
+      "website": "https://www.lockheedmartin.com/",
+      "sponsor_portal": "https://www.lockheedmartinjobs.com/",
+      "typical_offering": "Event grant funding & cyber defense internship pipelines",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Pitch military-grade cyber defense and collegiate talent acquisition across premier universities.",
+      "recent_events": [
+        {
+          "id": 1341,
+          "title": "Great Lakes Security Conference CTF",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1341/",
+          "event_url": "https://ctf.glsc.tech/",
+          "weight": 24.6
+        }
+      ],
+      "sample_events_str": "Great Lakes Security Conference CTF (2021)"
+    },
+    {
+      "name": "Hudson River Trading (HRT)",
+      "count": 1,
+      "category": "Quant Trading & High Finance",
+      "website": "https://www.hudsonrivertrading.com/",
+      "sponsor_portal": "https://www.hudsonrivertrading.com/campus-recruiting/",
+      "typical_offering": "Direct cash prize pool ($2,000 - $5,000) & technical engineering internships",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "HRT sponsors collegiate and open CTFs (like TAMUctf) for C++ / low-level systems engineers. Highlight SecLeaf's 150+ university cyber club network.",
+      "recent_events": [
+        {
+          "id": 3095,
+          "title": "TAMUctf 2026",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3095/",
+          "event_url": "https://tamuctf.com/",
+          "weight": 76.22
+        }
+      ],
+      "sample_events_str": "TAMUctf 2026 (2026)"
+    },
+    {
+      "name": "Cybereason",
+      "count": 1,
+      "category": "EDR & XDR Defense",
+      "website": "https://www.cybereason.com/",
+      "sponsor_portal": "https://www.cybereason.com/careers",
+      "typical_offering": "Gold cash sponsorship & SOC analyst recruitment",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored BSidesTLV. Pitch endpoint threat hunting & detection engineering track.",
+      "recent_events": [
+        {
+          "id": 1078,
+          "title": "BSidesTLV 2020 CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1078/",
+          "event_url": "https://bsidestlv.com/CTF/2020/",
+          "weight": 21.38
+        }
+      ],
+      "sample_events_str": "BSidesTLV 2020 CTF (2020)"
+    },
+    {
+      "name": "Compass Security",
+      "count": 1,
+      "category": "Boutique Offensive Security & Pentesting",
+      "website": "https://www.compass-security.com/",
+      "sponsor_portal": "https://www.compass-security.com/en/careers",
+      "typical_offering": "Ethical hacking training vouchers & cash prizes",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Swiss/German ethical hacking firm. Pitch European solver recruitment.",
+      "recent_events": [
+        {
+          "id": 1739,
+          "title": "ostctf 2023",
+          "year": "2023",
+          "ctftime_url": "https://ctftime.org/event/1739/",
+          "event_url": "https://cybersecuritydays.ch/capture-the-flag/",
+          "weight": 0.0
+        }
+      ],
+      "sample_events_str": "ostctf 2023 (2023)"
+    },
+    {
+      "name": "CloudSEK",
+      "count": 1,
+      "category": "Indian Enterprise Cybersecurity",
+      "website": "https://www.cloudsek.com/",
+      "sponsor_portal": "https://www.cloudsek.com/careers",
+      "typical_offering": "Cash prize sponsorship, threat intel platform access & hiring pipeline",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Leading Indian AI threat intelligence startup (XVigil / BeVigil). Sponsored VishwaCTF. Pitch Dark Web & Threat Intelligence challenge track.",
+      "recent_events": [
+        {
+          "id": 1548,
+          "title": "VishwaCTF 2022",
+          "year": "2022",
+          "ctftime_url": "https://ctftime.org/event/1548/",
+          "event_url": "https://www.vishwactf.com/",
+          "weight": 20.79
+        }
+      ],
+      "sample_events_str": "VishwaCTF 2022 (2022)"
+    },
+    {
+      "name": "Cisco",
+      "count": 1,
+      "category": "Networking & Enterprise Security",
+      "website": "https://www.cisco.com/",
+      "sponsor_portal": "https://talosintelligence.com/",
+      "typical_offering": "Corporate event sponsorship & Cisco Talos threat research swag/vouchers",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch Cisco Talos threat research collaboration and network defense challenges.",
+      "recent_events": [
+        {
+          "id": 3212,
+          "title": "CRACK-IN 2.0",
+          "year": "2026",
+          "ctftime_url": "https://ctftime.org/event/3212/",
+          "event_url": "https://www.crackin.tech/",
+          "weight": 0
+        }
+      ],
+      "sample_events_str": "CRACK-IN 2.0 (2026)"
+    },
+    {
+      "name": "Bluefire Redteam",
+      "count": 1,
+      "category": "Indian Red Teaming & VAPT",
+      "website": "https://bluefireredteam.com/",
+      "sponsor_portal": "https://bluefireredteam.com/",
+      "typical_offering": "Internship opportunities for top solvers & cash prizes",
+      "recommended_tier": "Silver ($1,800)",
+      "pitch_strategy": "Sponsored VishwaCTF. Offer priority technical intern candidate referrals from top Indian solvers.",
+      "recent_events": [
+        {
+          "id": 1286,
+          "title": "vishwaCTF 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1286/",
+          "event_url": "https://vishwactf.com/",
+          "weight": 20.79
+        }
+      ],
+      "sample_events_str": "vishwaCTF 2021 (2021)"
+    },
+    {
+      "name": "AppsFlyer",
+      "count": 1,
+      "category": "Marketing & Mobile Analytics",
+      "website": "https://www.appsflyer.com/",
+      "sponsor_portal": "https://www.appsflyer.com/careers/",
+      "typical_offering": "Titanium/Gold cash sponsorship & engineering hiring outreach",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Sponsored BSidesTLV. Pitch cloud infrastructure & high-scale data pipeline security.",
+      "recent_events": [
+        {
+          "id": 1078,
+          "title": "BSidesTLV 2020 CTF",
+          "year": "2020",
+          "ctftime_url": "https://ctftime.org/event/1078/",
+          "event_url": "https://bsidestlv.com/CTF/2020/",
+          "weight": 21.38
+        }
+      ],
+      "sample_events_str": "BSidesTLV 2020 CTF (2020)"
+    },
+    {
+      "name": "AMD",
+      "count": 1,
+      "category": "Semiconductor & Hardware Security",
+      "website": "https://www.amd.com/",
+      "sponsor_portal": "https://www.amd.com/en/corporate/careers",
+      "typical_offering": "Hardware processor prizes & cash sponsorship",
+      "recommended_tier": "Gold ($3,600)",
+      "pitch_strategy": "Pitch Confidential Computing & AMD SEV virtualization challenge track.",
+      "recent_events": [
+        {
+          "id": 1436,
+          "title": "Reply Cyber Security Challenge 2021",
+          "year": "2021",
+          "ctftime_url": "https://ctftime.org/event/1436/",
+          "event_url": "https://replychallenges.com/ctftime",
+          "weight": 27.83
+        }
+      ],
+      "sample_events_str": "Reply Cyber Security Challenge 2021 (2021)"
+    },
+    {
+      "name": "Optiver",
+      "count": 0,
+      "category": "Quant Trading & High Finance",
+      "website": "https://optiver.com/",
+      "sponsor_portal": "https://optiver.com/working-at-optiver/",
+      "typical_offering": "Direct cash awards & graduate software engineering fast-tracks",
+      "recommended_tier": "Platinum ($6,000)",
+      "pitch_strategy": "Pitch quantitative problem solving & hardware/networking optimization challenges.",
+      "recent_events": [],
+      "sample_events_str": "Target Enterprise"
+    },
+    {
+      "name": "Jump Trading",
+      "count": 0,
+      "category": "Quant Trading & High Finance",
+      "website": "https://www.jumptrading.com/",
+      "sponsor_portal": "https://www.jumptrading.com/careers/",
+      "typical_offering": "High-dollar cash prizes & low-latency engineering fellowships",
+      "recommended_tier": "Diamond ($10,000)",
+      "pitch_strategy": "Pitch systems architecture and high-performance exploitation challenges to attract top competitive coders.",
+      "recent_events": [],
+      "sample_events_str": "Target Enterprise"
+    },
+    {
+      "name": "Citadel Securities",
+      "count": 0,
+      "category": "Quant Trading & High Finance",
+      "website": "https://www.citadelsecurities.com/",
+      "sponsor_portal": "https://www.citadelsecurities.com/careers/",
+      "typical_offering": "Cash prize sponsorship & invitation-only hiring dinners / interviews",
+      "recommended_tier": "Diamond ($10,000)",
+      "pitch_strategy": "Citadel heavily funds university hackathons and CTFs. Offer a private Recruiter Speed-Networking session with the top 20 teams.",
+      "recent_events": [],
+      "sample_events_str": "Target Enterprise"
+    }
+  ]
+}

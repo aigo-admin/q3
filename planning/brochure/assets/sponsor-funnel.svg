@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%" style="background: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="12" y="12" width="876" height="336" rx="12" fill="#faf9f6" stroke="#e6e2da" stroke-width="1.5"/>
+  <text x="36" y="42" fill="#18181b" font-size="16" font-weight="700">Sponsorship Tiers &amp; What Companies Receive in Return</text>
+  <text x="36" y="62" fill="#71717a" font-size="13">Designed for High Conversion: Hiring Top Security Talent + Massive Brand Reach</text>
+
+  <!-- Title -->
+  <g transform="translate(36, 85)">
+    <rect width="828" height="52" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+    <rect x="10" y="10" width="120" height="32" rx="4" fill="#dcfce7"/>
+    <text x="20" y="31" fill="#15803d" font-size="12" font-weight="bold">TITLE (1 Slot)</text>
+    <text x="145" y="32" fill="#18181b" font-size="13" font-weight="bold">5,000 / ₹12.5L</text>
+    <text x="280" y="32" fill="#3f3f46" font-size="12">"SecLeaf CTF Presented by [Brand]" • 3 Custom Challenges • Keynote Talk • Full CV Bank</text>
+  </g>
+
+  <!-- Diamond -->
+  <g transform="translate(36, 147)">
+    <rect width="828" height="52" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+    <rect x="10" y="10" width="120" height="32" rx="4" fill="#dbeafe"/>
+    <text x="20" y="31" fill="#1d4ed8" font-size="12" font-weight="bold">DIAMOND (3)</text>
+    <text x="145" y="32" fill="#18181b" font-size="13" font-weight="bold">,500 / ₹6.2L</text>
+    <text x="280" y="32" fill="#3f3f46" font-size="12">Prominent Banner • Full Vetted Resume Bank • 2 Sourced Challenges • Stream Ad Ingestion</text>
+  </g>
+
+  <!-- Platinum -->
+  <g transform="translate(36, 209)">
+    <rect width="828" height="52" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+    <rect x="10" y="10" width="120" height="32" rx="4" fill="#fef3c7"/>
+    <text x="20" y="31" fill="#b45309" font-size="12" font-weight="bold">PLATINUM (6)</text>
+    <text x="145" y="32" fill="#18181b" font-size="13" font-weight="bold">,500 / ₹2.9L</text>
+    <text x="280" y="32" fill="#3f3f46" font-size="12">Portal &amp; Certificate Logo • Top 10% CV Access • 1 Sourced Challenge • 3 Social Media Blasts</text>
+  </g>
+
+  <!-- Gold & Tooling -->
+  <g transform="translate(36, 271)">
+    <rect width="828" height="52" rx="8" fill="#ffffff" stroke="#e2ded6" stroke-width="1"/>
+    <rect x="10" y="10" width="120" height="32" rx="4" fill="#f4f2ec"/>
+    <text x="20" y="31" fill="#52525b" font-size="12" font-weight="bold">GOLD (12)</text>
+    <text x="145" y="32" fill="#18181b" font-size="13" font-weight="bold">,500 / ₹1.25L</text>
+    <text x="280" y="32" fill="#3f3f46" font-size="12">Standard Logo Placement • Discord Announcements • Product Tooling &amp; Licenses (Burp/Caido/INE)</text>
+  </g>
+</svg>
