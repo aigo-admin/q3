@@ -132,38 +132,20 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 0;
+      z-index: 1;
     }
 
-    /* ANAMORPHIC HORIZONTAL FLARE STREAK */
+    /* REALISTIC COCKPIT DEEP SPACE LIGHTING */
     .anamorphic-beam {
-      position: fixed;
-      top: 50%;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(186, 236, 67, 0.05) 15%, 
-        rgba(186, 236, 67, 0.4) 50%, 
-        rgba(186, 236, 67, 0.05) 85%, 
-        transparent 100%);
-      filter: blur(1.5px);
-      pointer-events: none;
-      z-index: 1;
-      transform: translateY(-20px);
-      opacity: 0.7;
+      display: none;
     }
 
     .cinematic-glow {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 1000px;
-      height: 520px;
-      background: radial-gradient(ellipse, rgba(186, 236, 67, 0.055) 0%, rgba(13, 20, 32, 0.25) 55%, transparent 75%);
-      filter: blur(90px);
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at 50% 50%, #0a1122 0%, #050812 60%, #030407 100%);
       pointer-events: none;
       z-index: 0;
     }
@@ -171,9 +153,9 @@
     .cinematic-vignette {
       position: fixed;
       inset: 0;
-      background: radial-gradient(circle at center, transparent 35%, rgba(4, 5, 7, 0.88) 100%);
+      background: radial-gradient(circle at center, transparent 55%, rgba(3, 4, 6, 0.65) 100%);
       pointer-events: none;
-      z-index: 1;
+      z-index: 2;
     }
 
     /* DYNAMIC FILM GRAIN OVERLAY */
@@ -672,6 +654,31 @@
       background: var(--accent);
       box-shadow: 0 0 10px var(--accent);
       animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .gyro-pill {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      color: rgba(185, 210, 245, 0.65);
+      margin-left: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.25s ease;
+      user-select: none;
+    }
+
+    .gyro-pill.active {
+      background: rgba(30, 90, 200, 0.18);
+      border-color: rgba(110, 180, 255, 0.4);
+      color: #b5d5ff;
+      box-shadow: 0 0 12px rgba(80, 160, 255, 0.2);
     }
 
     @keyframes pulse {
@@ -1465,6 +1472,7 @@
       <div class="bottom-status">
         <span class="status-pulse-dot"></span>
         <span>SecLeaf Operations</span>
+        <span class="gyro-pill" id="gyroPill" title="Cockpit Gyroscope & Space Perspective">360° SPACE LOOK</span>
       </div>
 
       <div>
@@ -1802,51 +1810,288 @@
       setTimeout(function(){ toast.classList.remove('show'); }, 2800);
     }
 
-    // 3D HYPERSPACE PARTICLE TUNNEL WITH INTERACTIVE WARP AND GYROSCOPE
-    var cruiseSpeed = 1.8;
+    // -------------------------------------------------------------
+    // AUTHENTIC 360° COCKPIT STARFIELD & GYROSCOPE SPACE ENGINE
+    // - Physically modeled stellar populations (Harvard O,B,A,F,G,K,M spectral blackbody distribution)
+    // - True 3DOF spherical camera projection (Pitch, Yaw, Roll)
+    // - Full 360° panoramic navigation via Device Gyroscope (mobile) & Drag/Parallax (desktop)
+    // - Real Milky Way galactic dust plane & deep sky celestial landmarks
+    // - Relativistic motion streaks transformed through 3D camera rotation matrix
+    // -------------------------------------------------------------
+    var cruiseSpeed = 1.2;
     var warpSpeed = cruiseSpeed;
     var targetWarpSpeed = cruiseSpeed;
-    var mouseX = 0, mouseY = 0;
-    var targetMouseX = 0, targetMouseY = 0;
     var isWarping = false;
 
-    (function initHyperspaceTunnel(){
+    (function initAuthenticCockpitStarfield(){
       var canvas = $('ambientCanvas');
       var ctx = canvas.getContext('2d');
+      var gyroPill = $('gyroPill');
       var w, h, cx, cy;
-      var stars = [];
-      var count = window.innerWidth <= 680 ? 650 : 1400;
-      var fov = 340;
+      var fov = 420;
 
       function resize(){
         w = canvas.width = window.innerWidth;
         h = canvas.height = window.innerHeight;
         cx = w / 2;
         cy = h / 2;
+        fov = Math.min(w, h) * 0.72;
       }
       window.addEventListener('resize', resize);
       resize();
 
-      window.addEventListener('mousemove', function(e){
-        targetMouseX = (e.clientX - cx) * 0.18;
-        targetMouseY = (e.clientY - cy) * 0.18;
-      });
+      // CAMERA ORIENTATION (Angles in radians)
+      var camPitch = 0, camYaw = 0, camRoll = 0;
+      var targetPitch = 0, targetYaw = 0, targetRoll = 0;
+      var gyroActive = false;
+      var gyroCalibrated = false;
+      var basePitch = 0, baseYaw = 0;
 
-      // DEVICE GYROSCOPE TILT
-      if (window.DeviceOrientationEvent) {
-        window.addEventListener('deviceorientation', function(e){
-          if (e.gamma !== null && e.beta !== null) {
-            targetMouseX = Math.max(-140, Math.min(140, e.gamma * 3.0));
-            targetMouseY = Math.max(-140, Math.min(140, (e.beta - 40) * 2.8));
-          }
-        }, { passive: true });
+      // STELLAR POPULATION WITH REAL SPECTRAL TEMPERATURES
+      // Harvard Spectral Classification (O/B, A, F, G, K, M)
+      var SPECTRAL_CLASSES = [
+        { type: 'O/B', r: 212, g: 228, b: 255, prob: 0.10, minMag: 0.8, maxMag: 2.6 }, // Diamond Ice-Blue
+        { type: 'A',   r: 250, g: 252, b: 255, prob: 0.35, minMag: 0.5, maxMag: 2.4 }, // Pure Crisp White
+        { type: 'F',   r: 255, g: 248, b: 236, prob: 0.20, minMag: 0.5, maxMag: 2.0 }, // Warm Cream White
+        { type: 'G',   r: 255, g: 240, b: 206, prob: 0.15, minMag: 0.5, maxMag: 1.8 }, // Solar Gold-White
+        { type: 'K',   r: 255, g: 214, b: 165, prob: 0.12, minMag: 0.6, maxMag: 2.2 }, // Soft Amber
+        { type: 'M',   r: 255, g: 172, b: 126, prob: 0.08, minMag: 0.7, maxMag: 2.5 }  // Deep Red-Orange
+      ];
+
+      function pickSpectralClass(){
+        var rand = Math.random();
+        var accum = 0;
+        for (var i = 0; i < SPECTRAL_CLASSES.length; i++){
+          accum += SPECTRAL_CLASSES[i].prob;
+          if (rand <= accum) return SPECTRAL_CLASSES[i];
+        }
+        return SPECTRAL_CLASSES[1];
       }
 
-      // INTERACTIVE WARP-DRIVE CONTROLLER
+      var stars = [];
+      var isMobile = window.innerWidth <= 768;
+      var starCount = isMobile ? 1300 : 2600;
+
+      // 1. FOREGROUND & MIDGROUND CRUISING STARS (Distributed in front of spacecraft heading)
+      var cruiseStarCount = Math.floor(starCount * 0.58);
+      for (var i = 0; i < cruiseStarCount; i++){
+        var spec = pickSpectralClass();
+        var mag = spec.minMag + Math.random() * (spec.maxMag - spec.minMag);
+        var sizeWeight = Math.pow(Math.random(), 2.8);
+        var radius = 0.55 + sizeWeight * (mag - 0.5);
+        var baseAlpha = 0.5 + sizeWeight * 0.5;
+
+        stars.push({
+          x: (Math.random() - 0.5) * 3600,
+          y: (Math.random() - 0.5) * 2600,
+          z: 35 + Math.random() * 2400,
+          radius: radius,
+          baseAlpha: baseAlpha,
+          spec: spec,
+          isDeepSky: false,
+          hasHalo: radius > 1.8,
+          hasSpikes: sizeWeight > 0.95,
+          scintillationPhase: Math.random() * Math.PI * 2,
+          scintillationSpeed: 0.02 + Math.random() * 0.04
+        });
+      }
+
+      // 2. 360° CELESTIAL SPHERE ASTRONOMICAL BACKGROUND (Uniformly distributed across entire cosmos)
+      var sphereCount = Math.floor(starCount * 0.26);
+      for (var s = 0; s < sphereCount; s++){
+        var u = Math.random();
+        var v = Math.random();
+        var thetaS = u * 2.0 * Math.PI;
+        var phiS = Math.acos(2.0 * v - 1.0);
+        var rS = 2800;
+
+        var sx = rS * Math.sin(phiS) * Math.cos(thetaS);
+        var sy = rS * Math.sin(phiS) * Math.sin(thetaS);
+        var sz = rS * Math.cos(phiS);
+
+        var specS = pickSpectralClass();
+        var magS = specS.minMag + Math.random() * (specS.maxMag - specS.minMag);
+        var sizeWeightS = Math.pow(Math.random(), 3.0);
+
+        stars.push({
+          x: sx,
+          y: sy,
+          z: sz,
+          radius: 0.5 + sizeWeightS * (magS - 0.45),
+          baseAlpha: 0.45 + Math.random() * 0.55,
+          spec: specS,
+          isDeepSky: true,
+          hasHalo: sizeWeightS > 0.9,
+          hasSpikes: sizeWeightS > 0.96,
+          scintillationPhase: Math.random() * Math.PI * 2,
+          scintillationSpeed: 0.015 + Math.random() * 0.03
+        });
+      }
+
+      // 3. MILKY WAY GALACTIC DUST BAND (Arching across celestial sphere)
+      var milkyCount = Math.floor(starCount * 0.16);
+      var mwInc = 62 * Math.PI / 180;
+      var mwNode = 28 * Math.PI / 180;
+      var cosInc = Math.cos(mwInc), sinInc = Math.sin(mwInc);
+      var cosNode = Math.cos(mwNode), sinNode = Math.sin(mwNode);
+
+      for (var m = 0; m < milkyCount; m++){
+        var theta = Math.random() * Math.PI * 2;
+        var rSphere = 2900 + Math.random() * 200;
+        var spread = (Math.random() + Math.random() + Math.random() - 1.5) * 160;
+
+        var x0 = rSphere * Math.cos(theta);
+        var y0 = spread;
+        var z0 = rSphere * Math.sin(theta);
+
+        var y1 = y0 * cosInc - z0 * sinInc;
+        var z1 = y0 * sinInc + z0 * cosInc;
+        var x2 = x0 * cosNode - z1 * sinNode;
+        var z2 = x0 * sinNode + z1 * cosNode;
+
+        var specM = Math.random() < 0.4 ? SPECTRAL_CLASSES[0] : (Math.random() < 0.5 ? SPECTRAL_CLASSES[1] : SPECTRAL_CLASSES[3]);
+        stars.push({
+          x: x2,
+          y: y1,
+          z: z2,
+          radius: 0.4 + Math.random() * 0.8,
+          baseAlpha: 0.35 + Math.random() * 0.65,
+          spec: specM,
+          isDeepSky: true,
+          hasHalo: false,
+          hasSpikes: false,
+          scintillationPhase: 0,
+          scintillationSpeed: 0
+        });
+      }
+
+      // 4. CELESTIAL DEEP-SKY CLUSTERS (Landmarks in space)
+      var clusterStars = 32;
+      var cYaw = 110 * Math.PI / 180, cPitch = 18 * Math.PI / 180;
+      for (var c = 0; c < clusterStars; c++){
+        var offX = (Math.random() - 0.5) * 240;
+        var offY = (Math.random() - 0.5) * 240;
+        var offZ = (Math.random() - 0.5) * 180;
+        var rC = 2800;
+        var px0 = rC * Math.sin(cYaw) + offX;
+        var py0 = rC * Math.sin(cPitch) + offY;
+        var pz0 = rC * Math.cos(cYaw) + offZ;
+        stars.push({
+          x: px0, y: py0, z: pz0,
+          radius: 0.9 + Math.random() * 1.5,
+          baseAlpha: 0.75 + Math.random() * 0.25,
+          spec: SPECTRAL_CLASSES[0],
+          isDeepSky: true,
+          hasHalo: true,
+          hasSpikes: c < 6,
+          scintillationPhase: Math.random() * Math.PI,
+          scintillationSpeed: 0.03
+        });
+      }
+
+      // 4. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
+      function updateTelemetry(){
+        if (!gyroPill) return;
+        var degP = Math.round(camPitch * 180 / Math.PI);
+        var degY = Math.round(((camYaw * 180 / Math.PI) % 360 + 360) % 360);
+        var signP = degP >= 0 ? '+' : '';
+        if (gyroActive) {
+          gyroPill.classList.add('active');
+          gyroPill.textContent = '360° GYRO • P:' + signP + degP + '° Y:' + degY + '°';
+        } else {
+          gyroPill.classList.remove('active');
+          gyroPill.textContent = '360° LOOK • P:' + signP + degP + '° Y:' + degY + '°';
+        }
+      }
+
+      function handleOrientation(e){
+        if (e.beta === null || e.gamma === null) return;
+        if (!gyroActive) {
+          gyroActive = true;
+          updateTelemetry();
+        }
+
+        if (!gyroCalibrated) {
+          basePitch = (e.beta * Math.PI / 180);
+          baseYaw = e.alpha ? (e.alpha * Math.PI / 180) : 0;
+          gyroCalibrated = true;
+        }
+
+        var p = ((e.beta * Math.PI / 180) - (basePitch || 0.78));
+        targetPitch = Math.max(-1.48, Math.min(1.48, p * 1.3));
+
+        var r = (e.gamma * Math.PI / 180);
+        targetRoll = Math.max(-0.6, Math.min(0.6, -r * 0.8));
+
+        if (e.alpha !== null && !isNaN(e.alpha)) {
+          var y = (e.alpha * Math.PI / 180);
+          targetYaw = -(y - (baseYaw || 0));
+        } else {
+          targetYaw += (-r * 0.015);
+        }
+      }
+
+      function requestGyroPermission(){
+        if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+          DeviceOrientationEvent.requestPermission().then(function(state){
+            if (state === 'granted') {
+              window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+              gyroActive = true;
+              updateTelemetry();
+            }
+          }).catch(function(){});
+        }
+      }
+
+      if (window.DeviceOrientationEvent) {
+        window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+      }
+
+      // DESKTOP / TOUCH DRAG & PARALLAX LOOK-AROUND
+      var isDragging = false;
+      var lastPointerX = 0, lastPointerY = 0;
+      var pointerMoved = false;
+
+      window.addEventListener('pointerdown', function(e){
+        requestGyroPermission();
+        if (e.target && (e.target.closest('button') || e.target.closest('a') || e.target.closest('.countdown-unit-card') || e.target.closest('.calendar-dropdown'))) {
+          return;
+        }
+        isDragging = true;
+        pointerMoved = false;
+        lastPointerX = e.clientX;
+        lastPointerY = e.clientY;
+      });
+
+      window.addEventListener('pointermove', function(e){
+        if (isDragging) {
+          var dx = e.clientX - lastPointerX;
+          var dy = e.clientY - lastPointerY;
+          if (Math.abs(dx) > 2 || Math.abs(dy) > 2) pointerMoved = true;
+          targetYaw += dx * 0.0035;
+          targetPitch = Math.max(-1.45, Math.min(1.45, targetPitch - dy * 0.0035));
+          lastPointerX = e.clientX;
+          lastPointerY = e.clientY;
+        } else if (!gyroActive) {
+          var offX = (e.clientX - cx) / cx;
+          var offY = (e.clientY - cy) / cy;
+          targetYaw = offX * 0.35;
+          targetPitch = -offY * 0.25;
+        }
+      });
+
+      window.addEventListener('pointerup', function(){
+        isDragging = false;
+      });
+      window.addEventListener('pointercancel', function(){
+        isDragging = false;
+      });
+
+      // WARP DRIVE INTERACTION
       function engageWarp(){
         if (isWarping) return;
         isWarping = true;
-        targetWarpSpeed = 22.0;
+        targetWarpSpeed = 24.0;
         if (window.__slSound && window.__slSound.warp) window.__slSound.warp(true);
       }
 
@@ -1857,7 +2102,6 @@
         if (window.__slSound && window.__slSound.warp) window.__slSound.warp(false);
       }
 
-      // Spacebar hold
       window.addEventListener('keydown', function(e){
         if (e.code === 'Space' && !e.repeat && (e.target === document.body || e.target === document.documentElement)) {
           e.preventDefault();
@@ -1868,88 +2112,171 @@
         if (e.code === 'Space') disengageWarp();
       });
 
-      // Background pointer hold
-      var stageEl = document.querySelector('.page-stage');
-      if (stageEl) {
-        stageEl.addEventListener('pointerdown', function(e){
-          if (e.target && (e.target.closest('button') || e.target.closest('a') || e.target.closest('.countdown-unit-card') || e.target.closest('.calendar-dropdown'))) {
-            return;
-          }
-          engageWarp();
-        });
-      }
-      window.addEventListener('pointerup', disengageWarp);
-      window.addEventListener('pointercancel', disengageWarp);
+      var holdTimeout = null;
+      window.addEventListener('pointerdown', function(e){
+        if (e.target && (e.target.closest('button') || e.target.closest('a') || e.target.closest('.countdown-unit-card') || e.target.closest('.calendar-dropdown'))) {
+          return;
+        }
+        holdTimeout = setTimeout(function(){
+          if (isDragging && !pointerMoved) engageWarp();
+          else if (!pointerMoved) engageWarp();
+        }, 280);
+      });
+      window.addEventListener('pointerup', function(){
+        clearTimeout(holdTimeout);
+        disengageWarp();
+      });
+      window.addEventListener('pointercancel', function(){
+        clearTimeout(holdTimeout);
+        disengageWarp();
+      });
 
-      for (var i = 0; i < count; i++){
-        stars.push({
-          x: (Math.random() - 0.5) * 2600,
-          y: (Math.random() - 0.5) * 2600,
-          z: Math.random() * 1900 + 1,
-          pz: 0,
-          r: Math.random() * 1.5 + 0.4,
-          type: Math.random() < 0.28 ? 'lime' : Math.random() < 0.15 ? 'cyan' : 'white'
-        });
-      }
+      // 5. RENDER LOOP WITH FULL 3DOF ROTATION MATRIX
+      var frameCount = 0;
+      function render(){
+        frameCount++;
 
-      function loop(){
-        mouseX += (targetMouseX - mouseX) * 0.05;
-        mouseY += (targetMouseY - mouseY) * 0.05;
+        camPitch += (targetPitch - camPitch) * 0.085;
+        camYaw   += (targetYaw   - camYaw)   * 0.085;
+        camRoll  += (targetRoll  - camRoll)  * 0.085;
 
         warpSpeed += (targetWarpSpeed - warpSpeed) * 0.07;
+        var isStreaking = warpSpeed > 2.8;
+
+        if (frameCount % 6 === 0) {
+          updateTelemetry();
+        }
 
         ctx.clearRect(0, 0, w, h);
 
-        var curCx = cx + mouseX;
-        var curCy = cy + mouseY;
-        var isStreaking = warpSpeed > 3.2;
+        var cosY = Math.cos(camYaw),   sinY = Math.sin(camYaw);
+        var cosP = Math.cos(camPitch), sinP = Math.sin(camPitch);
+        var cosR = Math.cos(camRoll),  sinR = Math.sin(camRoll);
 
-        for (var i = 0; i < stars.length; i++){
-          var s = stars[i];
-          s.pz = s.z;
-          s.z -= warpSpeed;
-
-          if (s.z <= 1){
-            s.z = 1900;
-            s.pz = s.z;
-            s.x = (Math.random() - 0.5) * 2600;
-            s.y = (Math.random() - 0.5) * 2600;
-          }
-
-          var k = fov / s.z;
-          var px = s.x * k + curCx;
-          var py = s.y * k + curCy;
-
-          if (px < -40 || px > w + 40 || py < -40 || py > h + 40) continue;
-
-          var alpha = Math.min(1, Math.max(0.15, (1 - s.z / 1900) * 1.2));
-          var color = (s.type === 'lime') ? 'rgba(186, 236, 67, ' + alpha + ')' :
-                      (s.type === 'cyan') ? 'rgba(29, 225, 243, ' + (alpha * 0.85) + ')' :
-                      'rgba(240, 245, 255, ' + alpha + ')';
-
-          if (isStreaking) {
-            var prevK = fov / Math.max(1, s.pz);
-            var prevPx = s.x * prevK + curCx;
-            var prevPy = s.y * prevK + curCy;
-
+        // Distant cosmic emission nebula (anchored to celestial sphere)
+        var nebX = 3000 * Math.sin(-0.78);
+        var nebY = 3000 * Math.sin(0.26);
+        var nebZ = 3000 * Math.cos(-0.78);
+        var nx1 = nebX * cosY - nebZ * sinY;
+        var nz1 = nebX * sinY + nebZ * cosY;
+        var ny2 = nebY * cosP - nz1 * sinP;
+        var nz2 = nebY * sinP + nz1 * cosP;
+        if (nz2 > 50) {
+          var nScale = fov / nz2;
+          var nScreenX = cx + (nx1 * cosR - ny2 * sinR) * nScale;
+          var nScreenY = cy + (nx1 * sinR + ny2 * cosR) * nScale;
+          var nRad = 260 * nScale;
+          if (nRad > 10 && nScreenX > -nRad && nScreenX < w + nRad && nScreenY > -nRad && nScreenY < h + nRad) {
+            var nebGrad = ctx.createRadialGradient(nScreenX, nScreenY, 0, nScreenX, nScreenY, nRad);
+            nebGrad.addColorStop(0, 'rgba(40, 24, 65, 0.14)');
+            nebGrad.addColorStop(0.45, 'rgba(18, 30, 52, 0.08)');
+            nebGrad.addColorStop(1, 'transparent');
+            ctx.fillStyle = nebGrad;
             ctx.beginPath();
-            ctx.moveTo(prevPx, prevPy);
-            ctx.lineTo(px, py);
-            ctx.lineWidth = Math.max(1.2, s.r * (warpSpeed / 7.0));
-            ctx.strokeStyle = color;
-            ctx.stroke();
-          } else {
-            var size = Math.max(0.6, (1 - s.z / 1900) * s.r * 2.8);
-            ctx.beginPath();
-            ctx.arc(px, py, size, 0, Math.PI * 2);
-            ctx.fillStyle = color;
+            ctx.arc(nScreenX, nScreenY, nRad, 0, Math.PI * 2);
             ctx.fill();
           }
         }
 
-        requestAnimationFrame(loop);
+        // RENDER ALL STARS
+        for (var i = 0; i < stars.length; i++){
+          var s = stars[i];
+
+          var prevZ = s.z;
+          if (!s.isDeepSky) {
+            s.z -= warpSpeed;
+            if (s.z < 25) {
+              s.z = 2400;
+              s.x = (Math.random() - 0.5) * 3600;
+              s.y = (Math.random() - 0.5) * 2600;
+              prevZ = s.z;
+            }
+          }
+
+          var x1 = s.x * cosY - s.z * sinY;
+          var z1 = s.x * sinY + s.z * cosY;
+          var y2 = s.y * cosP - z1 * sinP;
+          var z2 = s.y * sinP + z1 * cosP;
+
+          if (z2 <= 20) continue;
+
+          var x3 = x1 * cosR - y2 * sinR;
+          var y3 = x1 * sinR + y2 * cosR;
+
+          var scale = fov / z2;
+          var px = cx + x3 * scale;
+          var py = cy + y3 * scale;
+
+          if (px < -30 || px > w + 30 || py < -30 || py > h + 30) continue;
+
+          var alpha = s.baseAlpha;
+          if (s.scintillationSpeed > 0) {
+            s.scintillationPhase += s.scintillationSpeed;
+            alpha *= (0.88 + Math.sin(s.scintillationPhase) * 0.12);
+          }
+
+          var spec = s.spec;
+          var starColor = 'rgba(' + spec.r + ',' + spec.g + ',' + spec.b + ',' + Math.min(1, alpha).toFixed(3) + ')';
+
+          if (isStreaking && !s.isDeepSky) {
+            var trailZ = prevZ + warpSpeed * 1.4;
+            var tx1 = s.x * cosY - trailZ * sinY;
+            var tz1 = s.x * sinY + trailZ * cosY;
+            var ty2 = s.y * cosP - tz1 * sinP;
+            var tz2 = s.y * sinP + tz1 * cosP;
+
+            if (tz2 > 10) {
+              var tScale = fov / tz2;
+              var tx3 = tx1 * cosR - ty2 * sinR;
+              var ty3 = tx1 * sinR + ty2 * cosR;
+              var tpx = cx + tx3 * tScale;
+              var tpy = cy + ty3 * tScale;
+
+              ctx.beginPath();
+              ctx.moveTo(tpx, tpy);
+              ctx.lineTo(px, py);
+              ctx.strokeStyle = starColor;
+              ctx.lineWidth = Math.max(0.8, s.radius * (warpSpeed / 8.0));
+              ctx.stroke();
+            }
+          } else {
+            var rad = Math.max(0.45, s.radius * Math.min(1.4, scale * 3.5));
+
+            if (s.hasHalo && rad > 1.2) {
+              var haloRad = rad * 3.8;
+              var haloGrad = ctx.createRadialGradient(px, py, rad * 0.4, px, py, haloRad);
+              haloGrad.addColorStop(0, 'rgba(' + spec.r + ',' + spec.g + ',' + spec.b + ',' + (alpha * 0.45).toFixed(3) + ')');
+              haloGrad.addColorStop(0.5, 'rgba(' + spec.r + ',' + spec.g + ',' + spec.b + ',' + (alpha * 0.12).toFixed(3) + ')');
+              haloGrad.addColorStop(1, 'transparent');
+              ctx.fillStyle = haloGrad;
+              ctx.beginPath();
+              ctx.arc(px, py, haloRad, 0, Math.PI * 2);
+              ctx.fill();
+            }
+
+            ctx.beginPath();
+            ctx.arc(px, py, rad, 0, Math.PI * 2);
+            ctx.fillStyle = starColor;
+            ctx.fill();
+
+            if (s.hasSpikes && rad > 1.5 && !isStreaking) {
+              var spikeLen = rad * 4.5;
+              ctx.strokeStyle = 'rgba(' + spec.r + ',' + spec.g + ',' + spec.b + ',' + (alpha * 0.22).toFixed(3) + ')';
+              ctx.lineWidth = 0.55;
+              ctx.beginPath();
+              ctx.moveTo(px - spikeLen, py);
+              ctx.lineTo(px + spikeLen, py);
+              ctx.moveTo(px, py - spikeLen);
+              ctx.lineTo(px, py + spikeLen);
+              ctx.stroke();
+            }
+          }
+        }
+
+        requestAnimationFrame(render);
       }
-      loop();
+
+      render();
     })();
 
     // 4. SOLID 3D TUMBLER DIGIT UPDATE (ZERO OVERLAP)
