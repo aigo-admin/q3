@@ -661,7 +661,7 @@
       font-size: 10px;
       font-weight: 500;
       letter-spacing: 0.08em;
-      padding: 3px 8px;
+      padding: 3px 9px;
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.09);
@@ -670,15 +670,23 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
+      cursor: pointer;
+      outline: none;
       transition: all 0.25s ease;
       user-select: none;
     }
 
+    .gyro-pill:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
     .gyro-pill.active {
-      background: rgba(30, 90, 200, 0.18);
-      border-color: rgba(110, 180, 255, 0.4);
+      background: rgba(30, 90, 200, 0.22);
+      border-color: rgba(110, 180, 255, 0.5);
       color: #b5d5ff;
-      box-shadow: 0 0 12px rgba(80, 160, 255, 0.2);
+      box-shadow: 0 0 12px rgba(80, 160, 255, 0.25);
     }
 
     @keyframes pulse {
@@ -1472,7 +1480,7 @@
       <div class="bottom-status">
         <span class="status-pulse-dot"></span>
         <span>SecLeaf Operations</span>
-        <span class="gyro-pill" id="gyroPill" title="Cockpit Gyroscope & Space Perspective">360° SPACE LOOK</span>
+        <button class="gyro-pill" id="gyroPill" type="button" aria-label="Toggle Gyroscope Perspective" title="Cockpit Gyroscope & Space Perspective">360° SPACE LOOK</button>
       </div>
 
       <div>
@@ -2031,20 +2039,79 @@
         }
       }
 
-      function requestGyroPermission(){
+      var permissionRequested = false;
+      function requestGyroPermission(isExplicit){
         if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-          DeviceOrientationEvent.requestPermission().then(function(state){
-            if (state === 'granted') {
-              window.addEventListener('deviceorientation', handleOrientation, { passive: true });
-              gyroActive = true;
-              updateTelemetry();
+          if (gyroActive) {
+            if (isExplicit) {
+              gyroCalibrated = false;
+              if (typeof showToast === 'function') showToast('360° Gyroscope re-centered');
             }
-          }).catch(function(){});
+            return;
+          }
+          if (permissionRequested && !isExplicit) return;
+          permissionRequested = true;
+          try {
+            DeviceOrientationEvent.requestPermission()
+              .then(function(state){
+                if (state === 'granted') {
+                  gyroActive = true;
+                  gyroCalibrated = false;
+                  window.removeEventListener('deviceorientation', handleOrientation);
+                  window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+                  updateTelemetry();
+                  if (isExplicit && typeof showToast === 'function') {
+                    showToast('360° Gyroscope calibrated');
+                  }
+                } else if (isExplicit && typeof showToast === 'function') {
+                  showToast('Motion permission denied • Drag to look around');
+                }
+              })
+              .catch(function(){
+                permissionRequested = false;
+                if (isExplicit && typeof showToast === 'function') {
+                  showToast('Tap 360° SPACE LOOK to enable motion');
+                }
+              });
+          } catch(err){
+            permissionRequested = false;
+          }
+        } else if (window.DeviceOrientationEvent) {
+          if (!gyroActive) {
+            window.removeEventListener('deviceorientation', handleOrientation);
+            window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+            gyroActive = true;
+            updateTelemetry();
+          }
+          if (isExplicit && typeof showToast === 'function') {
+            gyroCalibrated = false;
+            showToast('360° Gyroscope re-centered');
+          }
         }
       }
 
-      if (window.DeviceOrientationEvent) {
+      if (window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission !== 'function') {
         window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+      }
+
+      // iOS Safari requires a direct user gesture (click/touchend) to prompt DeviceOrientationEvent.requestPermission()
+      var firstTapEvents = ['click', 'touchend'];
+      function handleFirstTap(e){
+        var isPill = !!(e && e.target && (e.target.id === 'gyroPill' || (e.target.closest && e.target.closest('#gyroPill'))));
+        requestGyroPermission(isPill);
+        firstTapEvents.forEach(function(evt){
+          window.removeEventListener(evt, handleFirstTap, true);
+        });
+      }
+      firstTapEvents.forEach(function(evt){
+        window.addEventListener(evt, handleFirstTap, { capture: true, passive: true });
+      });
+
+      if (gyroPill) {
+        gyroPill.addEventListener('click', function(e){
+          e.stopPropagation();
+          requestGyroPermission(true);
+        });
       }
 
       // DESKTOP / TOUCH DRAG & PARALLAX LOOK-AROUND
@@ -2053,7 +2120,6 @@
       var pointerMoved = false;
 
       window.addEventListener('pointerdown', function(e){
-        requestGyroPermission();
         if (e.target && (e.target.closest('button') || e.target.closest('a') || e.target.closest('.countdown-unit-card') || e.target.closest('.calendar-dropdown'))) {
           return;
         }
