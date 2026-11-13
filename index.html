@@ -689,6 +689,137 @@
       box-shadow: 0 0 12px rgba(80, 160, 255, 0.25);
     }
 
+    /* 360 GYRO TOP BUTTON IN HEADER */
+    .gyro-hud-btn {
+      border-color: rgba(110, 180, 255, 0.28);
+      color: rgba(200, 225, 255, 0.85);
+    }
+
+    .gyro-hud-btn:hover {
+      border-color: rgba(110, 180, 255, 0.65);
+      color: #ffffff;
+      box-shadow: 0 0 16px rgba(80, 160, 255, 0.3);
+    }
+
+    .gyro-hud-btn.active {
+      border-color: rgba(37, 211, 102, 0.55);
+      color: #8affc2;
+    }
+
+    .gyro-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #6eb4ff;
+      box-shadow: 0 0 8px #6eb4ff;
+      transition: all 0.25s ease;
+    }
+
+    .gyro-hud-btn.active .gyro-dot {
+      background: #25D366;
+      box-shadow: 0 0 10px #25D366;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    /* PROMINENT MOBILE 360 GYRO LOOK BANNER */
+    .mobile-gyro-banner {
+      display: none;
+      margin: 18px auto 2px auto;
+      justify-content: center;
+      width: 100%;
+      max-width: 360px;
+      z-index: 10;
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-gyro-banner {
+        display: flex;
+      }
+    }
+
+    .mobile-gyro-trigger {
+      width: 100%;
+      background: rgba(12, 22, 42, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(110, 180, 255, 0.42);
+      color: #ffffff;
+      font-family: var(--font-display);
+      padding: 12px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 16px rgba(80, 160, 255, 0.18);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+
+    .mobile-gyro-trigger:hover, .mobile-gyro-trigger:active {
+      background: rgba(22, 42, 80, 0.92);
+      border-color: rgba(140, 210, 255, 0.8);
+      box-shadow: 0 0 25px rgba(80, 170, 255, 0.38);
+      transform: scale(0.99);
+    }
+
+    .gyro-trigger-icon {
+      font-size: 18px;
+      color: #6eb4ff;
+      display: inline-block;
+      line-height: 1;
+      animation: spinSlow 10s linear infinite;
+    }
+
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .gyro-trigger-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .gyro-trigger-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    .gyro-trigger-sub {
+      font-size: 10px;
+      color: rgba(190, 220, 255, 0.72);
+      margin-top: 1px;
+    }
+
+    .mobile-gyro-banner.active .mobile-gyro-trigger {
+      background: rgba(10, 36, 24, 0.7);
+      border-color: rgba(37, 211, 102, 0.55);
+      box-shadow: 0 0 20px rgba(37, 211, 102, 0.25);
+    }
+
+    .mobile-gyro-banner.active .gyro-trigger-icon {
+      color: #25D366;
+      animation: none;
+    }
+
+    .mobile-gyro-banner.active .gyro-trigger-title {
+      color: #8affc2;
+    }
+
+    .mobile-gyro-banner.active .gyro-trigger-sub {
+      color: rgba(180, 255, 215, 0.78);
+    }
+
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.35; transform: scale(0.85); }
@@ -1308,6 +1439,12 @@
           <span id="snd-label">Tap for sound</span>
         </button>
 
+        <!-- 360 GYROSCOPE SPACE LOOK HUD BUTTON -->
+        <button class="sound-btn gyro-hud-btn" id="gyroHudBtn" type="button" aria-label="Toggle 360 space look" title="Cockpit Gyroscope & Space Perspective">
+          <span class="sound-icon-dot gyro-dot"></span>
+          <span id="gyroHudLabel">360° Space Look</span>
+        </button>
+
         <!-- ADD TO CALENDAR BUTTON & COMPATIBLE DROPDOWN -->
         <div class="calendar-menu-wrap" id="calendarMenu">
           <button class="calendar-trigger-btn" id="cal-btn" onclick="toggleCalendarMenu()" aria-expanded="false">
@@ -1448,6 +1585,17 @@
           </div>
           <div class="unit-label">Seconds</div>
         </div>
+      </div>
+
+      <!-- PROMINENT MOBILE 360 GYRO ACTIVATION BANNER (iOS & Android) -->
+      <div class="mobile-gyro-banner" id="mobileGyroBanner">
+        <button class="mobile-gyro-trigger" id="mobileGyroBtn" type="button" aria-label="Enable 360 Space Gyroscope">
+          <span class="gyro-trigger-icon">⟲</span>
+          <span class="gyro-trigger-text">
+            <span class="gyro-trigger-title" id="mobileGyroTitle">ENABLE 360° GYRO LOOK</span>
+            <span class="gyro-trigger-sub" id="mobileGyroSub">Tap to unlock phone motion controls</span>
+          </span>
+        </button>
       </div>
 
       <!-- COMMUNITY ACTION BUTTONS -->
@@ -1835,6 +1983,12 @@
       var canvas = $('ambientCanvas');
       var ctx = canvas.getContext('2d');
       var gyroPill = $('gyroPill');
+      var gyroHudBtn = $('gyroHudBtn');
+      var gyroHudLabel = $('gyroHudLabel');
+      var mobileGyroBanner = $('mobileGyroBanner');
+      var mobileGyroBtn = $('mobileGyroBtn');
+      var mobileGyroTitle = $('mobileGyroTitle');
+      var mobileGyroSub = $('mobileGyroSub');
       var w, h, cx, cy;
       var fov = 420;
 
@@ -1999,16 +2153,39 @@
 
       // 4. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
       function updateTelemetry(){
-        if (!gyroPill) return;
         var degP = Math.round(camPitch * 180 / Math.PI);
         var degY = Math.round(((camYaw * 180 / Math.PI) % 360 + 360) % 360);
         var signP = degP >= 0 ? '+' : '';
+        var coords = 'P:' + signP + degP + '° Y:' + degY + '°';
+
         if (gyroActive) {
-          gyroPill.classList.add('active');
-          gyroPill.textContent = '360° GYRO • P:' + signP + degP + '° Y:' + degY + '°';
+          if (gyroPill) {
+            gyroPill.classList.add('active');
+            gyroPill.textContent = '360° GYRO • ' + coords;
+          }
+          if (gyroHudBtn) {
+            gyroHudBtn.classList.add('active');
+            if (gyroHudLabel) gyroHudLabel.textContent = '360° GYRO • ' + coords;
+          }
+          if (mobileGyroBanner) {
+            mobileGyroBanner.classList.add('active');
+            if (mobileGyroTitle) mobileGyroTitle.textContent = '360° GYRO ACTIVE (' + coords + ')';
+            if (mobileGyroSub) mobileGyroSub.textContent = 'Tilt phone to look • Tap to re-center';
+          }
         } else {
-          gyroPill.classList.remove('active');
-          gyroPill.textContent = '360° LOOK • P:' + signP + degP + '° Y:' + degY + '°';
+          if (gyroPill) {
+            gyroPill.classList.remove('active');
+            gyroPill.textContent = '360° LOOK • ' + coords;
+          }
+          if (gyroHudBtn) {
+            gyroHudBtn.classList.remove('active');
+            if (gyroHudLabel) gyroHudLabel.textContent = '360° Space Look';
+          }
+          if (mobileGyroBanner) {
+            mobileGyroBanner.classList.remove('active');
+            if (mobileGyroTitle) mobileGyroTitle.textContent = 'ENABLE 360° GYRO LOOK';
+            if (mobileGyroSub) mobileGyroSub.textContent = 'Tap to unlock phone motion controls';
+          }
         }
       }
 
@@ -2039,79 +2216,74 @@
         }
       }
 
-      var permissionRequested = false;
-      function requestGyroPermission(isExplicit){
+      function activateGyro(isExplicit){
+        if (!gyroActive) {
+          gyroActive = true;
+          window.removeEventListener('deviceorientation', handleOrientation);
+          window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+        }
+        gyroCalibrated = false;
+        updateTelemetry();
+        if (isExplicit && typeof showToast === 'function') {
+          showToast('360° Gyroscope calibrated • Move phone to look around');
+        }
+      }
+
+      function triggerMotionPermission(){
+        // MUST BE CALLED DIRECTLY FROM A USER BUTTON GESTURE (iOS WebKit requirement)
         if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-          if (gyroActive) {
-            if (isExplicit) {
-              gyroCalibrated = false;
-              if (typeof showToast === 'function') showToast('360° Gyroscope re-centered');
-            }
-            return;
-          }
-          if (permissionRequested && !isExplicit) return;
-          permissionRequested = true;
           try {
             DeviceOrientationEvent.requestPermission()
               .then(function(state){
                 if (state === 'granted') {
-                  gyroActive = true;
-                  gyroCalibrated = false;
-                  window.removeEventListener('deviceorientation', handleOrientation);
-                  window.addEventListener('deviceorientation', handleOrientation, { passive: true });
-                  updateTelemetry();
-                  if (isExplicit && typeof showToast === 'function') {
-                    showToast('360° Gyroscope calibrated');
-                  }
-                } else if (isExplicit && typeof showToast === 'function') {
-                  showToast('Motion permission denied • Drag to look around');
+                  activateGyro(true);
+                } else {
+                  showToast('Motion permission: ' + state + ' • Drag screen to look around');
                 }
               })
-              .catch(function(){
-                permissionRequested = false;
-                if (isExplicit && typeof showToast === 'function') {
-                  showToast('Tap 360° SPACE LOOK to enable motion');
+              .catch(function(err){
+                console.warn('DeviceOrientationEvent error:', err);
+                if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+                  DeviceMotionEvent.requestPermission().then(function(s2){
+                    if (s2 === 'granted') activateGyro(true);
+                    else showToast('Motion permission denied • Drag to look around');
+                  }).catch(function(){
+                    showToast('Motion sensors require HTTPS or were blocked in settings');
+                  });
+                } else {
+                  showToast('Motion sensors require HTTPS or were blocked in settings');
                 }
               });
           } catch(err){
-            permissionRequested = false;
+            console.error('requestPermission exception:', err);
+            showToast('Motion error: ' + (err.message || 'Permission blocked'));
           }
         } else if (window.DeviceOrientationEvent) {
-          if (!gyroActive) {
-            window.removeEventListener('deviceorientation', handleOrientation);
-            window.addEventListener('deviceorientation', handleOrientation, { passive: true });
-            gyroActive = true;
-            updateTelemetry();
-          }
-          if (isExplicit && typeof showToast === 'function') {
-            gyroCalibrated = false;
-            showToast('360° Gyroscope re-centered');
-          }
+          // Android, Chrome, or older browsers without permission gate
+          activateGyro(true);
+        } else {
+          showToast('Motion sensors not supported • Drag screen to look around');
         }
       }
 
-      if (window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission !== 'function') {
-        window.addEventListener('deviceorientation', handleOrientation, { passive: true });
-      }
-
-      // iOS Safari requires a direct user gesture (click/touchend) to prompt DeviceOrientationEvent.requestPermission()
-      var firstTapEvents = ['click', 'touchend'];
-      function handleFirstTap(e){
-        var isPill = !!(e && e.target && (e.target.id === 'gyroPill' || (e.target.closest && e.target.closest('#gyroPill'))));
-        requestGyroPermission(isPill);
-        firstTapEvents.forEach(function(evt){
-          window.removeEventListener(evt, handleFirstTap, true);
+      // Direct synchronous user click listeners on all three UI buttons
+      [gyroPill, gyroHudBtn, mobileGyroBtn].forEach(function(btn){
+        if (!btn) return;
+        btn.addEventListener('click', function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if (gyroActive) {
+            gyroCalibrated = false;
+            if (typeof showToast === 'function') showToast('360° Gyroscope re-centered');
+          } else {
+            triggerMotionPermission();
+          }
         });
-      }
-      firstTapEvents.forEach(function(evt){
-        window.addEventListener(evt, handleFirstTap, { capture: true, passive: true });
       });
 
-      if (gyroPill) {
-        gyroPill.addEventListener('click', function(e){
-          e.stopPropagation();
-          requestGyroPermission(true);
-        });
+      // Android automatic initialization (non-iOS browsers where permission function does not exist)
+      if (window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission !== 'function') {
+        window.addEventListener('deviceorientation', handleOrientation, { passive: true });
       }
 
       // DESKTOP / TOUCH DRAG & PARALLAX LOOK-AROUND
