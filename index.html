@@ -2058,7 +2058,20 @@
         }
       })();
 
-      // 6. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
+      // 6. CELESTIAL LANDMARK 2: SATURN AND ITS RINGS (RIGHT SKY: YAW +78°, PITCH +16°)
+      var satYaw = 88 * Math.PI / 180;
+      var satPitch = 20 * Math.PI / 180;
+      var satDist = 2800;
+      var SATURN = {
+        x: satDist * Math.cos(satPitch) * Math.sin(satYaw),
+        y: -satDist * Math.sin(satPitch), // Above horizontal
+        z: satDist * Math.cos(satPitch) * Math.cos(satYaw),
+        bodyRadius: 210,
+        ringTilt: -24 * Math.PI / 180,
+        ringAspect: 0.38
+      };
+
+      // 7. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
       function updateTelemetry(){
         if (!gyroPill) return;
         var degP = Math.round(camPitch * 180 / Math.PI);
@@ -2397,6 +2410,132 @@
               ctx.lineTo(px, py + spikeLen);
               ctx.stroke();
             }
+          }
+        }
+
+        // -------------------------------------------------------------
+        // RENDER CELESTIAL LANDMARK 2: SATURN & ITS RINGS (RIGHT HORIZON)
+        // -------------------------------------------------------------
+        var sx1 = SATURN.x * cosY - SATURN.z * sinY;
+        var sz1 = SATURN.x * sinY + SATURN.z * cosY;
+        var sy2 = SATURN.y * cosP - sz1 * sinP;
+        var sz2 = SATURN.y * sinP + sz1 * cosP;
+
+        if (sz2 > 60) {
+          var sx3 = sx1 * cosR - sy2 * sinR;
+          var sy3 = sx1 * sinR + sy2 * cosR;
+
+          var satScale = fov / sz2;
+          var spx = cx + sx3 * satScale;
+          var spy = cy + sy3 * satScale;
+          var sBodyR = Math.max(1.8, SATURN.bodyRadius * satScale);
+          var sRingOut = sBodyR * 2.32;
+
+          if (spx > -sRingOut && spx < w + sRingOut && spy > -sRingOut && spy < h + sRingOut) {
+            ctx.save();
+            ctx.translate(spx, spy);
+            var netTilt = SATURN.ringTilt + camRoll;
+
+            function drawSaturnRingHalf(isFront){
+              var startAngle = isFront ? 0 : Math.PI;
+              var endAngle = isFront ? Math.PI : Math.PI * 2;
+              var rings = [
+                { inR: 1.20, outR: 1.48, fill: 'rgba(125, 115, 100, 0.28)' }, // Ring C (Crepe)
+                { inR: 1.48, outR: 1.88, fill: 'rgba(238, 222, 192, 0.92)' }, // Ring B (Bright main)
+                { inR: 1.98, outR: 2.28, fill: 'rgba(205, 192, 172, 0.75)' }  // Ring A (Outer)
+              ];
+              for (var i = 0; i < rings.length; i++){
+                var ring = rings[i];
+                var rIn = sBodyR * ring.inR;
+                var rOut = sBodyR * ring.outR;
+                ctx.beginPath();
+                ctx.ellipse(0, 0, rOut, rOut * SATURN.ringAspect, netTilt, startAngle, endAngle);
+                ctx.ellipse(0, 0, rIn, rIn * SATURN.ringAspect, netTilt, endAngle, startAngle, true);
+                ctx.closePath();
+                ctx.fillStyle = ring.fill;
+                ctx.fill();
+              }
+            }
+
+            // 1. Back half of rings (behind planet globe)
+            drawSaturnRingHalf(false);
+
+            // Planet shadow cast across back rings
+            ctx.beginPath();
+            ctx.ellipse(0, 0, sBodyR * 2.3, sBodyR * 2.3 * SATURN.ringAspect, netTilt, Math.PI * 1.55, Math.PI * 1.95);
+            ctx.lineTo(0, 0);
+            ctx.closePath();
+            ctx.fillStyle = 'rgba(2, 5, 12, 0.88)';
+            ctx.fill();
+
+            // 2. Planet body (Globe)
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(0, 0, sBodyR, 0, Math.PI * 2);
+            ctx.clip();
+
+            // Spherical shading (sunlight from upper-left)
+            var sunGrad = ctx.createRadialGradient(-sBodyR * 0.35, -sBodyR * 0.35, sBodyR * 0.1, sBodyR * 0.2, sBodyR * 0.2, sBodyR * 1.15);
+            sunGrad.addColorStop(0, '#f5e9d3');
+            sunGrad.addColorStop(0.35, '#dec9a4');
+            sunGrad.addColorStop(0.75, '#b0946d');
+            sunGrad.addColorStop(1, '#1b1712');
+            ctx.fillStyle = sunGrad;
+            ctx.fill();
+
+            // Atmospheric latitudinal cloud belts
+            var satBands = [
+              { yOff: -0.65, h: 0.18, col: 'rgba(145, 148, 130, 0.22)' },
+              { yOff: -0.35, h: 0.22, col: 'rgba(215, 185, 140, 0.35)' },
+              { yOff: -0.08, h: 0.18, col: 'rgba(255, 245, 225, 0.40)' },
+              { yOff: 0.12,  h: 0.25, col: 'rgba(195, 160, 120, 0.35)' },
+              { yOff: 0.48,  h: 0.22, col: 'rgba(160, 145, 125, 0.30)' }
+            ];
+            for (var b = 0; b < satBands.length; b++){
+              var band = satBands[b];
+              ctx.fillStyle = band.col;
+              ctx.fillRect(-sBodyR, band.yOff * sBodyR, sBodyR * 2, band.h * sBodyR);
+            }
+
+            // Ring shadow across globe
+            ctx.beginPath();
+            ctx.ellipse(0, -sBodyR * 0.08, sBodyR * 1.5, sBodyR * 1.5 * SATURN.ringAspect, netTilt, 0, Math.PI);
+            ctx.lineWidth = sBodyR * 0.14;
+            ctx.strokeStyle = 'rgba(15, 12, 10, 0.75)';
+            ctx.stroke();
+
+            ctx.restore();
+
+            // 3. Front half of rings (in front of planet)
+            drawSaturnRingHalf(true);
+
+            // 4. Moon Titan (orange nitrogen-methane haze)
+            var titanX = sBodyR * 3.8;
+            var titanY = -sBodyR * 1.2;
+            var titanRad = Math.max(1.2, sBodyR * 0.11);
+            var titanGrad = ctx.createRadialGradient(titanX, titanY, 0, titanX, titanY, titanRad * 2.2);
+            titanGrad.addColorStop(0, '#ffbe6b');
+            titanGrad.addColorStop(0.5, '#e68a2e');
+            titanGrad.addColorStop(1, 'transparent');
+            ctx.fillStyle = titanGrad;
+            ctx.beginPath();
+            ctx.arc(titanX, titanY, titanRad * 2.2, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = '#ffe0a8';
+            ctx.beginPath();
+            ctx.arc(titanX, titanY, titanRad * 0.65, 0, Math.PI * 2);
+            ctx.fill();
+
+            // 5. Icy Moon Rhea (pinpoint diamond)
+            var rheaX = -sBodyR * 2.7;
+            var rheaY = sBodyR * 0.75;
+            ctx.fillStyle = 'rgba(240, 248, 255, 0.85)';
+            ctx.beginPath();
+            ctx.arc(rheaX, rheaY, Math.max(0.7, sBodyR * 0.04), 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.restore();
           }
         }
 
