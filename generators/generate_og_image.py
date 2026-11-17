@@ -62,8 +62,8 @@ if os.path.exists(logo_path):
     logo.thumbnail((95, 95), Image.Resampling.LANCZOS)
     img.paste(logo, (width//2 - logo.width//2, 55), logo)
 
-# 2. Pill Badge: FLAGSHIP CYBER OPERATIONS
-badge_text = "FLAGSHIP CYBER OPERATIONS"
+# 2. Pill Badge: SECLEAF Q3 2027 OPERATIONS
+badge_text = "SECLEAF Q3 2027 OPERATIONS"
 bbox = f_badge.getbbox(badge_text)
 bw = bbox[2] - bbox[0]
 bx1, by1 = width//2 - bw//2 - 18, 175
@@ -96,13 +96,13 @@ m_box = f_meta.getbbox(meta_text)
 mw = m_box[2] - m_box[0]
 draw.text((width//2 - mw//2, 415), meta_text, font=f_meta, fill=(148, 163, 184))
 
-# 6. Bottom Domain Badges: ctf.secleaf.xyz • q3.secleaf.xyz • ctf.secleaf.tech • q3.secleaf.tech
-domains = "ctf.secleaf.xyz   •   q3.secleaf.xyz   •   ctf.secleaf.tech   •   q3.secleaf.tech"
+# 6. Bottom Domain Badges: q3.secleaf.xyz • ctf.secleaf.xyz • q3.secleaf.tech • ctf.secleaf.tech
+domains = "q3.secleaf.xyz   •   ctf.secleaf.xyz   •   q3.secleaf.tech   •   ctf.secleaf.tech"
 dom_box = f_links.getbbox(domains)
 dom_w = dom_box[2] - dom_box[0]
 draw.line([(width//2 - 250, 480), (width//2 + 250, 480)], fill=(40, 48, 64), width=1)
 draw.text((width//2 - dom_w//2, 505), domains, font=f_links, fill=(186, 236, 67))
 
 # Save
-img.save('og-image.png', format='PNG', quality=95)
-print("Saved 1200x630 og-image.png successfully!")
+img.save('Q3/og-image.png', format='PNG', quality=95)
+print("Saved 1200x630 Q3/og-image.png successfully!")
