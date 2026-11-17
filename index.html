@@ -1859,6 +1859,16 @@
       var gyroCalibrated = false;
       var basePitch = 0, baseYaw = 0;
 
+      window.__setLook = function(yawDeg, pitchDeg){
+        targetYaw = camYaw = yawDeg * Math.PI / 180;
+        targetPitch = camPitch = pitchDeg * Math.PI / 180;
+      };
+      try {
+        var _sp = new URLSearchParams(window.location.search);
+        if (_sp.has('yaw')) targetYaw = camYaw = parseFloat(_sp.get('yaw')) * Math.PI / 180;
+        if (_sp.has('pitch')) targetPitch = camPitch = parseFloat(_sp.get('pitch')) * Math.PI / 180;
+      } catch(e){}
+
       // STELLAR POPULATION WITH REAL SPECTRAL TEMPERATURES
       // Harvard Spectral Classification (O/B, A, F, G, K, M)
       var SPECTRAL_CLASSES = [
@@ -2059,7 +2069,7 @@
         }
       })();
 
-      // 6. CELESTIAL LANDMARK 2: SATURN AND ITS RINGS (RIGHT SKY: YAW +78°, PITCH +16°)
+      // 6. CELESTIAL LANDMARK 2: SATURN AND ITS RINGS (RIGHT SKY: YAW +88°, PITCH +20°)
       var satYaw = 88 * Math.PI / 180;
       var satPitch = 20 * Math.PI / 180;
       var satDist = 2800;
@@ -2072,7 +2082,51 @@
         ringAspect: 0.38
       };
 
-      // 7. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
+      // 7. CELESTIAL LANDMARK 3: THE GREAT ORION NEBULA (M42) & TRAPEZIUM CLUSTER
+      // Zenith / High overhead sky (Yaw -38°, Pitch +62°)
+      var orionYaw = -38 * Math.PI / 180;
+      var orionPitch = 62 * Math.PI / 180;
+      var orionDist = 2850;
+      var ORION_NEBULA = {
+        x: orionDist * Math.cos(orionPitch) * Math.sin(orionYaw),
+        y: -orionDist * Math.sin(orionPitch),
+        z: orionDist * Math.cos(orionPitch) * Math.cos(orionYaw),
+        coreRadius: 185,
+        trapezium: [
+          { dx: -3.8, dy: -2.6, rad: 2.2, col: 'rgba(235, 248, 255, 0.98)', spike: true },  // theta^1 Ori C (O6V)
+          { dx: 4.6,  dy: 3.2,  rad: 1.8, col: 'rgba(215, 235, 255, 0.92)', spike: true },  // theta^1 Ori D (B0.5V)
+          { dx: -6.9, dy: 5.4,  rad: 1.6, col: 'rgba(205, 230, 255, 0.88)', spike: false }, // theta^1 Ori A (B0.5V)
+          { dx: 2.8,  dy: -7.2, rad: 1.4, col: 'rgba(200, 225, 255, 0.85)', spike: false }  // theta^1 Ori B (Algol-type)
+        ]
+      };
+
+      // 8. CELESTIAL LANDMARK 4: THE ANDROMEDA GALAXY (M31) & SATELLITES M32 & M110
+      // Left-aft celestial quadrant (Yaw -118°, Pitch +26°)
+      var m31Yaw = -118 * Math.PI / 180;
+      var m31Pitch = 26 * Math.PI / 180;
+      var m31Dist = 2900;
+      var ANDROMEDA_GALAXY = {
+        x: m31Dist * Math.cos(m31Pitch) * Math.sin(m31Yaw),
+        y: -m31Dist * Math.sin(m31Pitch),
+        z: m31Dist * Math.cos(m31Pitch) * Math.cos(m31Yaw),
+        majorRadius: 270,
+        minorRadius: 86, // ~77° visual tilt
+        tiltAngle: 36 * Math.PI / 180
+      };
+
+      // 9. CELESTIAL LANDMARK 5: THE MOON (LUNAR MARIA & TYCHO CRATER RAY SYSTEM)
+      // Forward-right high sky (Yaw +36°, Pitch +32°)
+      var moonYaw = 36 * Math.PI / 180;
+      var moonPitch = 32 * Math.PI / 180;
+      var moonDist = 2750;
+      var MOON = {
+        x: moonDist * Math.cos(moonPitch) * Math.sin(moonYaw),
+        y: -moonDist * Math.sin(moonPitch),
+        z: moonDist * Math.cos(moonPitch) * Math.cos(moonYaw),
+        radius: 125
+      };
+
+      // 10. INTERACTION CONTROLLER: GYROSCOPE & MOUSE
       function updateTelemetry(){
         if (!gyroPill) return;
         var degP = Math.round(camPitch * 180 / Math.PI);
@@ -2289,28 +2343,232 @@
         var cosP = Math.cos(camPitch), sinP = Math.sin(camPitch);
         var cosR = Math.cos(camRoll),  sinR = Math.sin(camRoll);
 
-        // Distant cosmic emission nebula (anchored to celestial sphere)
-        var nebX = 3000 * Math.sin(-0.78);
-        var nebY = 3000 * Math.sin(0.26);
-        var nebZ = 3000 * Math.cos(-0.78);
-        var nx1 = nebX * cosY - nebZ * sinY;
-        var nz1 = nebX * sinY + nebZ * cosY;
-        var ny2 = nebY * cosP - nz1 * sinP;
-        var nz2 = nebY * sinP + nz1 * cosP;
-        if (nz2 > 50) {
-          var nScale = fov / nz2;
-          var nScreenX = cx + (nx1 * cosR - ny2 * sinR) * nScale;
-          var nScreenY = cy + (nx1 * sinR + ny2 * cosR) * nScale;
-          var nRad = 260 * nScale;
-          if (nRad > 10 && nScreenX > -nRad && nScreenX < w + nRad && nScreenY > -nRad && nScreenY < h + nRad) {
-            var nebGrad = ctx.createRadialGradient(nScreenX, nScreenY, 0, nScreenX, nScreenY, nRad);
-            nebGrad.addColorStop(0, 'rgba(40, 24, 65, 0.14)');
-            nebGrad.addColorStop(0.45, 'rgba(18, 30, 52, 0.08)');
-            nebGrad.addColorStop(1, 'transparent');
-            ctx.fillStyle = nebGrad;
+        // Pre-project Moon for star occlusion & rendering
+        var mx1 = MOON.x * cosY - MOON.z * sinY;
+        var mz1 = MOON.x * sinY + MOON.z * cosY;
+        var my2 = MOON.y * cosP - mz1 * sinP;
+        var mz2 = MOON.y * sinP + mz1 * cosP;
+        var isMoonVisible = false;
+        var moonScreenX = -9999, moonScreenY = -9999, mRadius = 0;
+
+        if (mz2 > 40) {
+          var mx3 = mx1 * cosR - my2 * sinR;
+          var my3 = mx1 * sinR + my2 * cosR;
+          var mScale = fov / mz2;
+          moonScreenX = cx + mx3 * mScale;
+          moonScreenY = cy + my3 * mScale;
+          mRadius = Math.max(2, MOON.radius * mScale);
+          if (moonScreenX > -mRadius * 2 && moonScreenX < w + mRadius * 2 &&
+              moonScreenY > -mRadius * 2 && moonScreenY < h + mRadius * 2) {
+            isMoonVisible = true;
+          }
+        }
+
+        // -------------------------------------------------------------
+        // RENDER CELESTIAL LANDMARK 3: THE GREAT ORION NEBULA (M42)
+        // -------------------------------------------------------------
+        var ox1 = ORION_NEBULA.x * cosY - ORION_NEBULA.z * sinY;
+        var oz1 = ORION_NEBULA.x * sinY + ORION_NEBULA.z * cosY;
+        var oy2 = ORION_NEBULA.y * cosP - oz1 * sinP;
+        var oz2 = ORION_NEBULA.y * sinP + oz1 * cosP;
+
+        if (oz2 > 40) {
+          var ox3 = ox1 * cosR - oy2 * sinR;
+          var oy3 = ox1 * sinR + oy2 * cosR;
+          var oScale = fov / oz2;
+          var opx = cx + ox3 * oScale;
+          var opy = cy + oy3 * oScale;
+          var coreR = Math.max(3, ORION_NEBULA.coreRadius * oScale);
+
+          if (opx > -coreR * 3 && opx < w + coreR * 3 && opy > -coreR * 3 && opy < h + coreR * 3) {
+            ctx.save();
+            ctx.translate(opx, opy);
+            ctx.rotate(camRoll);
+
+            // 1. Broad Hydrogen-Alpha diffuse emission veil (Ruby / Magenta wings)
+            // East wing
             ctx.beginPath();
-            ctx.arc(nScreenX, nScreenY, nRad, 0, Math.PI * 2);
+            ctx.ellipse(-coreR * 0.45, -coreR * 0.15, coreR * 1.55, coreR * 0.95, -0.38, 0, Math.PI * 2);
+            var hAlphaEast = ctx.createRadialGradient(-coreR * 0.35, -coreR * 0.1, 0, -coreR * 0.35, -coreR * 0.1, coreR * 1.5);
+            hAlphaEast.addColorStop(0, 'rgba(190, 24, 93, 0.22)');
+            hAlphaEast.addColorStop(0.45, 'rgba(136, 19, 55, 0.13)');
+            hAlphaEast.addColorStop(1, 'transparent');
+            ctx.fillStyle = hAlphaEast;
             ctx.fill();
+
+            // West wing
+            ctx.beginPath();
+            ctx.ellipse(coreR * 0.55, coreR * 0.22, coreR * 1.45, coreR * 0.85, 0.32, 0, Math.PI * 2);
+            var hAlphaWest = ctx.createRadialGradient(coreR * 0.45, coreR * 0.15, 0, coreR * 0.45, coreR * 0.15, coreR * 1.4);
+            hAlphaWest.addColorStop(0, 'rgba(180, 28, 60, 0.20)');
+            hAlphaWest.addColorStop(0.5, 'rgba(120, 15, 45, 0.11)');
+            hAlphaWest.addColorStop(1, 'transparent');
+            ctx.fillStyle = hAlphaWest;
+            ctx.fill();
+
+            // Southern expansion veil
+            ctx.beginPath();
+            ctx.ellipse(coreR * 0.08, coreR * 0.65, coreR * 1.15, coreR * 1.35, 0.12, 0, Math.PI * 2);
+            var hAlphaSouth = ctx.createRadialGradient(coreR * 0.05, coreR * 0.4, 0, coreR * 0.05, coreR * 0.4, coreR * 1.3);
+            hAlphaSouth.addColorStop(0, 'rgba(159, 18, 57, 0.18)');
+            hAlphaSouth.addColorStop(0.6, 'rgba(88, 28, 135, 0.08)');
+            hAlphaSouth.addColorStop(1, 'transparent');
+            ctx.fillStyle = hAlphaSouth;
+            ctx.fill();
+
+            // 2. The Inner Huygenian Region & [O III] Doubly Ionized Oxygen Core (500.7nm turquoise glow)
+            ctx.beginPath();
+            ctx.ellipse(-coreR * 0.04, -coreR * 0.04, coreR * 0.72, coreR * 0.58, -0.25, 0, Math.PI * 2);
+            var o3Core = ctx.createRadialGradient(-coreR * 0.04, -coreR * 0.04, 0, -coreR * 0.04, -coreR * 0.04, coreR * 0.72);
+            o3Core.addColorStop(0, 'rgba(240, 253, 250, 0.90)');
+            o3Core.addColorStop(0.18, 'rgba(103, 232, 249, 0.62)');
+            o3Core.addColorStop(0.42, 'rgba(14, 165, 233, 0.32)');
+            o3Core.addColorStop(0.72, 'rgba(147, 51, 234, 0.12)');
+            o3Core.addColorStop(1, 'transparent');
+            ctx.fillStyle = o3Core;
+            ctx.fill();
+
+            // 3. The Sinus Magnus ("Fish's Mouth" Dark Interstellar Dust Veil)
+            ctx.beginPath();
+            ctx.moveTo(-coreR * 0.75, -coreR * 0.52);
+            ctx.quadraticCurveTo(-coreR * 0.22, -coreR * 0.24, -coreR * 0.02, -coreR * 0.06);
+            ctx.quadraticCurveTo(-coreR * 0.25, -coreR * 0.02, -coreR * 0.52, -coreR * 0.08);
+            ctx.closePath();
+            ctx.fillStyle = 'rgba(3, 4, 7, 0.78)';
+            ctx.fill();
+
+            // 4. The Trapezium Cluster (theta^1 Orionis A, B, C, D)
+            for (var t = 0; t < ORION_NEBULA.trapezium.length; t++){
+              var star = ORION_NEBULA.trapezium[t];
+              var tsScale = coreR / 55;
+              var tsX = star.dx * tsScale;
+              var tsY = star.dy * tsScale;
+              var tsRad = Math.max(0.7, star.rad * oScale * 3.8);
+
+              // Diamond halo
+              var tsHalo = ctx.createRadialGradient(tsX, tsY, 0, tsX, tsY, tsRad * 3.2);
+              tsHalo.addColorStop(0, 'rgba(186, 230, 253, 0.75)');
+              tsHalo.addColorStop(0.5, 'rgba(56, 189, 248, 0.22)');
+              tsHalo.addColorStop(1, 'transparent');
+              ctx.fillStyle = tsHalo;
+              ctx.beginPath();
+              ctx.arc(tsX, tsY, tsRad * 3.2, 0, Math.PI * 2);
+              ctx.fill();
+
+              // Star core
+              ctx.beginPath();
+              ctx.arc(tsX, tsY, tsRad * 0.75, 0, Math.PI * 2);
+              ctx.fillStyle = star.col;
+              ctx.fill();
+
+              // Diffraction spikes for luminous primaries
+              if (star.spike && tsRad > 1.2 && !isStreaking) {
+                var sLen = tsRad * 4.2;
+                ctx.strokeStyle = 'rgba(224, 242, 254, 0.45)';
+                ctx.lineWidth = 0.5;
+                ctx.beginPath();
+                ctx.moveTo(tsX - sLen, tsY); ctx.lineTo(tsX + sLen, tsY);
+                ctx.moveTo(tsX, tsY - sLen); ctx.lineTo(tsX, tsY + sLen);
+                ctx.stroke();
+              }
+            }
+
+            ctx.restore();
+          }
+        }
+
+        // -------------------------------------------------------------
+        // RENDER CELESTIAL LANDMARK 4: THE ANDROMEDA GALAXY (M31)
+        // -------------------------------------------------------------
+        var ax1 = ANDROMEDA_GALAXY.x * cosY - ANDROMEDA_GALAXY.z * sinY;
+        var az1 = ANDROMEDA_GALAXY.x * sinY + ANDROMEDA_GALAXY.z * cosY;
+        var ay2 = ANDROMEDA_GALAXY.y * cosP - az1 * sinP;
+        var az2 = ANDROMEDA_GALAXY.y * sinP + az1 * cosP;
+
+        if (az2 > 40) {
+          var ax3 = ax1 * cosR - ay2 * sinR;
+          var ay3 = ax1 * sinR + ay2 * cosR;
+          var aScale = fov / az2;
+          var apx = cx + ax3 * aScale;
+          var apy = cy + ay3 * aScale;
+          var aMajor = Math.max(3, ANDROMEDA_GALAXY.majorRadius * aScale);
+          var aMinor = Math.max(1, ANDROMEDA_GALAXY.minorRadius * aScale);
+
+          if (apx > -aMajor * 2 && apx < w + aMajor * 2 && apy > -aMajor * 2 && apy < h + aMajor * 2) {
+            ctx.save();
+            ctx.translate(apx, apy);
+            ctx.rotate(ANDROMEDA_GALAXY.tiltAngle + camRoll);
+
+            // 1. Broad Elliptical Spiral Arm Disk
+            ctx.save();
+            ctx.scale(1, aMinor / aMajor);
+            var diskGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, aMajor);
+            diskGrad.addColorStop(0, 'rgba(254, 243, 199, 0.55)');   // Golden population II bulge
+            diskGrad.addColorStop(0.25, 'rgba(219, 234, 254, 0.28)'); // Blue OB star forming disk
+            diskGrad.addColorStop(0.55, 'rgba(147, 197, 253, 0.12)'); // Outer spiral arms
+            diskGrad.addColorStop(0.85, 'rgba(59, 130, 246, 0.04)');
+            diskGrad.addColorStop(1, 'transparent');
+            ctx.fillStyle = diskGrad;
+            ctx.beginPath();
+            ctx.arc(0, 0, aMajor, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+
+            // 2. Interstellar Dust Absorption Lanes (10-kpc Star Formation Ring)
+            ctx.beginPath();
+            ctx.ellipse(-aMajor * 0.04, aMinor * 0.26, aMajor * 0.74, aMinor * 0.54, 0, Math.PI * 0.14, Math.PI * 0.86);
+            ctx.strokeStyle = 'rgba(2, 4, 8, 0.52)';
+            ctx.lineWidth = Math.max(0.8, aMinor * 0.08);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.ellipse(-aMajor * 0.06, aMinor * 0.44, aMajor * 0.90, aMinor * 0.64, 0, Math.PI * 0.18, Math.PI * 0.82);
+            ctx.strokeStyle = 'rgba(2, 4, 8, 0.38)';
+            ctx.lineWidth = Math.max(0.6, aMinor * 0.06);
+            ctx.stroke();
+
+            // 3. Dense Galactic Nucleus (Supermassive black hole bulge)
+            ctx.save();
+            ctx.scale(1, aMinor / aMajor);
+            var coreGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, aMajor * 0.24);
+            coreGrad.addColorStop(0, 'rgba(255, 255, 255, 0.98)');
+            coreGrad.addColorStop(0.30, 'rgba(254, 240, 138, 0.88)');
+            coreGrad.addColorStop(0.65, 'rgba(245, 158, 11, 0.32)');
+            coreGrad.addColorStop(1, 'transparent');
+            ctx.fillStyle = coreGrad;
+            ctx.beginPath();
+            ctx.arc(0, 0, aMajor * 0.24, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+
+            // 4. Satellite Dwarf Galaxy 1: Messier 32 (NGC 221)
+            var m32X = aMajor * 0.14;
+            var m32Y = aMinor * 1.38;
+            var m32Rad = Math.max(1.8, aMajor * 0.05);
+            var m32Grad = ctx.createRadialGradient(m32X, m32Y, 0, m32X, m32Y, m32Rad * 2.8);
+            m32Grad.addColorStop(0, 'rgba(255, 252, 235, 0.86)');
+            m32Grad.addColorStop(0.4, 'rgba(254, 240, 138, 0.35)');
+            m32Grad.addColorStop(1, 'transparent');
+            ctx.fillStyle = m32Grad;
+            ctx.beginPath();
+            ctx.arc(m32X, m32Y, m32Rad * 2.8, 0, Math.PI * 2);
+            ctx.fill();
+
+            // 5. Satellite Dwarf Galaxy 2: Messier 110 (NGC 205)
+            var m110X = -aMajor * 0.44;
+            var m110Y = -aMinor * 1.82;
+            var m110Major = Math.max(2.4, aMajor * 0.088);
+            var m110Minor = m110Major * 0.56;
+            ctx.beginPath();
+            ctx.ellipse(m110X, m110Y, m110Major, m110Minor, -0.35, 0, Math.PI * 2);
+            var m110Grad = ctx.createRadialGradient(m110X, m110Y, 0, m110X, m110Y, m110Major);
+            m110Grad.addColorStop(0, 'rgba(224, 231, 255, 0.42)');
+            m110Grad.addColorStop(0.6, 'rgba(199, 210, 254, 0.14)');
+            m110Grad.addColorStop(1, 'transparent');
+            ctx.fillStyle = m110Grad;
+            ctx.fill();
+
+            ctx.restore();
           }
         }
 
@@ -2349,6 +2607,8 @@
           var py = cy + y3 * scale;
 
           if (px < -30 || px > w + 30 || py < -30 || py > h + 30) continue;
+          // Occlusion by solid lunar body
+          if (isMoonVisible && (px - moonScreenX) * (px - moonScreenX) + (py - moonScreenY) * (py - moonScreenY) < mRadius * mRadius) continue;
 
           var alpha = s.baseAlpha;
           if (s.scintillationSpeed > 0) {
@@ -2538,6 +2798,89 @@
 
             ctx.restore();
           }
+        }
+
+        // -------------------------------------------------------------
+        // RENDER CELESTIAL LANDMARK 5: THE MOON (LUNA)
+        // -------------------------------------------------------------
+        if (isMoonVisible) {
+          ctx.save();
+          ctx.translate(moonScreenX, moonScreenY);
+          ctx.rotate(camRoll);
+
+          // Clip to spherical body of the Moon
+          ctx.beginPath();
+          ctx.arc(0, 0, mRadius, 0, Math.PI * 2);
+          ctx.clip();
+
+          // 1. Base lunar anorthosite regolith with realistic spherical illumination
+          var moonSunGrad = ctx.createRadialGradient(
+            -mRadius * 0.32, -mRadius * 0.32, mRadius * 0.05,
+            mRadius * 0.25, mRadius * 0.25, mRadius * 1.15
+          );
+          moonSunGrad.addColorStop(0, '#f1f5f9');
+          moonSunGrad.addColorStop(0.38, '#cbd5e1');
+          moonSunGrad.addColorStop(0.72, '#64748b');
+          moonSunGrad.addColorStop(0.92, '#1e293b');
+          moonSunGrad.addColorStop(1, '#050810');
+          ctx.fillStyle = moonSunGrad;
+          ctx.fillRect(-mRadius, -mRadius, mRadius * 2, mRadius * 2);
+
+          // 2. Real Lunar Maria (Dark basaltic lava basins)
+          // Oceanus Procellarum (Ocean of Storms - western expanse)
+          ctx.beginPath();
+          ctx.ellipse(-mRadius * 0.42, -mRadius * 0.12, mRadius * 0.36, mRadius * 0.44, 0.22, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(28, 38, 55, 0.58)';
+          ctx.fill();
+
+          // Mare Imbrium (Sea of Rains - upper circular basin)
+          ctx.beginPath();
+          ctx.ellipse(-mRadius * 0.20, -mRadius * 0.42, mRadius * 0.25, mRadius * 0.22, -0.15, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(24, 34, 50, 0.62)';
+          ctx.fill();
+
+          // Mare Serenitatis & Mare Tranquillitatis (Apollo 11 - center/eastern seas)
+          ctx.beginPath();
+          ctx.ellipse(mRadius * 0.16, -mRadius * 0.22, mRadius * 0.18, mRadius * 0.16, 0.12, 0, Math.PI * 2);
+          ctx.ellipse(mRadius * 0.26, -mRadius * 0.02, mRadius * 0.20, mRadius * 0.18, -0.22, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(26, 36, 52, 0.55)';
+          ctx.fill();
+
+          // Mare Crisium (Distinct isolated circular sea near eastern limb)
+          ctx.beginPath();
+          ctx.ellipse(mRadius * 0.60, -mRadius * 0.14, mRadius * 0.12, mRadius * 0.15, 0.15, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(20, 28, 42, 0.65)';
+          ctx.fill();
+
+          // Mare Fecunditatis & Mare Nectaris (South-eastern plains)
+          ctx.beginPath();
+          ctx.ellipse(mRadius * 0.34, mRadius * 0.22, mRadius * 0.17, mRadius * 0.15, 0.28, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(25, 35, 48, 0.50)';
+          ctx.fill();
+
+          // 3. Southern Highlands Tycho Crater & Extensive Radial Ray Filaments
+          var tychoX = -mRadius * 0.12;
+          var tychoY = mRadius * 0.56;
+          ctx.strokeStyle = 'rgba(241, 245, 249, 0.28)';
+          ctx.lineWidth = Math.max(0.5, mRadius * 0.014);
+          var tyAngles = [-1.45, -0.95, -0.42, 0.18, 0.68, 1.15, 1.75, 2.45];
+          for (var a = 0; a < tyAngles.length; a++){
+            ctx.beginPath();
+            ctx.moveTo(tychoX, tychoY);
+            ctx.lineTo(
+              tychoX + Math.cos(tyAngles[a]) * mRadius * 0.94,
+              tychoY + Math.sin(tyAngles[a]) * mRadius * 0.94
+            );
+            ctx.stroke();
+          }
+
+          // Tycho bright crater central peak
+          ctx.beginPath();
+          ctx.arc(tychoX, tychoY, Math.max(1.1, mRadius * 0.038), 0, Math.PI * 2);
+          ctx.fillStyle = '#f8fafc';
+          ctx.fill();
+
+          ctx.restore();
         }
 
         // -------------------------------------------------------------
